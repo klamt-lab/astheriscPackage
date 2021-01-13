@@ -1,0 +1,2638 @@
+ASTHERISC community MDF advantage search
+
+
+=SETTINGS=
+Substrate reaction: R_EX_C_glc__D_exchg
+Maximal substrate uptake for single species (in units of the model): 1
+Minimal yield factor (i.e., minimal necessary percentage of maximal possible yield): 0.8
+Minimal absolute yield: 1e-06
+Minimal absolute MDF community advantage: 0.2
+Temperature [K] (for comparison: 25°C=77°F=298.15 K): 298.15
+Minimal absolute mdf with community: 0
+Minimal absolute flux (in units of the model) for a reaction in order to be considered 'active' ('v epsilon'): 1e-06
+Model path: ./0Astherisc/publication_runs/ecoli_models/models_and_dG0_data/ecolicore2triple.mat
+Report path: ./0Astherisc/publication_runs/ecoli_models/run_results/report__10000_seconds__model_ecolicore2triple__maxYield_0.8__numMaxExchanges_Inf.txt
+Calculate and show community solution bottlenecks? false
+Calculate and show single-species bottlenecks with active reactions of the community? true
+Calculate indirect bottlenecks for selected bottleneck types? false
+Number of maximal allowed exchanges: Inf
+Reactions with set minimal flux of 0:
+ R_ATPM_ecoli1
+ R_ATPM_ecoli2
+ R_ATPM_ecoli3
+'Ignored' metabolites (i.e., metabolites which are deemed to play no role thermodynamically as their concentration range is fixed to 1, so that instead of the default output '[unused]' in this case, '[1;1]' is printed instead:
+ M_h2o_c_ecoli1
+ M_h2o_c_ecoli2
+ M_h2o_c_ecoli3
+ M_h2o_p_ecoli1
+ M_h2o_p_ecoli2
+ M_h2o_p_ecoli3
+ M_h2o_e_ecoli1
+ M_h2o_e_ecoli2
+ M_h2o_e_ecoli3
+ M_h2o_exchg
+ M_h_c_ecoli1
+ M_h_c_ecoli2
+ M_h_c_ecoli3
+ M_h_p_ecoli1
+ M_h_p_ecoli2
+ M_h_p_ecoli3
+ M_h_e_ecoli1
+ M_h_e_ecoli2
+ M_h_e_ecoli3
+ M_h_exchg
+Fixed ratio ranges (ID of metabolite A, ID of metabolite B, minimal concentration ratio of A:B, maximal concentration ratio of A:B:
+ M_atp_c_ecoli1, M_adp_c_ecoli1, 3, 10
+ M_adp_c_ecoli1, M_amp_c_ecoli1, 0.5, 2
+ M_nad_c_ecoli1, M_nadh_c_ecoli1, 3, 10
+ M_nadph_c_ecoli1, M_nadp_c_ecoli1, 3, 10
+ M_atp_c_ecoli2, M_adp_c_ecoli2, 3, 10
+ M_adp_c_ecoli2, M_amp_c_ecoli2, 0.5, 2
+ M_nad_c_ecoli2, M_nadh_c_ecoli2, 3, 10
+ M_nadph_c_ecoli2, M_nadp_c_ecoli2, 3, 10
+ M_atp_c_ecoli3, M_adp_c_ecoli3, 3, 10
+ M_adp_c_ecoli3, M_amp_c_ecoli3, 0.5, 2
+ M_nad_c_ecoli3, M_nadh_c_ecoli3, 3, 10
+ M_nadph_c_ecoli3, M_nadp_c_ecoli3, 3, 10
+Target exchange reaction selection:
+ R_EX_C_hmbil_exchg
+ R_EX_C_iscssh_exchg
+ R_EX_C_dhgly_exchg
+ R_EX_C_fmn_exchg
+ R_EX_C_o2_exchg
+ R_EX_C_prlp_exchg
+ R_EX_C_prbamp_exchg
+ R_EX_C_ribflv_exchg
+ R_EX_C_5drib_exchg
+ R_EX_C_pydx5p_exchg
+ R_EX_C_orot5p_exchg
+ R_EX_C_3c4mop_exchg
+ R_EX_C_udp_exchg
+ R_EX_C_actp_exchg
+ R_EX_C_dtbt_exchg
+ R_EX_C_bmoco1gdp_exchg
+ R_EX_C_glu5p_exchg
+ R_EX_C_ckdo_exchg
+ R_EX_C_pro__L_exchg
+ R_EX_C_coa_exchg
+ R_EX_C_udcpp_exchg
+ R_EX_C_ara5p_exchg
+ R_EX_C_paps_exchg
+ R_EX_C_cyst__L_exchg
+ R_EX_C_hgmeACP_exchg
+ R_EX_C_gdp_exchg
+ R_EX_C_1hdecg3p_exchg
+ R_EX_C_ctp_exchg
+ R_EX_C_3php_exchg
+ R_EX_C_uama_exchg
+ R_EX_C_ipdp_exchg
+ R_EX_C_xmp_exchg
+ R_EX_C_k_exchg
+ R_EX_C_uppg3_exchg
+ R_EX_C_flxso_exchg
+ R_EX_C_23dhmp_exchg
+ R_EX_C_ACP_exchg
+ R_EX_C_lipidAds_exchg
+ R_EX_C_tdcoa_exchg
+ R_EX_C_leu__L_exchg
+ R_EX_C_amp_exchg
+ R_EX_C_hdd2coa_exchg
+ R_EX_C_mptamp_exchg
+ R_EX_C_mlthf_exchg
+ R_EX_C_4c2me_exchg
+ R_EX_C_udcpdp_exchg
+ R_EX_C_accoa_exchg
+ R_EX_C_2ohph_exchg
+ R_EX_C_5aprbu_exchg
+ R_EX_C_glu1sa_exchg
+ R_EX_C_td2coa_exchg
+ R_EX_C_gly_exchg
+ R_EX_C_8aonn_exchg
+ R_EX_C_sheme_exchg
+ R_EX_C_dctp_exchg
+ R_EX_C_glyc__R_exchg
+ R_EX_C_3hmrsACP_exchg
+ R_EX_C_mthgxl_exchg
+ R_EX_C_2mecdp_exchg
+ R_EX_C_2dmmq8_exchg
+ R_EX_C_cpppg3_exchg
+ R_EX_C_glyc_exchg
+ R_EX_C_fadh2_exchg
+ R_EX_C_3hddcoa_exchg
+ R_EX_C_pyr_exchg
+ R_EX_C_iscu__2fe2s_exchg
+ R_EX_C_aps_exchg
+ R_EX_C_hisp_exchg
+ R_EX_C_26dap__M_exchg
+ R_EX_C_r5p_exchg
+ R_EX_C_4ppcys_exchg
+ R_EX_C_acald_exchg
+ R_EX_C_nadh_exchg
+ R_EX_C_anth_exchg
+ R_EX_C_pmeACP_exchg
+ R_EX_C_adp_exchg
+ R_EX_C_pmtcoa_exchg
+ R_EX_C_ddcacoa_exchg
+ R_EX_C_ura_exchg
+ R_EX_C_val__L_exchg
+ R_EX_C_scl_exchg
+ R_EX_C_glu__D_exchg
+ R_EX_C_3mob_exchg
+ R_EX_C_aspsa_exchg
+ R_EX_C_dd2coa_exchg
+ R_EX_C_nad_exchg
+ R_EX_C_murein5p5p_exchg
+ R_EX_C_co2_exchg
+ R_EX_C_dhptd_exchg
+ R_EX_C_cbp_exchg
+ R_EX_C_rhcys_exchg
+ R_EX_C_5aop_exchg
+ R_EX_C_orn_exchg
+ R_EX_C_2fe2s_exchg
+ R_EX_C_ps161_exchg
+ R_EX_C_asn__L_exchg
+ R_EX_C_zn2_exchg
+ R_EX_C_5caiz_exchg
+ R_EX_C_succ_exchg
+ R_EX_C_lys__L_exchg
+ R_EX_C_cdp_exchg
+ R_EX_C_fe2_exchg
+ R_EX_C_dump_exchg
+ R_EX_C_gtp_exchg
+ R_EX_C_amet_exchg
+ R_EX_C_dmlz_exchg
+ R_EX_C_gmp_exchg
+ R_EX_C_moadcoo_exchg
+ R_EX_C_acon__C_exchg
+ R_EX_C_egmeACP_exchg
+ R_EX_C_pap_exchg
+ R_EX_C_epmeACP_exchg
+ R_EX_C_malcoa_exchg
+ R_EX_C_hdcoa_exchg
+ R_EX_C_3htdcoa_exchg
+ R_EX_C_iscu__2fe2s2_exchg
+ R_EX_C_grdp_exchg
+ R_EX_C_cdpdhdec9eg_exchg
+ R_EX_C_cpmp_exchg
+ R_EX_C_sl26da_exchg
+ R_EX_C_6hmhpt_exchg
+ R_EX_C_1hdec9eg3p_exchg
+ R_EX_C_trnaglu_exchg
+ R_EX_C_dgtp_exchg
+ R_EX_C_na1_exchg
+ R_EX_C_23dhdp_exchg
+ R_EX_C_meoh_exchg
+ R_EX_C_4abz_exchg
+ R_EX_C_dad__5_exchg
+ R_EX_C_prbatp_exchg
+ R_EX_C_aacoa_exchg
+ R_EX_C_dhpt_exchg
+ R_EX_C_glyclt_exchg
+ R_EX_C_air_exchg
+ R_EX_C_gar_exchg
+ R_EX_C_phom_exchg
+ R_EX_C_pser__L_exchg
+ R_EX_C_ser__L_exchg
+ R_EX_C_met__L_exchg
+ R_EX_C_icit_exchg
+ R_EX_C_iasp_exchg
+ R_EX_C_dad__2_exchg
+ R_EX_C_his__L_exchg
+ R_EX_C_3hhdcoa_exchg
+ R_EX_C_akg_exchg
+ R_EX_C_lipidX_exchg
+ R_EX_C_octdp_exchg
+ R_EX_C_glc__D_exchg
+ R_EX_C_3omrsACP_exchg
+ R_EX_C_flxr_exchg
+ R_EX_C_dxyl5p_exchg
+ R_EX_C_dcamp_exchg
+ R_EX_C_iscs_exchg
+ R_EX_C_thf_exchg
+ R_EX_C_ade_exchg
+ R_EX_C_alaala_exchg
+ R_EX_C_acglu_exchg
+ R_EX_C_argsuc_exchg
+ R_EX_C_gam6p_exchg
+ R_EX_C_moadcosh_exchg
+ R_EX_C_iscu__4fe4s_exchg
+ R_EX_C_cl_exchg
+ R_EX_C_pa160_exchg
+ R_EX_C_cys__L_exchg
+ R_EX_C_ogmeACP_exchg
+ R_EX_C_lac__D_exchg
+ R_EX_C_10fthf_exchg
+ R_EX_C_s7p_exchg
+ R_EX_C_sl2a6o_exchg
+ R_EX_C_ppp9_exchg
+ R_EX_C_6pgl_exchg
+ R_EX_C_dtmp_exchg
+ R_EX_C_3ohdcoa_exchg
+ R_EX_C_e4p_exchg
+ R_EX_C_xu5p__D_exchg
+ R_EX_C_dhf_exchg
+ R_EX_C_db4p_exchg
+ R_EX_C_orot_exchg
+ R_EX_C_uri_exchg
+ R_EX_C_pimACP_exchg
+ R_EX_C_kdolipid4_exchg
+ R_EX_C_btcoa_exchg
+ R_EX_C_mg2_exchg
+ R_EX_C_dpcoa_exchg
+ R_EX_C_cbasp_exchg
+ R_EX_C_pan4p_exchg
+ R_EX_C_pnto__R_exchg
+ R_EX_C_datp_exchg
+ R_EX_C_duri_exchg
+ R_EX_C_3hocoa_exchg
+ R_EX_C_u23ga_exchg
+ R_EX_C_grxox_exchg
+ R_EX_C_fdp_exchg
+ R_EX_C_forBIO_exchg
+ R_EX_C_2h3oppan_exchg
+ R_EX_C_pant__R_exchg
+ R_EX_C_thr__L_exchg
+ R_EX_C_lipidA_exchg
+ R_EX_C_ppbng_exchg
+ R_EX_C_2obut_exchg
+ R_EX_C_mpt_exchg
+ R_EX_C_pe161_exchg
+ R_EX_C_aicar_exchg
+ R_EX_C_3otdcoa_exchg
+ R_EX_C_3c2hmp_exchg
+ R_EX_C_atp_exchg
+ R_EX_C_malcoame_exchg
+ R_EX_C_2dmmql8_exchg
+ R_EX_C_23dhmb_exchg
+ R_EX_C_4ppan_exchg
+ R_EX_C_ac_exchg
+ R_EX_C_2ippm_exchg
+ R_EX_C_ugmda_exchg
+ R_EX_C_frdp_exchg
+ R_EX_C_hcys__L_exchg
+ R_EX_C_2ddg6p_exchg
+ R_EX_C_amob_exchg
+ R_EX_C_arg__L_exchg
+ R_EX_C_ahdt_exchg
+ R_EX_C_dadp_exchg
+ R_EX_C_gmeACP_exchg
+ R_EX_C_3odcoa_exchg
+ R_EX_C_dhor__S_exchg
+ R_EX_C_glu5sa_exchg
+ R_EX_C_mdhdhf_exchg
+ R_EX_C_btn_exchg
+ R_EX_C_ump_exchg
+ R_EX_C_gthrd_exchg
+ R_EX_C_utp_exchg
+ R_EX_C_pa161_exchg
+ R_EX_C_acser_exchg
+ R_EX_C_so4_exchg
+ R_EX_C_grxrd_exchg
+ R_EX_C_ca2_exchg
+ R_EX_C_3c3hmp_exchg
+ R_EX_C_gthox_exchg
+ R_EX_C_u3aga_exchg
+ R_EX_C_fe3_exchg
+ R_EX_C_q8_exchg
+ R_EX_C_2dr1p_exchg
+ R_EX_C_dscl_exchg
+ R_EX_C_5aizc_exchg
+ R_EX_C_mqn8_exchg
+ R_EX_C_ile__L_exchg
+ R_EX_C_ddca_exchg
+ R_EX_C_oc2coa_exchg
+ R_EX_C_fad_exchg
+ R_EX_C_palmACP_exchg
+ R_EX_C_damp_exchg
+ R_EX_C_ahcys_exchg
+ R_EX_C_dann_exchg
+ R_EX_C_dmpp_exchg
+ R_EX_C_3ophb_exchg
+ R_EX_C_25drapp_exchg
+ R_EX_C_occoa_exchg
+ R_EX_C_citr__L_exchg
+ R_EX_C_mobd_exchg
+ R_EX_C_hdceap_exchg
+ R_EX_C_thmpp_exchg
+ R_EX_C_dha_exchg
+ R_EX_C_ps160_exchg
+ R_EX_C_dc2coa_exchg
+ R_EX_C_etoh_exchg
+ R_EX_C_fpram_exchg
+ R_EX_C_glyc3p_exchg
+ R_EX_C_5apru_exchg
+ R_EX_C_glu__L_exchg
+ R_EX_C_prpp_exchg
+ R_EX_C_uacgam_exchg
+ R_EX_C_dcacoa_exchg
+ R_EX_C_moadamp_exchg
+ R_EX_C_2fe1s_exchg
+ R_EX_C_mththf_exchg
+ R_EX_C_hco3_exchg
+ R_EX_C_adn_exchg
+ R_EX_C_alac__S_exchg
+ R_EX_C_2oph_exchg
+ R_EX_C_thdp_exchg
+ R_EX_C_uaagmda_exchg
+ R_EX_C_4mop_exchg
+ R_EX_C_uagmda_exchg
+ R_EX_C_hdca_exchg
+ R_EX_C_hdeACP_exchg
+ R_EX_C_fgam_exchg
+ R_EX_C_ru5p__D_exchg
+ R_EX_C_pppg9_exchg
+ R_EX_C_dttp_exchg
+ R_EX_C_2mahmp_exchg
+ R_EX_C_cit_exchg
+ R_EX_C_cmp_exchg
+ R_EX_C_prfp_exchg
+ R_EX_C_hom__L_exchg
+ R_EX_C_ala__D_exchg
+ R_EX_C_mql8_exchg
+ R_EX_C_hpmeACP_exchg
+ R_EX_C_4crsol_exchg
+ R_EX_C_hx2coa_exchg
+ R_EX_C_25aics_exchg
+ R_EX_C_dnad_exchg
+ R_EX_C_mn2_exchg
+ R_EX_C_3hdcoa_exchg
+ R_EX_C_cobalt2_exchg
+ R_EX_C_hxcoa_exchg
+ R_EX_C_acg5sa_exchg
+ R_EX_C_malACP_exchg
+ R_EX_C_4fe4s_exchg
+ R_EX_C_succoa_exchg
+ R_EX_C_cdpdhdecg_exchg
+ R_EX_C_glxBIO_exchg
+ R_EX_C_5mthf_exchg
+ R_EX_C_dtdp_exchg
+ R_EX_C_3oddcoa_exchg
+ R_EX_C_q8h2_exchg
+ R_EX_C_pheme_exchg
+ R_EX_C_pe160_exchg
+ R_EX_C_kdo2lipid4_exchg
+ R_EX_C_hdcap_exchg
+ R_EX_C_gam1p_exchg
+ R_EX_C_pi_exchg
+ R_EX_C_nadp_exchg
+ R_EX_C_uamag_exchg
+ R_EX_C_3ohcoa_exchg
+ R_EX_C_ni2_exchg
+ R_EX_C_bmocogdp_exchg
+ R_EX_C_4hbz_exchg
+ R_EX_C_uaccg_exchg
+ R_EX_C_bmoco_exchg
+ R_EX_C_acorn_exchg
+ R_EX_C_histd_exchg
+ R_EX_C_h2s_exchg
+ R_EX_C_2p4c2me_exchg
+ R_EX_C_gcald_exchg
+ R_EX_C_nh4_exchg
+ R_EX_C_h2mb4p_exchg
+ R_EX_C_uamr_exchg
+ R_EX_C_acg5p_exchg
+ R_EX_C_fprica_exchg
+ R_EX_C_4r5au_exchg
+ R_EX_C_ddcaACP_exchg
+ R_EX_C_dhnpt_exchg
+ R_EX_C_4mpetz_exchg
+ R_EX_C_gln__L_exchg
+ R_EX_C_glutrna_exchg
+ R_EX_C_ala__L_exchg
+ R_EX_C_1pyr5c_exchg
+ R_EX_C_moco_exchg
+ R_EX_C_eig3p_exchg
+ R_EX_C_u3hga_exchg
+ R_EX_C_b2coa_exchg
+ R_EX_C_6pgc_exchg
+ R_EX_C_nadph_exchg
+ R_EX_C_ugmd_exchg
+ R_EX_C_methf_exchg
+ R_EX_C_dhpmp_exchg
+ R_EX_C_ohpb_exchg
+ R_EX_C_acgam1p_exchg
+ R_EX_C_26dap__LL_exchg
+ R_EX_C_pdx5p_exchg
+ R_EX_C_4ampm_exchg
+ R_EX_C_3hhcoa_exchg
+ R_EX_C_cu2_exchg
+ R_EX_C_so3_exchg
+ R_EX_C_3mop_exchg
+ R_EX_C_2ahbut_exchg
+ R_EX_C_thmmp_exchg
+ R_EX_C_3hbcoa_exchg
+ R_EX_C_2dhp_exchg
+ R_EX_C_3oocoa_exchg
+ R_EX_C_g6p_exchg
+ R_EX_C_murein5px4p_exchg
+ R_EX_C_opmeACP_exchg
+ R_EX_C_hdcea_exchg
+ R_EX_C_iscu_exchg
+ R_EX_C_imp_exchg
+ R_EX_C_quln_exchg
+ R_EX_C_imacp_exchg
+ R_EX_C_6hmhptpp_exchg
+
+=RUN RESULTS=
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hmbil_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscssh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhgly_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35862
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fmn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_o2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prlp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35994
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prbamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35994
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ribflv_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5drib_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pydx5p_exchg
+Reached MDF without community is 5.3227
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_orot5p_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3c4mop_exchg
+Reached MDF without community is 1.8696
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_udp_exchg
+Reached MDF without community is -15.3652
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_actp_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dtbt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_bmoco1gdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu5p_exchg
+Reached MDF without community is 0.85997
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ckdo_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.34223
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pro__L_exchg
+Reached MDF without community is 1.7199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.21704
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_udcpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.074877
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ara5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_paps_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51919
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cyst__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57976
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hgmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5553
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_1hdecg3p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.22222
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ctp_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3php_exchg
+Reached MDF without community is -3.671
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uama_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ipdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.79316
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_xmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.59975
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_k_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_uppg3_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_flxso_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_23dhmp_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_lipidAds_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0625
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_tdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12996
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_leu__L_exchg
+Reached MDF without community is 2.4927
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_amp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55467
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdd2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12357
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mptamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.20779
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mlthf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25259
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4c2me_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_udcpdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.074877
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_accoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.20265
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2ohph_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.090824
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5aprbu_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55153
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glu1sa_exchg and the model without allowed community
+Maxyield with NaN reactions: 1
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_td2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13107
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gly_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_8aonn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.31858
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_sheme_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.098361
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dctp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5777
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glyc__R_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hmrsACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_mthgxl_exchg
+Reached MDF without community is 13.4747
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2mecdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.9137
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2dmmq8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cpppg3_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glyc_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fadh2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hddcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13953
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pyr_exchg
+Reached MDF without community is 12.6629
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu__2fe2s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_aps_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.53341
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hisp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.78296
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_26dap__M_exchg
+Reached MDF without community is 7.1764
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_r5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4ppcys_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.36271
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acald_exchg
+Reached MDF without community is 15.1028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nadh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25551
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_anth_exchg
+Reached MDF without community is 7.6204
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_adp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.54232
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pmtcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12259
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ddcacoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13828
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ura_exchg
+Reached MDF without community is -15.3652
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_val__L_exchg
+Reached MDF without community is 11.8184
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_scl_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.098361
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu__D_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3mob_exchg
+Reached MDF without community is 12.2745
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_aspsa_exchg
+Reached MDF without community is 5.3823
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dd2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13953
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nad_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.26099
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_murein5p5p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.070395
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_co2_exchg
+Reached MDF without community is 9.2754
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhptd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cbp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_rhcys_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5aop_exchg and the model without allowed community
+Maxyield with NaN reactions: 1
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_orn_exchg
+Reached MDF without community is 5.9101
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2fe2s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.93805
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ps161_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_asn__L_exchg
+Reached MDF without community is 4.2002
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_zn2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5caiz_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.62914
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_succ_exchg
+Reached MDF without community is 7.9599
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_lys__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cdp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fe2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dump_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.61028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gtp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.54286
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_amet_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.29275
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dmlz_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.56826
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moadcoo_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acon__C_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_egmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pap_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_epmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_malcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.20075
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12357
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3htdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13107
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu__2fe2s2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_grdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.40482
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cdpdhdec9eg_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10169
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cpmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55849
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_sl26da_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_6hmhpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.68688
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_1hdec9eg3p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.22222
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_trnaglu_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dgtp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51919
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_na1_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_23dhdp_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_meoh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4abz_exchg
+Reached MDF without community is 7.6204
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dad__5_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prbatp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.3547
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_aacoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.19005
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.34687
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glyclt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_air_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.65068
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gar_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_phom_exchg
+Reached MDF without community is 7.1764
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pser__L_exchg
+Reached MDF without community is -3.671
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ser__L_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_met__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.62391
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_icit_exchg
+Reached MDF without community is 5.9019
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_iasp_exchg
+Reached MDF without community is 7.6204
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dad__2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.53282
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_his__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.87705
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hhdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12357
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_akg_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_lipidX_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_octdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10281
+
+INFO: Maximal yield of -1 is smaller than minimal yield for R_EX_C_glc__D_exchg and the model without allowed community
+Maxyield with NaN reactions: -1
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3omrsACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_flxr_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_dxyl5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dcamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.42945
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscs_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_thf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.26511
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ade_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_alaala_exchg==
+WARNING: Approximated optimal yield at approximated optimal MDF for the community could not be calculated, this is possible e.g. due to timeouts.
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.98182
+Optimal yield without community without any MDF constraint: 0.98182
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: 9.2754
+Reached yield without community at optimal MDF solution: 0.7963
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 9.8562
+Approximated optimal yield with community at maximal community MDF (if no warning given): 0.7963
+Number of active metabolites: 74
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+ecoli1: 0 | 0
+ecoli2: 20 | 31.5532
+ecoli3: 21 | 14.8079
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_fdp_c_to_fdp | SCALED FLUX: 0.7963 | M_fdp_c_ecoli2 [0.019082;0.02] | M_fdp_exchg [0.00035808;0.0003753]
+R_EXCHG_ecoli2_dhap_c_to_dhap | SCALED FLUX: 0.59722 | M_dhap_c_ecoli2 [0.0083225;0.02] | M_dhap_exchg [8.7176e-05;0.0003753]
+R_EXCHG_ecoli2_alaala_c_to_alaala | SCALED FLUX: 0.7963 | M_alaala_c_ecoli2 [5.3291e-05;0.00030776] | M_alaala_exchg [1e-06;5.7751e-06]
+R_EXCHG_ecoli2_glyc3p_c_to_glyc3p | SCALED FLUX: -2.1898 | M_glyc3p_c_ecoli2 [1e-06;1.0079e-06] | M_glyc3p_exchg [5.3291e-05;5.3712e-05]
+R_EXCHG_ecoli3_fdp_c_to_fdp | SCALED FLUX: -0.7963 | M_fdp_c_ecoli3 [6.7193e-06;7.0425e-06] | M_fdp_exchg [0.00035808;0.0003753]
+R_EXCHG_ecoli3_dhap_c_to_dhap | SCALED FLUX: -0.59722 | M_dhap_c_ecoli3 [1.6359e-06;1.6531e-06] | M_dhap_exchg [8.7176e-05;0.0003753]
+R_EXCHG_ecoli3_glyc3p_c_to_glyc3p | SCALED FLUX: 2.1898 | M_glyc3p_c_ecoli3 [0.0028399;0.0028624] | M_glyc3p_exchg [5.3291e-05;5.3712e-05]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_h_p_to_h | SCALED FLUX: 1.5926 | M_h_p_ecoli2 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli2_nh4_p_to_nh4 | SCALED FLUX: -1.5926 | M_nh4_p_ecoli2 [1e-06;0.02] | M_nh4_exchg [5.3291e-05;10]
+R_EXCHG_ecoli2_h2o_p_to_h2o | SCALED FLUX: 4.5787 | M_h2o_p_ecoli2 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli2_o2_p_to_o2 | SCALED FLUX: -1.0949 | M_o2_p_ecoli2 [1e-06;0.02] | M_o2_exchg [5.3291e-05;10]
+R_EXCHG_ecoli3_co2_p_to_co2 | SCALED FLUX: 1.2222 | M_co2_p_ecoli3 [5.3291e-05;0.001] | M_co2_exchg [1e-06;1.8765e-05]
+R_EXCHG_ecoli3_h2o_p_to_h2o | SCALED FLUX: -0.96759 | M_h2o_p_ecoli3 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli3_o2_p_to_o2 | SCALED FLUX: -0.12731 | M_o2_p_ecoli3 [1e-06;0.02] | M_o2_exchg [5.3291e-05;10]
+
+Species-specific uptake:
+R_EXCHG_ecoli1_glc__D_p_to_glc__D | SCALED FLUX 0
+R_EXCHG_ecoli2_glc__D_p_to_glc__D | SCALED FLUX -0.7963
+R_EXCHG_ecoli3_glc__D_p_to_glc__D | SCALED FLUX -0.2037
+
+Metabolites with non-overlapping concentration ranges between species:
+M_2ddg6p_c_ecoli1 [unused] & M_2ddg6p_c_ecoli2 [0.0083225;0.02] & M_2ddg6p_c_ecoli3 [unused]
+M_3mob_c_ecoli1 [unused] & M_3mob_c_ecoli2 [1e-06;0.00014386] & M_3mob_c_ecoli3 [unused]
+M_6pgc_c_ecoli1 [unused] & M_6pgc_c_ecoli2 [1e-06;0.02] & M_6pgc_c_ecoli3 [0.00020491;0.00020735]
+M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [1e-06;0.00013934] & M_6pgl_c_ecoli3 [1.2362e-06;1.2509e-06]
+M_adp_c_ecoli1 [unused] & M_adp_c_ecoli2 [1e-06;0.0066667] & M_adp_c_ecoli3 [1e-06;0.0066667]
+M_akg_c_ecoli1 [unused] & M_akg_c_ecoli2 [1e-06;5.4784e-06] & M_akg_c_ecoli3 [unused]
+M_ala__D_c_ecoli1 [unused] & M_ala__D_c_ecoli2 [2.3287e-06;5.5962e-06] & M_ala__D_c_ecoli3 [unused]
+M_ala__L_c_ecoli1 [unused] & M_ala__L_c_ecoli2 [0.00012206;0.00029333] & M_ala__L_c_ecoli3 [unused]
+M_alaala_c_ecoli1 [unused] & M_alaala_c_ecoli2 [5.3291e-05;0.00030776] & M_alaala_c_ecoli3 [unused]
+M_atp_c_ecoli1 [unused] & M_atp_c_ecoli2 [3e-06;0.02] & M_atp_c_ecoli3 [3e-06;0.02]
+M_co2_c_ecoli1 [unused] & M_co2_c_ecoli2 [unused] & M_co2_c_ecoli3 [1e-06;1.0039e-06]
+M_dhap_c_ecoli1 [unused] & M_dhap_c_ecoli2 [0.0083225;0.02] & M_dhap_c_ecoli3 [1.6359e-06;1.6531e-06]
+M_e4p_c_ecoli1 [unused] & M_e4p_c_ecoli2 [unused] & M_e4p_c_ecoli3 [4.0734e-06;4.1056e-06]
+M_f6p_c_ecoli1 [unused] & M_f6p_c_ecoli2 [0.00014354;0.02] & M_f6p_c_ecoli3 [0.00012792;0.00012962]
+M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [0.019082;0.02] & M_fdp_c_ecoli3 [6.7193e-06;7.0425e-06]
+M_g3p_c_ecoli1 [unused] & M_g3p_c_ecoli2 [0.0060661;0.014578] & M_g3p_c_ecoli3 [9.1959e-06;9.293e-06]
+M_g6p_c_ecoli1 [unused] & M_g6p_c_ecoli2 [4.5553e-05;0.0063472] & M_g6p_c_ecoli3 [4.0598e-05;4.1135e-05]
+M_glc__D_c_ecoli1 [unused] & M_glc__D_c_ecoli2 [1e-06;0.0003753] & M_glc__D_c_ecoli3 [1e-06;0.0003753]
+M_glu__L_c_ecoli1 [unused] & M_glu__L_c_ecoli2 [0.0036507;0.02] & M_glu__L_c_ecoli3 [unused]
+M_glyc3p_c_ecoli1 [unused] & M_glyc3p_c_ecoli2 [1e-06;1.0079e-06] & M_glyc3p_c_ecoli3 [0.0028399;0.0028624]
+M_nadp_c_ecoli1 [unused] & M_nadp_c_ecoli2 [1e-06;0.0048063] & M_nadp_c_ecoli3 [1e-06;0.0066667]
+M_nadph_c_ecoli1 [unused] & M_nadph_c_ecoli2 [4.1612e-06;0.02] & M_nadph_c_ecoli3 [3e-06;0.02]
+M_nh4_c_ecoli1 [unused] & M_nh4_c_ecoli2 [0.0083225;0.02] & M_nh4_c_ecoli3 [unused]
+M_o2_c_ecoli1 [unused] & M_o2_c_ecoli2 [1e-06;0.02] & M_o2_c_ecoli3 [1e-06;0.02]
+M_pi_c_ecoli1 [unused] & M_pi_c_ecoli2 [0.00018442;0.0035501] & M_pi_c_ecoli3 [0.00018442;0.02]
+M_pyr_c_ecoli1 [unused] & M_pyr_c_ecoli2 [3.676e-05;8.8338e-05] & M_pyr_c_ecoli3 [unused]
+M_q8_c_ecoli1 [unused] & M_q8_c_ecoli2 [1e-06;0.02] & M_q8_c_ecoli3 [1e-06;0.02]
+M_q8h2_c_ecoli1 [unused] & M_q8h2_c_ecoli2 [1e-06;0.02] & M_q8h2_c_ecoli3 [1e-06;0.02]
+M_r5p_c_ecoli1 [unused] & M_r5p_c_ecoli2 [unused] & M_r5p_c_ecoli3 [0.0022075;0.0022249]
+M_ru5p__D_c_ecoli1 [unused] & M_ru5p__D_c_ecoli2 [unused] & M_ru5p__D_c_ecoli3 [0.019843;0.02]
+M_s7p_c_ecoli1 [unused] & M_s7p_c_ecoli2 [unused] & M_s7p_c_ecoli3 [0.012248;0.012475]
+M_val__L_c_ecoli1 [unused] & M_val__L_c_ecoli2 [0.00013903;0.02] & M_val__L_c_ecoli3 [unused]
+M_xu5p__D_c_ecoli1 [unused] & M_xu5p__D_c_ecoli2 [unused] & M_xu5p__D_c_ecoli3 [0.0014606;0.0014722]
+M_co2_p_ecoli1 [unused] & M_co2_p_ecoli2 [unused] & M_co2_p_ecoli3 [5.3291e-05;0.001]
+M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [5.3291e-05;0.02] & M_glc__D_p_ecoli3 [5.3291e-05;0.02]
+M_nh4_p_ecoli1 [unused] & M_nh4_p_ecoli2 [1e-06;0.02] & M_nh4_p_ecoli3 [unused]
+M_o2_p_ecoli1 [unused] & M_o2_p_ecoli2 [1e-06;0.02] & M_o2_p_ecoli3 [1e-06;0.02]
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
+MDF in single species with reactions occuring in community solution: 9.2754 (OptMDF in community was 9.8562, difference is 0.58078)
+>Bottleneck reactions (driving force=OptMDF):
+R_FBA_ecoli1 | 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+R_G6PDH2r_ecoli1 | 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 
+R_PGI_ecoli1 | 1 M_f6p_c_ecoli1 (<)-> 1 M_g6p_c_ecoli1 
+R_RPE_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+R_RPI_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+R_TALA_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+R_TKT1_ecoli1 | 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+R_TKT2_ecoli1 | 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 
+R_TPI_ecoli1 | 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+>Connecting metabolites:
+R_TPI_ecoli1-> R_FBA_ecoli1; M_dhap_c_ecoli1 
+R_TALA_ecoli1-> R_TKT2_ecoli1; M_e4p_c_ecoli1 
+R_TALA_ecoli1/R_TKT2_ecoli1-> R_PGI_ecoli1; M_f6p_c_ecoli1 
+R_TKT1_ecoli1/R_TKT2_ecoli1-> R_FBA_ecoli1/R_TALA_ecoli1/R_TPI_ecoli1; M_g3p_c_ecoli1 
+R_PGI_ecoli1-> R_G6PDH2r_ecoli1; M_g6p_c_ecoli1 
+R_RPI_ecoli1-> R_TKT1_ecoli1; M_r5p_c_ecoli1 
+R_TKT1_ecoli1-> R_TALA_ecoli1; M_s7p_c_ecoli1 
+R_RPE_ecoli1-> R_TKT1_ecoli1/R_TKT2_ecoli1; M_xu5p__D_c_ecoli1 
+>Connecting metabolite ranges:
+~M_dhap_c_ecoli1~
+In single species:
+[3.3492e-05;3.3769e-05] (range 2.7685e-07)
+In community:
+M_dhap_c_ecoli1: [unused] (range 0)
+M_dhap_c_ecoli2: [0.0083225;0.02] (range 0.011678)
+M_dhap_c_ecoli3: [1.6359e-06;1.6531e-06] (range 1.7285e-08)
+~M_e4p_c_ecoli1~
+In single species:
+[2.0776e-05;2.0862e-05] (range 8.5692e-08)
+In community:
+M_e4p_c_ecoli1: [unused] (range 0)
+M_e4p_c_ecoli2: [unused] (range 0)
+M_e4p_c_ecoli3: [4.0734e-06;4.1056e-06] (range 3.2238e-08)
+~M_f6p_c_ecoli1~
+In single species:
+[6.4771e-05;6.4904e-05] (range 1.3344e-07)
+In community:
+M_f6p_c_ecoli1: [unused] (range 0)
+M_f6p_c_ecoli2: [0.00014354;0.02] (range 0.019856)
+M_f6p_c_ecoli3: [0.00012792;0.00012962] (range 1.6919e-06)
+~M_g3p_c_ecoli1~
+In single species:
+[0.00014957;0.00015018] (range 6.1689e-07)
+In community:
+M_g3p_c_ecoli1: [unused] (range 0)
+M_g3p_c_ecoli2: [0.0060661;0.014578] (range 0.0085116)
+M_g3p_c_ecoli3: [9.1959e-06;9.293e-06] (range 9.7167e-08)
+~M_g6p_c_ecoli1~
+In single species:
+[2.5982e-05;2.6036e-05] (range 5.3527e-08)
+In community:
+M_g6p_c_ecoli1: [unused] (range 0)
+M_g6p_c_ecoli2: [4.5553e-05;0.0063472] (range 0.0063016)
+M_g6p_c_ecoli3: [4.0598e-05;4.1135e-05] (range 5.3693e-07)
+~M_r5p_c_ecoli1~
+In single species:
+[0.0028008;0.0028123] (range 1.1552e-05)
+In community:
+M_r5p_c_ecoli1: [unused] (range 0)
+M_r5p_c_ecoli2: [unused] (range 0)
+M_r5p_c_ecoli3: [0.0022075;0.0022249] (range 1.7471e-05)
+~M_s7p_c_ecoli1~
+In single species:
+[0.0015426;0.0015489] (range 6.3624e-06)
+In community:
+M_s7p_c_ecoli1: [unused] (range 0)
+M_s7p_c_ecoli2: [unused] (range 0)
+M_s7p_c_ecoli3: [0.012248;0.012475] (range 0.00022737)
+~M_xu5p__D_c_ecoli1~
+In single species:
+[0.001857;0.0018608] (range 3.8257e-06)
+In community:
+M_xu5p__D_c_ecoli1: [unused] (range 0)
+M_xu5p__D_c_ecoli2: [unused] (range 0)
+M_xu5p__D_c_ecoli3: [0.0014606;0.0014722] (range 1.156e-05)
+
+
+Detailed reaction-wise solution reports:
+~Community solution detailed solutions~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+EX_C_h_exchg; 1.5926; NaN; 1 M_h_exchg (<)-> 
+EX_C_nh4_exchg; -1.5926; NaN; (<)-> 1 M_nh4_exchg 
+EX_C_co2_exchg; 1.2222; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 3.6111; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_alaala_exchg; 0.7963; NaN; 1 M_alaala_exchg -> 
+EX_C_o2_exchg; -1.2222; NaN; (<)-> 1 M_o2_exchg 
+EXCHG_ecoli2_fdp_c_to_fdp; 0.7963; 0; 1 M_fdp_c_ecoli2 -> 1 M_fdp_exchg 
+EXCHG_ecoli2_h_p_to_h; 1.5926; NaN; 1 M_h_p_ecoli2 (<)-> 1 M_h_exchg 
+EXCHG_ecoli2_dhap_c_to_dhap; 0.59722; 0; 1 M_dhap_c_ecoli2 -> 1 M_dhap_exchg 
+EXCHG_ecoli2_glc__D_p_to_glc__D; -0.7963; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli2 
+EXCHG_ecoli2_nh4_p_to_nh4; -1.5926; 0; 1 M_nh4_exchg (<)-> 1 M_nh4_p_ecoli2 
+EXCHG_ecoli2_h2o_p_to_h2o; 4.5787; NaN; 1 M_h2o_p_ecoli2 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli2_alaala_c_to_alaala; 0.7963; 0; 1 M_alaala_c_ecoli2 -> 1 M_alaala_exchg 
+EXCHG_ecoli2_glyc3p_c_to_glyc3p; -2.1898; 0; 1 M_glyc3p_exchg -> 1 M_glyc3p_c_ecoli2 
+EXCHG_ecoli2_o2_p_to_o2; -1.0949; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli2 
+EXCHG_ecoli3_fdp_c_to_fdp; -0.7963; 0; 1 M_fdp_exchg -> 1 M_fdp_c_ecoli3 
+EXCHG_ecoli3_dhap_c_to_dhap; -0.59722; 0; 1 M_dhap_exchg -> 1 M_dhap_c_ecoli3 
+EXCHG_ecoli3_co2_p_to_co2; 1.2222; 0; 1 M_co2_p_ecoli3 (<)-> 1 M_co2_exchg 
+EXCHG_ecoli3_glc__D_p_to_glc__D; -0.2037; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli3 
+EXCHG_ecoli3_h2o_p_to_h2o; -0.96759; NaN; 1 M_h2o_exchg (<)-> 1 M_h2o_p_ecoli3 
+EXCHG_ecoli3_glyc3p_c_to_glyc3p; 2.1898; 0; 1 M_glyc3p_c_ecoli3 -> 1 M_glyc3p_exchg 
+EXCHG_ecoli3_o2_p_to_o2; -0.12731; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli3 
+Detailed solution for species ecoli2 (Reaction ID; Flux; dG0; Reaction string):
+ALAALAr; 0.7963; -25.7289; 1 M_atp_c_ecoli2 + 2 M_ala__D_c_ecoli2 (<)-> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2 + 1 M_alaala_c_ecoli2 
+ALAR; 1.5926; -0.040976; 1 M_ala__L_c_ecoli2 (<)-> 1 M_ala__D_c_ecoli2 
+ATPS4rpp; 1.5926; -33.8921; 1 M_adp_c_ecoli2 + 1 M_pi_c_ecoli2 + 4 M_h_p_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 + 3 M_h_c_ecoli2 
+CYTBO3_4pp; 2.1898; -55.284; 4 M_h_c_ecoli2 + 0.5 M_o2_c_ecoli2 + 1 M_q8h2_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 4 M_h_p_ecoli2 + 1 M_q8_c_ecoli2 
+EDA; 1.5926; 16.2402; 1 M_2ddg6p_c_ecoli2 -> 1 M_pyr_c_ecoli2 + 1 M_g3p_c_ecoli2 
+EDD; 1.5926; -42.8448; 1 M_6pgc_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 1 M_2ddg6p_c_ecoli2 
+FBA; -1.5926; 22.3932; 1 M_g3p_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_fdp_c_ecoli2 
+FBP; 0.7963; -8.4178; 1 M_h2o_c_ecoli2 + 1 M_fdp_c_ecoli2 -> 1 M_pi_c_ecoli2 + 1 M_f6p_c_ecoli2 
+G3PD5; 2.1898; -109.0556; 1 M_glyc3p_c_ecoli2 + 1 M_q8_c_ecoli2 -> 1 M_q8h2_c_ecoli2 + 1 M_dhap_c_ecoli2 
+G6PDH2r; 1.5926; -3.9232; 1 M_nadp_c_ecoli2 + 1 M_g6p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_6pgl_c_ecoli2 
+GLCt2pp; 0.7963; 0; 1 M_h_p_ecoli2 + 1 M_glc__D_p_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_glc__D_c_ecoli2 
+GLUDy; -1.5926; 36.351; 1 M_nh4_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_akg_c_ecoli2 (<)-> 1 M_glu__L_c_ecoli2 + 1 M_h2o_c_ecoli2 + 1 M_nadp_c_ecoli2 
+H2Otpp; -4.5787; NaN; 1 M_h2o_c_ecoli2 (<)-> 1 M_h2o_p_ecoli2 
+HEX1; 0.7963; -17.901; 1 M_atp_c_ecoli2 + 1 M_glc__D_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_g6p_c_ecoli2 
+NH4tpp; 1.5926; NaN; 1 M_nh4_p_ecoli2 (<)-> 1 M_nh4_c_ecoli2 
+O2tpp; 1.0949; NaN; 1 M_o2_p_ecoli2 (<)-> 1 M_o2_c_ecoli2 
+PGI; -0.7963; 7.0102; 1 M_f6p_c_ecoli2 (<)-> 1 M_g6p_c_ecoli2 
+PGL; 1.5926; -22.5233; 1 M_h2o_c_ecoli2 + 1 M_6pgl_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_6pgc_c_ecoli2 
+VALTA; -1.5926; 1.7544; 1 M_glu__L_c_ecoli2 + 1 M_3mob_c_ecoli2 (<)-> 1 M_val__L_c_ecoli2 + 1 M_akg_c_ecoli2 
+VPAMTr; -1.5926; -1.5754; 1 M_val__L_c_ecoli2 + 1 M_pyr_c_ecoli2 (<)-> 1 M_ala__L_c_ecoli2 + 1 M_3mob_c_ecoli2 
+Detailed solution for species ecoli3 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 0.2037; -33.8921; 1 M_adp_c_ecoli3 + 1 M_pi_c_ecoli3 + 4 M_h_p_ecoli3 (<)-> 1 M_atp_c_ecoli3 + 1 M_h2o_c_ecoli3 + 3 M_h_c_ecoli3 
+CO2tpp; -1.2222; NaN; 1 M_co2_c_ecoli3 (<)-> 1 M_co2_p_ecoli3 
+CYTBO3_4pp; 0.25463; -55.284; 4 M_h_c_ecoli3 + 0.5 M_o2_c_ecoli3 + 1 M_q8h2_c_ecoli3 -> 1 M_h2o_c_ecoli3 + 4 M_h_p_ecoli3 + 1 M_q8_c_ecoli3 
+FBA; 0.59259; 22.3932; 1 M_fdp_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 + 1 M_dhap_c_ecoli3 
+FBP; 0.2037; -8.4178; 1 M_h2o_c_ecoli3 + 1 M_fdp_c_ecoli3 -> 1 M_pi_c_ecoli3 + 1 M_f6p_c_ecoli3 
+G3PD2; -2.4444; 25.6158; 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_dhap_c_ecoli3 (<)-> 1 M_nadp_c_ecoli3 + 1 M_glyc3p_c_ecoli3 
+G3PD5; 0.25463; -109.0556; 1 M_glyc3p_c_ecoli3 + 1 M_q8_c_ecoli3 -> 1 M_q8h2_c_ecoli3 + 1 M_dhap_c_ecoli3 
+G6PDH2r; 1.2222; -3.9232; 1 M_nadp_c_ecoli3 + 1 M_g6p_c_ecoli3 (<)-> 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_6pgl_c_ecoli3 
+GLCt2pp; 0.2037; 0; 1 M_h_p_ecoli3 + 1 M_glc__D_p_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_glc__D_c_ecoli3 
+GND; 1.2222; 10.332; 1 M_nadp_c_ecoli3 + 1 M_6pgc_c_ecoli3 -> 1 M_nadph_c_ecoli3 + 1 M_co2_c_ecoli3 + 1 M_ru5p__D_c_ecoli3 
+H2Otpp; 0.96759; NaN; 1 M_h2o_p_ecoli3 (<)-> 1 M_h2o_c_ecoli3 
+HEX1; 0.2037; -17.901; 1 M_atp_c_ecoli3 + 1 M_glc__D_c_ecoli3 -> 1 M_adp_c_ecoli3 + 1 M_h_c_ecoli3 + 1 M_g6p_c_ecoli3 
+O2tpp; 0.12731; NaN; 1 M_o2_p_ecoli3 (<)-> 1 M_o2_c_ecoli3 
+PGI; -1.0185; 7.0102; 1 M_f6p_c_ecoli3 (<)-> 1 M_g6p_c_ecoli3 
+PGL; 1.2222; -22.5233; 1 M_h2o_c_ecoli3 + 1 M_6pgl_c_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_6pgc_c_ecoli3 
+RPE; 0.81481; -3.388; 1 M_ru5p__D_c_ecoli3 (<)-> 1 M_xu5p__D_c_ecoli3 
+RPI; -0.40741; 4.4117; 1 M_ru5p__D_c_ecoli3 (<)-> 1 M_r5p_c_ecoli3 
+TALA; 0.40741; 3.4773; 1 M_g3p_c_ecoli3 + 1 M_s7p_c_ecoli3 (<)-> 1 M_e4p_c_ecoli3 + 1 M_f6p_c_ecoli3 
+TKT1; 0.40741; -1.5468; 1 M_r5p_c_ecoli3 + 1 M_xu5p__D_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 + 1 M_s7p_c_ecoli3 
+TKT2; 0.40741; -5.8438; 1 M_e4p_c_ecoli3 + 1 M_xu5p__D_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 + 1 M_f6p_c_ecoli3 
+TPI; -1; 5.5753; 1 M_g3p_c_ecoli3 (<)-> 1 M_dhap_c_ecoli3 
+
+~Single-species solution detailed solution~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+ALAALAr; 0.7963; -25.7289; 2 M_ala__D_c_ecoli1 + 1 M_atp_c_ecoli1 (<)-> 1 M_adp_c_ecoli1 + 1 M_alaala_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1 
+ALAR; 1.5926; -0.040976; 1 M_ala__L_c_ecoli1 (<)-> 1 M_ala__D_c_ecoli1 
+ATPS4rpp; 1.7963; -33.8921; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1 
+CO2tpp; -1.2222; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1 
+CYTBO3_4pp; 2.4444; -55.284; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1 
+EDA; 1.5926; 16.2402; 1 M_2ddg6p_c_ecoli1 -> 1 M_g3p_c_ecoli1 + 1 M_pyr_c_ecoli1 
+EDD; 1.5926; -42.8448; 1 M_6pgc_c_ecoli1 -> 1 M_2ddg6p_c_ecoli1 + 1 M_h2o_c_ecoli1 
+FBA; -1; 22.3932; 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+FBP; 1; -8.4178; 1 M_fdp_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_f6p_c_ecoli1 + 1 M_pi_c_ecoli1 
+G3PD2; -2.4444; 25.6158; 1 M_dhap_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 (<)-> 1 M_glyc3p_c_ecoli1 + 1 M_nadp_c_ecoli1 
+G3PD5; 2.4444; -109.0556; 1 M_glyc3p_c_ecoli1 + 1 M_q8_c_ecoli1 -> 1 M_dhap_c_ecoli1 + 1 M_q8h2_c_ecoli1 
+G6PDH2r; 2.8148; -3.9232; 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 
+GLCt2pp; 1; 0; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1 
+GLUDy; -1.5926; 36.351; 1 M_akg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_nh4_c_ecoli1 (<)-> 1 M_glu__L_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_nadp_c_ecoli1 
+GND; 1.2222; 10.332; 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_ru5p__D_c_ecoli1 
+H2Otpp; -3.6111; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1 
+HEX1; 1; -17.901; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1 
+NH4tpp; 1.5926; NaN; 1 M_nh4_p_ecoli1 (<)-> 1 M_nh4_c_ecoli1 
+O2tpp; 1.2222; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1 
+PGI; -1.8148; 7.0102; 1 M_f6p_c_ecoli1 (<)-> 1 M_g6p_c_ecoli1 
+PGL; 2.8148; -22.5233; 1 M_6pgl_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_6pgc_c_ecoli1 + 1 M_h_c_ecoli1 
+RPE; 0.81481; -3.388; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+RPI; -0.40741; 4.4117; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+TALA; 0.40741; 3.4773; 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+TKT1; 0.40741; -1.5468; 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+TKT2; 0.40741; -5.8438; 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 
+TPI; -1; 5.5753; 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+VALTA; -1.5926; 1.7544; 1 M_3mob_c_ecoli1 + 1 M_glu__L_c_ecoli1 (<)-> 1 M_akg_c_ecoli1 + 1 M_val__L_c_ecoli1 
+VPAMTr; -1.5926; -1.5754; 1 M_pyr_c_ecoli1 + 1 M_val__L_c_ecoli1 (<)-> 1 M_3mob_c_ecoli1 + 1 M_ala__L_c_ecoli1 
+EX_C_h_exchg; 1.5926; NaN; 1 M_h_exchg (<)-> 
+EX_C_nh4_exchg; -1.5926; NaN; (<)-> 1 M_nh4_exchg 
+EX_C_co2_exchg; 1.2222; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 3.6111; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_alaala_exchg; 0.7963; NaN; 1 M_alaala_exchg -> 
+EX_C_o2_exchg; -1.2222; NaN; (<)-> 1 M_o2_exchg 
+EXCHG_h_p_to_h; 1.5926; NaN; 1 M_h_p_ecoli1 (<)-> 1 M_h_exchg 
+EXCHG_co2_p_to_co2; 1.2222; 0; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg 
+EXCHG_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1 
+EXCHG_nh4_p_to_nh4; -1.5926; 0; 1 M_nh4_exchg (<)-> 1 M_nh4_p_ecoli1 
+EXCHG_h2o_p_to_h2o; 3.6111; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg 
+EXCHG_alaala_c_to_alaala; 0.7963; 0; 1 M_alaala_c_ecoli1 -> 1 M_alaala_exchg 
+EXCHG_o2_p_to_o2; -1.2222; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1 
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acglu_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_argsuc_exchg
+Reached MDF without community is -15.3652
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_gam6p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moadcosh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu__4fe4s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cl_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pa160_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11765
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cys__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 1.0564
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ogmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_lac__D_exchg
+Reached MDF without community is 12.2745
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_10fthf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25808
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_s7p_exchg
+Reached MDF without community is 10.7358
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_sl2a6o_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ppp9_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10345
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_6pgl_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dtmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.52366
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3ohdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12457
+
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_e4p_exchg==
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.3768
+Optimal yield without community without any MDF constraint: 1.3768
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: 5.2285
+Reached yield without community at optimal MDF solution: 1.25
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 8.4667
+Approximated optimal yield with community at maximal community MDF (if no warning given): 1.2056
+Number of active metabolites: 73
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+ecoli1: 0 | 0
+ecoli2: 20 | 14.4042
+ecoli3: 20 | 14.6612
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_s7p_c_to_s7p | SCALED FLUX: 0.82243 | M_s7p_c_ecoli2 [0.0062839;0.0063055] | M_s7p_exchg [0.00020653;0.00020724]
+R_EXCHG_ecoli2_glyc3p_c_to_glyc3p | SCALED FLUX: -1.2336 | M_glyc3p_c_ecoli2 [1e-06;1.378e-05] | M_glyc3p_exchg [3.0426e-05;0.00041926]
+R_EXCHG_ecoli2_q8_c_to_q8 | SCALED FLUX: -0.76168 | M_q8_c_ecoli2 [1e-06;2.1604e-05] | M_q8_exchg [3.0426e-05;0.00065733]
+R_EXCHG_ecoli2_q8h2_c_to_q8h2 | SCALED FLUX: 0.76168 | M_q8h2_c_ecoli2 [0.00092574;0.02] | M_q8h2_exchg [3.0426e-05;0.00065733]
+R_EXCHG_ecoli2_g6p_c_to_g6p | SCALED FLUX: 0.58879 | M_g6p_c_ecoli2 [0.018557;0.02] | M_g6p_exchg [0.00060989;0.00065733]
+R_EXCHG_ecoli3_e4p_c_to_e4p | SCALED FLUX: 1.2056 | M_e4p_c_ecoli3 [3.0426e-05;3.0531e-05] | M_e4p_exchg [1e-06;1.0034e-06]
+R_EXCHG_ecoli3_s7p_c_to_s7p | SCALED FLUX: -0.82243 | M_s7p_c_ecoli3 [6.788e-06;6.8113e-06] | M_s7p_exchg [0.00020653;0.00020724]
+R_EXCHG_ecoli3_glyc3p_c_to_glyc3p | SCALED FLUX: 1.2336 | M_glyc3p_c_ecoli3 [0.00092574;0.012756] | M_glyc3p_exchg [3.0426e-05;0.00041926]
+R_EXCHG_ecoli3_q8_c_to_q8 | SCALED FLUX: 0.76168 | M_q8_c_ecoli3 [0.00092574;0.02] | M_q8_exchg [3.0426e-05;0.00065733]
+R_EXCHG_ecoli3_q8h2_c_to_q8h2 | SCALED FLUX: -0.76168 | M_q8h2_c_ecoli3 [1e-06;2.1604e-05] | M_q8h2_exchg [3.0426e-05;0.00065733]
+R_EXCHG_ecoli3_g6p_c_to_g6p | SCALED FLUX: -0.58879 | M_g6p_c_ecoli3 [2.0045e-05;2.0114e-05] | M_g6p_exchg [0.00060989;0.00065733]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_co2_p_to_co2 | SCALED FLUX: 0.41121 | M_co2_p_ecoli2 [3.0426e-05;0.001] | M_co2_exchg [1e-06;3.2867e-05]
+R_EXCHG_ecoli2_h2o_p_to_h2o | SCALED FLUX: 1.0607 | M_h2o_p_ecoli2 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli2_pi_p_to_pi | SCALED FLUX: -0.17757 | M_pi_p_ecoli2 [0.0032036;0.02] | M_pi_exchg [0.097473;10]
+R_EXCHG_ecoli2_o2_p_to_o2 | SCALED FLUX: -0.6472 | M_o2_p_ecoli2 [1e-06;0.02] | M_o2_exchg [3.0426e-05;10]
+R_EXCHG_ecoli3_co2_p_to_co2 | SCALED FLUX: 0.76636 | M_co2_p_ecoli3 [3.0426e-05;0.001] | M_co2_exchg [1e-06;3.2867e-05]
+R_EXCHG_ecoli3_h2o_p_to_h2o | SCALED FLUX: 1.3224 | M_h2o_p_ecoli3 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli3_pi_p_to_pi | SCALED FLUX: -1.028 | M_pi_p_ecoli3 [0.0032036;0.02] | M_pi_exchg [0.097473;10]
+R_EXCHG_ecoli3_o2_p_to_o2 | SCALED FLUX: -0.53037 | M_o2_p_ecoli3 [1e-06;0.02] | M_o2_exchg [3.0426e-05;10]
+
+Species-specific uptake:
+R_EXCHG_ecoli1_glc__D_p_to_glc__D | SCALED FLUX 0
+R_EXCHG_ecoli2_glc__D_p_to_glc__D | SCALED FLUX -1
+R_EXCHG_ecoli3_glc__D_p_to_glc__D | SCALED FLUX 0
+
+Metabolites with non-overlapping concentration ranges between species:
+M_6pgc_c_ecoli1 [unused] & M_6pgc_c_ecoli2 [0.00011711;0.02] & M_6pgc_c_ecoli3 [5.9161e-05;0.00029133]
+M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [1e-06;0.0010666] & M_6pgl_c_ecoli3 [1e-06;1.0034e-06]
+M_adp_c_ecoli1 [unused] & M_adp_c_ecoli2 [1e-06;0.0066667] & M_adp_c_ecoli3 [1e-06;0.0066667]
+M_atp_c_ecoli1 [unused] & M_atp_c_ecoli2 [3e-06;0.02] & M_atp_c_ecoli3 [3e-06;0.02]
+M_co2_c_ecoli1 [unused] & M_co2_c_ecoli2 [1e-06;0.00017078] & M_co2_c_ecoli3 [1e-06;4.9158e-06]
+M_dhap_c_ecoli1 [unused] & M_dhap_c_ecoli2 [0.0077406;0.02] & M_dhap_c_ecoli3 [1e-06;3.9347e-06]
+M_e4p_c_ecoli1 [unused] & M_e4p_c_ecoli2 [2.3508e-06;2.367e-06] & M_e4p_c_ecoli3 [3.0426e-05;3.0531e-05]
+M_f6p_c_ecoli1 [unused] & M_f6p_c_ecoli2 [0.019931;0.02] & M_f6p_c_ecoli3 [3.6062e-05;3.6186e-05]
+M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [2.1397e-06;5.5476e-06] & M_fdp_c_ecoli3 [0.005083;0.02]
+M_g3p_c_ecoli1 [unused] & M_g3p_c_ecoli2 [1e-06;1.0069e-06] & M_g3p_c_ecoli3 [0.019931;0.02]
+M_g6p_c_ecoli1 [unused] & M_g6p_c_ecoli2 [0.018557;0.02] & M_g6p_c_ecoli3 [2.0045e-05;2.0114e-05]
+M_glc__D_c_ecoli1 [unused] & M_glc__D_c_ecoli2 [5.3219e-05;0.00065733] & M_glc__D_c_ecoli3 [unused]
+M_glyc3p_c_ecoli1 [unused] & M_glyc3p_c_ecoli2 [1e-06;1.378e-05] & M_glyc3p_c_ecoli3 [0.00092574;0.012756]
+M_nad_c_ecoli1 [unused] & M_nad_c_ecoli2 [unused] & M_nad_c_ecoli3 [9.9657e-06;0.02]
+M_nadh_c_ecoli1 [unused] & M_nadh_c_ecoli2 [unused] & M_nadh_c_ecoli3 [1e-06;0.0020069]
+M_nadp_c_ecoli1 [unused] & M_nadp_c_ecoli2 [1e-06;0.0066667] & M_nadp_c_ecoli3 [1e-06;0.0062361]
+M_nadph_c_ecoli1 [unused] & M_nadph_c_ecoli2 [3e-06;0.02] & M_nadph_c_ecoli3 [3.2071e-06;0.02]
+M_o2_c_ecoli1 [unused] & M_o2_c_ecoli2 [1e-06;0.02] & M_o2_c_ecoli3 [1e-06;0.02]
+M_pi_c_ecoli1 [unused] & M_pi_c_ecoli2 [0.00010529;0.00027205] & M_pi_c_ecoli3 [0.00010529;0.00065733]
+M_q8_c_ecoli1 [unused] & M_q8_c_ecoli2 [1e-06;2.1604e-05] & M_q8_c_ecoli3 [0.00092574;0.02]
+M_q8h2_c_ecoli1 [unused] & M_q8h2_c_ecoli2 [0.00092574;0.02] & M_q8h2_c_ecoli3 [1e-06;2.1604e-05]
+M_r5p_c_ecoli1 [unused] & M_r5p_c_ecoli2 [0.0038703;0.003897] & M_r5p_c_ecoli3 [0.0008583;0.003897]
+M_ru5p__D_c_ecoli1 [unused] & M_ru5p__D_c_ecoli2 [0.019863;0.02] & M_ru5p__D_c_ecoli3 [0.0093861;0.02]
+M_s7p_c_ecoli1 [unused] & M_s7p_c_ecoli2 [0.0062839;0.0063055] & M_s7p_c_ecoli3 [6.788e-06;6.8113e-06]
+M_xu5p__D_c_ecoli1 [unused] & M_xu5p__D_c_ecoli2 [2.6287e-05;2.6468e-05] & M_xu5p__D_c_ecoli3 [0.00056792;0.0025785]
+M_co2_p_ecoli1 [unused] & M_co2_p_ecoli2 [3.0426e-05;0.001] & M_co2_p_ecoli3 [3.0426e-05;0.001]
+M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [0.0016193;0.02] & M_glc__D_p_ecoli3 [unused]
+M_o2_p_ecoli1 [unused] & M_o2_p_ecoli2 [1e-06;0.02] & M_o2_p_ecoli3 [1e-06;0.02]
+M_pi_p_ecoli1 [unused] & M_pi_p_ecoli2 [0.0032036;0.02] & M_pi_p_ecoli3 [0.0032036;0.02]
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
+MDF in single species with reactions occuring in community solution: 5.2285 (OptMDF in community was 8.4667, difference is 3.2382)
+>Bottleneck reactions (driving force=OptMDF):
+R_FBA_ecoli1 | 1 M_fdp_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 
+R_RPI_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+R_TALA_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+R_TKT1_ecoli1 | 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+R_TKT2_ecoli1 | 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 
+R_TPI_ecoli1 | 1 M_dhap_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 
+R_EXCHG_ecoli1_e4p_c_to_e4p | 1 M_e4p_c_ecoli1 (<)-> 1 M_e4p_exchg 
+>Connecting metabolites:
+R_FBA_ecoli1-> R_TPI_ecoli1; M_dhap_c_ecoli1 
+R_TALA_ecoli1/R_TKT2_ecoli1-> R_EXCHG_ecoli1_e4p_c_to_e4p; M_e4p_c_ecoli1 
+R_TALA_ecoli1-> R_TKT2_ecoli1; M_f6p_c_ecoli1 
+R_FBA_ecoli1/R_TKT1_ecoli1/R_TPI_ecoli1-> R_TALA_ecoli1/R_TKT2_ecoli1; M_g3p_c_ecoli1 
+R_RPI_ecoli1-> R_TKT1_ecoli1; M_r5p_c_ecoli1 
+R_TKT1_ecoli1-> R_TALA_ecoli1; M_s7p_c_ecoli1 
+R_TKT2_ecoli1-> R_TKT1_ecoli1; M_xu5p__D_c_ecoli1 
+>Connecting metabolite ranges:
+~M_dhap_c_ecoli1~
+In single species:
+[0.0047491;0.0047631] (range 1.4045e-05)
+In community:
+M_dhap_c_ecoli1: [unused] (range 0)
+M_dhap_c_ecoli2: [0.0077406;0.02] (range 0.012259)
+M_dhap_c_ecoli3: [1e-06;3.9347e-06] (range 2.9347e-06)
+~M_e4p_c_ecoli1~
+In single species:
+[8.2406e-06;8.2466e-06] (range 6.0858e-09)
+In community:
+M_e4p_c_ecoli1: [unused] (range 0)
+M_e4p_c_ecoli2: [2.3508e-06;2.367e-06] (range 1.6216e-08)
+M_e4p_c_ecoli3: [3.0426e-05;3.0531e-05] (range 1.0476e-07)
+~M_f6p_c_ecoli1~
+In single species:
+[1.1783e-05;0.0044093] (range 0.0043976)
+In community:
+M_f6p_c_ecoli1: [unused] (range 0)
+M_f6p_c_ecoli2: [0.019931;0.02] (range 6.8625e-05)
+M_f6p_c_ecoli3: [3.6062e-05;3.6186e-05] (range 1.2416e-07)
+~M_g3p_c_ecoli1~
+In single species:
+[6.0792e-05;6.0882e-05] (range 8.9825e-08)
+In community:
+M_g3p_c_ecoli1: [unused] (range 0)
+M_g3p_c_ecoli2: [1e-06;1.0069e-06] (range 6.898e-09)
+M_g3p_c_ecoli3: [0.019931;0.02] (range 6.8625e-05)
+~M_r5p_c_ecoli1~
+In single species:
+[0.014367;0.014388] (range 2.1229e-05)
+In community:
+M_r5p_c_ecoli1: [unused] (range 0)
+M_r5p_c_ecoli2: [0.0038703;0.003897] (range 2.6697e-05)
+M_r5p_c_ecoli3: [0.0008583;0.003897] (range 0.0030387)
+~M_s7p_c_ecoli1~
+In single species:
+[5.3448e-05;0.02] (range 0.019947)
+In community:
+M_s7p_c_ecoli1: [unused] (range 0)
+M_s7p_c_ecoli2: [0.0062839;0.0063055] (range 2.1636e-05)
+M_s7p_c_ecoli3: [6.788e-06;6.8113e-06] (range 2.3371e-08)
+~M_xu5p__D_c_ecoli1~
+In single species:
+[1e-06;0.0003742] (range 0.0003732)
+In community:
+M_xu5p__D_c_ecoli1: [unused] (range 0)
+M_xu5p__D_c_ecoli2: [2.6287e-05;2.6468e-05] (range 1.8133e-07)
+M_xu5p__D_c_ecoli3: [0.00056792;0.0025785] (range 0.0020106)
+
+
+Detailed reaction-wise solution reports:
+~Community solution detailed solutions~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+EX_C_e4p_exchg; 1.2056; NaN; 1 M_e4p_exchg -> 
+EX_C_co2_exchg; 1.1776; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 2.3832; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_o2_exchg; -1.1776; NaN; (<)-> 1 M_o2_exchg 
+EX_C_pi_exchg; -1.2056; NaN; (<)-> 1 M_pi_exchg 
+EXCHG_ecoli2_co2_p_to_co2; 0.41121; 0; 1 M_co2_p_ecoli2 (<)-> 1 M_co2_exchg 
+EXCHG_ecoli2_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli2 
+EXCHG_ecoli2_h2o_p_to_h2o; 1.0607; NaN; 1 M_h2o_p_ecoli2 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli2_s7p_c_to_s7p; 0.82243; 0; 1 M_s7p_c_ecoli2 -> 1 M_s7p_exchg 
+EXCHG_ecoli2_glyc3p_c_to_glyc3p; -1.2336; 0; 1 M_glyc3p_exchg -> 1 M_glyc3p_c_ecoli2 
+EXCHG_ecoli2_q8_c_to_q8; -0.76168; 0; 1 M_q8_exchg -> 1 M_q8_c_ecoli2 
+EXCHG_ecoli2_pi_p_to_pi; -0.17757; 0; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli2 
+EXCHG_ecoli2_o2_p_to_o2; -0.6472; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli2 
+EXCHG_ecoli2_q8h2_c_to_q8h2; 0.76168; 0; 1 M_q8h2_c_ecoli2 -> 1 M_q8h2_exchg 
+EXCHG_ecoli2_g6p_c_to_g6p; 0.58879; 0; 1 M_g6p_c_ecoli2 -> 1 M_g6p_exchg 
+EXCHG_ecoli3_e4p_c_to_e4p; 1.2056; 0; 1 M_e4p_c_ecoli3 -> 1 M_e4p_exchg 
+EXCHG_ecoli3_co2_p_to_co2; 0.76636; 0; 1 M_co2_p_ecoli3 (<)-> 1 M_co2_exchg 
+EXCHG_ecoli3_h2o_p_to_h2o; 1.3224; NaN; 1 M_h2o_p_ecoli3 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli3_s7p_c_to_s7p; -0.82243; 0; 1 M_s7p_exchg -> 1 M_s7p_c_ecoli3 
+EXCHG_ecoli3_glyc3p_c_to_glyc3p; 1.2336; 0; 1 M_glyc3p_c_ecoli3 -> 1 M_glyc3p_exchg 
+EXCHG_ecoli3_q8_c_to_q8; 0.76168; 0; 1 M_q8_c_ecoli3 -> 1 M_q8_exchg 
+EXCHG_ecoli3_pi_p_to_pi; -1.028; 0; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli3 
+EXCHG_ecoli3_o2_p_to_o2; -0.53037; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli3 
+EXCHG_ecoli3_q8h2_c_to_q8h2; -0.76168; 0; 1 M_q8h2_exchg -> 1 M_q8h2_c_ecoli3 
+EXCHG_ecoli3_g6p_c_to_g6p; -0.58879; 0; 1 M_g6p_exchg -> 1 M_g6p_c_ecoli3 
+Detailed solution for species ecoli2 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1; -33.8921; 1 M_adp_c_ecoli2 + 1 M_pi_c_ecoli2 + 4 M_h_p_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 + 3 M_h_c_ecoli2 
+CO2tpp; -0.41121; NaN; 1 M_co2_c_ecoli2 (<)-> 1 M_co2_p_ecoli2 
+CYTBO3_4pp; 1.2944; -55.284; 4 M_h_c_ecoli2 + 0.5 M_o2_c_ecoli2 + 1 M_q8h2_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 4 M_h_p_ecoli2 + 1 M_q8_c_ecoli2 
+FBA; -0.82243; 22.3932; 1 M_g3p_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_fdp_c_ecoli2 
+FBP; 0.82243; -8.4178; 1 M_h2o_c_ecoli2 + 1 M_fdp_c_ecoli2 -> 1 M_pi_c_ecoli2 + 1 M_f6p_c_ecoli2 
+G3PD2; -0.82243; 25.6158; 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_nadp_c_ecoli2 + 1 M_glyc3p_c_ecoli2 
+G3PD5; 2.0561; -109.0556; 1 M_glyc3p_c_ecoli2 + 1 M_q8_c_ecoli2 -> 1 M_q8h2_c_ecoli2 + 1 M_dhap_c_ecoli2 
+G6PDH2r; 0.41121; -3.9232; 1 M_nadp_c_ecoli2 + 1 M_g6p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_6pgl_c_ecoli2 
+GLCt2pp; 1; 0; 1 M_h_p_ecoli2 + 1 M_glc__D_p_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_glc__D_c_ecoli2 
+GND; 0.41121; 10.332; 1 M_nadp_c_ecoli2 + 1 M_6pgc_c_ecoli2 -> 1 M_nadph_c_ecoli2 + 1 M_co2_c_ecoli2 + 1 M_ru5p__D_c_ecoli2 
+H2Otpp; -1.0607; NaN; 1 M_h2o_c_ecoli2 (<)-> 1 M_h2o_p_ecoli2 
+HEX1; 1; -17.901; 1 M_atp_c_ecoli2 + 1 M_glc__D_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_g6p_c_ecoli2 
+O2tpp; 0.6472; NaN; 1 M_o2_p_ecoli2 (<)-> 1 M_o2_c_ecoli2 
+PGL; 0.41121; -22.5233; 1 M_h2o_c_ecoli2 + 1 M_6pgl_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_6pgc_c_ecoli2 
+PIt2rpp; 0.17757; 0; 1 M_h_p_ecoli2 + 1 M_pi_p_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2 
+RPI; -0.41121; 4.4117; 1 M_ru5p__D_c_ecoli2 (<)-> 1 M_r5p_c_ecoli2 
+TALA; -0.41121; 3.4773; 1 M_e4p_c_ecoli2 + 1 M_f6p_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_s7p_c_ecoli2 
+TKT1; 0.41121; -1.5468; 1 M_r5p_c_ecoli2 + 1 M_xu5p__D_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_s7p_c_ecoli2 
+TKT2; -0.41121; -5.8438; 1 M_g3p_c_ecoli2 + 1 M_f6p_c_ecoli2 (<)-> 1 M_e4p_c_ecoli2 + 1 M_xu5p__D_c_ecoli2 
+TPI; 0.41121; 5.5753; 1 M_dhap_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 
+Detailed solution for species ecoli3 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1.028; -33.8921; 1 M_adp_c_ecoli3 + 1 M_pi_c_ecoli3 + 4 M_h_p_ecoli3 (<)-> 1 M_atp_c_ecoli3 + 1 M_h2o_c_ecoli3 + 3 M_h_c_ecoli3 
+CO2tpp; -0.76636; NaN; 1 M_co2_c_ecoli3 (<)-> 1 M_co2_p_ecoli3 
+CYTBO3_4pp; 1.0607; -55.284; 4 M_h_c_ecoli3 + 0.5 M_o2_c_ecoli3 + 1 M_q8h2_c_ecoli3 -> 1 M_h2o_c_ecoli3 + 4 M_h_p_ecoli3 + 1 M_q8_c_ecoli3 
+FBA; 1.028; 22.3932; 1 M_fdp_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 + 1 M_dhap_c_ecoli3 
+G3PD2; -1.2336; 25.6158; 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_dhap_c_ecoli3 (<)-> 1 M_nadp_c_ecoli3 + 1 M_glyc3p_c_ecoli3 
+G6PDH2r; 0.76636; -3.9232; 1 M_nadp_c_ecoli3 + 1 M_g6p_c_ecoli3 (<)-> 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_6pgl_c_ecoli3 
+GND; 0.76636; 10.332; 1 M_nadp_c_ecoli3 + 1 M_6pgc_c_ecoli3 -> 1 M_nadph_c_ecoli3 + 1 M_co2_c_ecoli3 + 1 M_ru5p__D_c_ecoli3 
+H2Otpp; -1.3224; NaN; 1 M_h2o_c_ecoli3 (<)-> 1 M_h2o_p_ecoli3 
+NADH16pp; 0.29907; -81.2018; 4 M_h_c_ecoli3 + 1 M_nadh_c_ecoli3 + 1 M_q8_c_ecoli3 (<)-> 1 M_nad_c_ecoli3 + 3 M_h_p_ecoli3 + 1 M_q8h2_c_ecoli3 
+NADTRHD; 0.29907; 0.13056; 1 M_nad_c_ecoli3 + 1 M_nadph_c_ecoli3 -> 1 M_nadp_c_ecoli3 + 1 M_nadh_c_ecoli3 
+O2tpp; 0.53037; NaN; 1 M_o2_p_ecoli3 (<)-> 1 M_o2_c_ecoli3 
+PFK; 1.028; -18.9474; 1 M_atp_c_ecoli3 + 1 M_f6p_c_ecoli3 -> 1 M_adp_c_ecoli3 + 1 M_h_c_ecoli3 + 1 M_fdp_c_ecoli3 
+PGI; -0.17757; 7.0102; 1 M_f6p_c_ecoli3 (<)-> 1 M_g6p_c_ecoli3 
+PGL; 0.76636; -22.5233; 1 M_h2o_c_ecoli3 + 1 M_6pgl_c_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_6pgc_c_ecoli3 
+PIt2rpp; 1.028; 0; 1 M_h_p_ecoli3 + 1 M_pi_p_ecoli3 (<)-> 1 M_h_c_ecoli3 + 1 M_pi_c_ecoli3 
+RPE; 0.38318; -3.388; 1 M_ru5p__D_c_ecoli3 (<)-> 1 M_xu5p__D_c_ecoli3 
+RPI; -0.38318; 4.4117; 1 M_ru5p__D_c_ecoli3 (<)-> 1 M_r5p_c_ecoli3 
+TALA; 1.2056; 3.4773; 1 M_g3p_c_ecoli3 + 1 M_s7p_c_ecoli3 (<)-> 1 M_e4p_c_ecoli3 + 1 M_f6p_c_ecoli3 
+TKT1; 0.38318; -1.5468; 1 M_r5p_c_ecoli3 + 1 M_xu5p__D_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 + 1 M_s7p_c_ecoli3 
+TPI; -0.20561; 5.5753; 1 M_g3p_c_ecoli3 (<)-> 1 M_dhap_c_ecoli3 
+
+~Single-species solution detailed solution~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1.4375; -33.8921; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1 
+CO2tpp; -1; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1 
+CYTBO3_4pp; 2; -55.284; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1 
+FBA; 0.25; 22.3932; 1 M_fdp_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 
+FBP; 0.1875; -8.4178; 1 M_fdp_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_f6p_c_ecoli1 + 1 M_pi_c_ecoli1 
+G3PD2; -2; 25.6158; 1 M_dhap_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 (<)-> 1 M_glyc3p_c_ecoli1 + 1 M_nadp_c_ecoli1 
+G3PD5; 2; -109.0556; 1 M_glyc3p_c_ecoli1 + 1 M_q8_c_ecoli1 -> 1 M_dhap_c_ecoli1 + 1 M_q8h2_c_ecoli1 
+G6PDH2r; 1; -3.9232; 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 
+GLCt2pp; 1; 0; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1 
+GND; 1; 10.332; 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_ru5p__D_c_ecoli1 
+H2Otpp; -2.25; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1 
+HEX1; 1; -17.901; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1 
+O2tpp; 1; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1 
+PFK; 0.4375; -18.9474; 1 M_atp_c_ecoli1 + 1 M_f6p_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_fdp_c_ecoli1 + 1 M_h_c_ecoli1 
+PGL; 1; -22.5233; 1 M_6pgl_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_6pgc_c_ecoli1 + 1 M_h_c_ecoli1 
+PIt2rpp; 1.25; 0; 1 M_h_p_ecoli1 + 1 M_pi_p_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1 
+RPE; 0.25; -3.388; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+RPI; -0.75; 4.4117; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+TALA; 0.75; 3.4773; 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+TKT1; 0.75; -1.5468; 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+TKT2; -0.5; -5.8438; 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 
+TPI; 0.25; 5.5753; 1 M_dhap_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 
+EX_C_e4p_exchg; 1.25; NaN; 1 M_e4p_exchg -> 
+EX_C_co2_exchg; 1; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 2.25; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_o2_exchg; -1; NaN; (<)-> 1 M_o2_exchg 
+EX_C_pi_exchg; -1.25; NaN; (<)-> 1 M_pi_exchg 
+EXCHG_e4p_c_to_e4p; 1.25; 0; 1 M_e4p_c_ecoli1 -> 1 M_e4p_exchg 
+EXCHG_co2_p_to_co2; 1; 0; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg 
+EXCHG_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1 
+EXCHG_h2o_p_to_h2o; 2.25; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg 
+EXCHG_pi_p_to_pi; -1.25; 0; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli1 
+EXCHG_o2_p_to_o2; -1; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1 
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_xu5p__D_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.27116
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_db4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_orot_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uri_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pimACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_kdolipid4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.057692
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_btcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.18544
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mg2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dpcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.21926
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cbasp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pan4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.36395
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pnto__R_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_datp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.50782
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_duri_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.63001
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hocoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16018
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_u23ga_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10714
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_grxox_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_fdp_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_forBIO_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2h3oppan_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pant__R_exchg
+Reached MDF without community is -3.671
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_thr__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_lipidA_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0625
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ppbng_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2obut_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.33365
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pe161_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_aicar_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.61104
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3otdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13219
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3c2hmp_exchg
+Reached MDF without community is 6.8202
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_atp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5305
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_malcoame_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16163
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2dmmql8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_23dhmb_exchg
+Reached MDF without community is 12.2745
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4ppan_exchg
+Reached MDF without community is -3.671
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ac_exchg
+Reached MDF without community is 12.2745
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2ippm_exchg
+Reached MDF without community is 12.087
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ugmda_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_frdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.27176
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hcys__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.74564
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2ddg6p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_amob_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_arg__L_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ahdt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.56171
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dadp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51864
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3odcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15063
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_dhor__S_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu5sa_exchg
+Reached MDF without community is 1.7199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mdhdhf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_btn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12497
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ump_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gthrd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_utp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pa161_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11765
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acser_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_so4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_grxrd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ca2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3c3hmp_exchg
+Reached MDF without community is 15.1028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gthox_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_u3aga_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15789
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fe3_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_q8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2dr1p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.98185
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dscl_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.098361
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5aizc_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.62914
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mqn8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ile__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ddca_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.33333
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_oc2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16018
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fad_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_palmACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_damp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.52992
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ahcys_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dann_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.1533
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dmpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.79316
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3ophb_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.090824
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_25drapp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_occoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15852
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_citr__L_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mobd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdceap_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_thmpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_dha_exchg==
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.9038
+Optimal yield without community without any MDF constraint: 1.9038
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: 8.9321
+Reached yield without community at optimal MDF solution: 1.6667
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 10.5124
+Approximated optimal yield with community at maximal community MDF (if no warning given): 1.6667
+Number of active metabolites: 62
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+ecoli1: 0 | 0
+ecoli2: 20 | 15.1667
+ecoli3: 11 | 10.25
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_oaa_c_to_oaa | SCALED FLUX: 1 | M_oaa_c_ecoli2 [0.010433;0.02] | M_oaa_exchg [0.00015025;0.00028802]
+R_EXCHG_ecoli2_glyc3p_c_to_glyc3p | SCALED FLUX: 1 | M_glyc3p_c_ecoli2 [0.004822;0.0048564] | M_glyc3p_exchg [6.944e-05;6.9937e-05]
+R_EXCHG_ecoli2_pep_c_to_pep | SCALED FLUX: -1 | M_pep_c_ecoli2 [1e-06;1.9169e-06] | M_pep_exchg [6.944e-05;0.00013311]
+R_EXCHG_ecoli2_dha_c_to_dha | SCALED FLUX: 0.66667 | M_dha_c_ecoli2 [6.944e-05;7.0186e-05] | M_dha_exchg [1e-06;1.0107e-06]
+R_EXCHG_ecoli3_oaa_c_to_oaa | SCALED FLUX: -1 | M_oaa_c_ecoli3 [2.1637e-06;4.1477e-06] | M_oaa_exchg [0.00015025;0.00028802]
+R_EXCHG_ecoli3_glyc3p_c_to_glyc3p | SCALED FLUX: -1 | M_glyc3p_c_ecoli3 [1e-06;1.0071e-06] | M_glyc3p_exchg [6.944e-05;6.9937e-05]
+R_EXCHG_ecoli3_pep_c_to_pep | SCALED FLUX: 1 | M_pep_c_ecoli3 [0.004822;0.0092433] | M_pep_exchg [6.944e-05;0.00013311]
+R_EXCHG_ecoli3_dha_c_to_dha | SCALED FLUX: 1 | M_dha_c_ecoli3 [6.944e-05;0.02] | M_dha_exchg [1e-06;1.0107e-06]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_h_p_to_h | SCALED FLUX: 1 | M_h_p_ecoli2 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli2_o2_p_to_o2 | SCALED FLUX: -0.5 | M_o2_p_ecoli2 [1e-06;0.02] | M_o2_exchg [6.944e-05;10]
+R_EXCHG_ecoli3_h_p_to_h | SCALED FLUX: -1 | M_h_p_ecoli3 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli3_co2_p_to_co2 | SCALED FLUX: 1 | M_co2_p_ecoli3 [6.944e-05;0.001] | M_co2_exchg [1e-06;1.4401e-05]
+R_EXCHG_ecoli3_h2o_p_to_h2o | SCALED FLUX: 1 | M_h2o_p_ecoli3 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli3_o2_p_to_o2 | SCALED FLUX: -0.5 | M_o2_p_ecoli3 [1e-06;0.02] | M_o2_exchg [6.944e-05;10]
+
+Species-specific uptake:
+R_EXCHG_ecoli1_glc__D_p_to_glc__D | SCALED FLUX 0
+R_EXCHG_ecoli2_glc__D_p_to_glc__D | SCALED FLUX -1
+R_EXCHG_ecoli3_glc__D_p_to_glc__D | SCALED FLUX 0
+
+Metabolites with non-overlapping concentration ranges between species:
+M_6pgc_c_ecoli1 [unused] & M_6pgc_c_ecoli2 [0.019858;0.02] & M_6pgc_c_ecoli3 [unused]
+M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [0.00015611;0.00016427] & M_6pgl_c_ecoli3 [unused]
+M_adp_c_ecoli1 [unused] & M_adp_c_ecoli2 [1e-06;0.0066667] & M_adp_c_ecoli3 [1e-06;0.0020143]
+M_atp_c_ecoli1 [unused] & M_atp_c_ecoli2 [3e-06;0.02] & M_atp_c_ecoli3 [9.929e-06;0.02]
+M_co2_c_ecoli1 [unused] & M_co2_c_ecoli2 [4.3251e-05;4.356e-05] & M_co2_c_ecoli3 [1e-06;1.0071e-06]
+M_dha_c_ecoli1 [unused] & M_dha_c_ecoli2 [6.944e-05;7.0186e-05] & M_dha_c_ecoli3 [6.944e-05;0.02]
+M_dhap_c_ecoli1 [unused] & M_dhap_c_ecoli2 [1.4235e-06;1.498e-06] & M_dhap_c_ecoli3 [4.429e-05;0.02]
+M_e4p_c_ecoli1 [unused] & M_e4p_c_ecoli2 [2.7302e-06;2.8936e-06] & M_e4p_c_ecoli3 [unused]
+M_f6p_c_ecoli1 [unused] & M_f6p_c_ecoli2 [3.0119e-05;3.1808e-05] & M_f6p_c_ecoli3 [2.8886e-06;0.02]
+M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [unused] & M_fdp_c_ecoli3 [1e-06;0.016715]
+M_g3p_c_ecoli1 [unused] & M_g3p_c_ecoli2 [1.0427e-05;1.0973e-05] & M_g3p_c_ecoli3 [1e-06;0.0069238]
+M_g6p_c_ecoli1 [unused] & M_g6p_c_ecoli2 [0.016299;0.017152] & M_g6p_c_ecoli3 [unused]
+M_glc__D_c_ecoli1 [unused] & M_glc__D_c_ecoli2 [0.00027565;0.00028802] & M_glc__D_c_ecoli3 [unused]
+M_glyc3p_c_ecoli1 [unused] & M_glyc3p_c_ecoli2 [0.004822;0.0048564] & M_glyc3p_c_ecoli3 [1e-06;1.0071e-06]
+M_nad_c_ecoli1 [unused] & M_nad_c_ecoli2 [9.5707e-06;0.02] & M_nad_c_ecoli3 [unused]
+M_nadh_c_ecoli1 [unused] & M_nadh_c_ecoli2 [1e-06;0.0020897] & M_nadh_c_ecoli3 [unused]
+M_nadp_c_ecoli1 [unused] & M_nadp_c_ecoli2 [1e-06;0.0027324] & M_nadp_c_ecoli3 [unused]
+M_nadph_c_ecoli1 [unused] & M_nadph_c_ecoli2 [7.3196e-06;0.02] & M_nadph_c_ecoli3 [unused]
+M_o2_c_ecoli1 [unused] & M_o2_c_ecoli2 [1e-06;0.02] & M_o2_c_ecoli3 [1e-06;0.02]
+M_oaa_c_ecoli1 [unused] & M_oaa_c_ecoli2 [0.010433;0.02] & M_oaa_c_ecoli3 [2.1637e-06;4.1477e-06]
+M_pep_c_ecoli1 [unused] & M_pep_c_ecoli2 [1e-06;1.9169e-06] & M_pep_c_ecoli3 [0.004822;0.0092433]
+M_pi_c_ecoli1 [unused] & M_pi_c_ecoli2 [0.00024031;0.00024202] & M_pi_c_ecoli3 [0.00079534;0.02]
+M_q8_c_ecoli1 [unused] & M_q8_c_ecoli2 [1e-06;0.02] & M_q8_c_ecoli3 [1e-06;0.02]
+M_q8h2_c_ecoli1 [unused] & M_q8h2_c_ecoli2 [1e-06;0.02] & M_q8h2_c_ecoli3 [1e-06;0.02]
+M_r5p_c_ecoli1 [unused] & M_r5p_c_ecoli2 [0.0011346;0.0012025] & M_r5p_c_ecoli3 [unused]
+M_ru5p__D_c_ecoli1 [unused] & M_ru5p__D_c_ecoli2 [0.013384;0.014085] & M_ru5p__D_c_ecoli3 [unused]
+M_s7p_c_ecoli1 [unused] & M_s7p_c_ecoli2 [0.002227;0.0023603] & M_s7p_c_ecoli3 [unused]
+M_xu5p__D_c_ecoli1 [unused] & M_xu5p__D_c_ecoli2 [0.00075608;0.00079565] & M_xu5p__D_c_ecoli3 [unused]
+M_co2_p_ecoli1 [unused] & M_co2_p_ecoli2 [unused] & M_co2_p_ecoli3 [6.944e-05;0.001]
+M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [0.019141;0.02] & M_glc__D_p_ecoli3 [unused]
+M_o2_p_ecoli1 [unused] & M_o2_p_ecoli2 [1e-06;0.02] & M_o2_p_ecoli3 [1e-06;0.02]
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
+MDF in single species with reactions occuring in community solution: 8.9321 (OptMDF in community was 10.5124, difference is 1.5803)
+>Bottleneck reactions (driving force=OptMDF):
+R_F6PA_ecoli1 | 1 M_f6p_c_ecoli1 (<)-> 1 M_dha_c_ecoli1 + 1 M_g3p_c_ecoli1 
+R_FBA_ecoli1 | 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+R_RPE_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+R_RPI_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+R_TALA_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+R_TKT1_ecoli1 | 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+R_TKT2_ecoli1 | 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 
+R_TPI_ecoli1 | 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+R_EXCHG_ecoli1_dha_c_to_dha | 1 M_dha_c_ecoli1 (<)-> 1 M_dha_exchg 
+>Connecting metabolites:
+R_F6PA_ecoli1-> R_EXCHG_ecoli1_dha_c_to_dha; M_dha_c_ecoli1 
+R_TPI_ecoli1-> R_FBA_ecoli1; M_dhap_c_ecoli1 
+R_TALA_ecoli1-> R_TKT2_ecoli1; M_e4p_c_ecoli1 
+R_TALA_ecoli1/R_TKT2_ecoli1-> R_F6PA_ecoli1; M_f6p_c_ecoli1 
+R_F6PA_ecoli1/R_TKT1_ecoli1/R_TKT2_ecoli1-> R_FBA_ecoli1/R_TALA_ecoli1/R_TPI_ecoli1; M_g3p_c_ecoli1 
+R_RPI_ecoli1-> R_TKT1_ecoli1; M_r5p_c_ecoli1 
+R_TKT1_ecoli1-> R_TALA_ecoli1; M_s7p_c_ecoli1 
+R_RPE_ecoli1-> R_TKT1_ecoli1/R_TKT2_ecoli1; M_xu5p__D_c_ecoli1 
+>Connecting metabolite ranges:
+~M_dha_c_ecoli1~
+In single species:
+[3.6709e-05;3.6795e-05] (range 8.6081e-08)
+In community:
+M_dha_c_ecoli1: [unused] (range 0)
+M_dha_c_ecoli2: [6.944e-05;7.0186e-05] (range 7.4573e-07)
+M_dha_c_ecoli3: [6.944e-05;0.02] (range 0.019931)
+~M_dhap_c_ecoli1~
+In single species:
+[3.3578e-05;3.3683e-05] (range 1.0503e-07)
+In community:
+M_dhap_c_ecoli1: [unused] (range 0)
+M_dhap_c_ecoli2: [1.4235e-06;1.498e-06] (range 7.4481e-08)
+M_dhap_c_ecoli3: [4.429e-05;0.02] (range 0.019956)
+~M_e4p_c_ecoli1~
+In single species:
+[2.2259e-05;2.2364e-05] (range 1.0452e-07)
+In community:
+M_e4p_c_ecoli1: [unused] (range 0)
+M_e4p_c_ecoli2: [2.7302e-06;2.8936e-06] (range 1.6339e-07)
+M_e4p_c_ecoli3: [unused] (range 0)
+~M_f6p_c_ecoli1~
+In single species:
+[0.00010513;0.00010537] (range 2.4652e-07)
+In community:
+M_f6p_c_ecoli1: [unused] (range 0)
+M_f6p_c_ecoli2: [3.0119e-05;3.1808e-05] (range 1.689e-06)
+M_f6p_c_ecoli3: [2.8886e-06;0.02] (range 0.019997)
+~M_g3p_c_ecoli1~
+In single species:
+[0.00013023;0.00013043] (range 2.0351e-07)
+In community:
+M_g3p_c_ecoli1: [unused] (range 0)
+M_g3p_c_ecoli2: [1.0427e-05;1.0973e-05] (range 5.4557e-07)
+M_g3p_c_ecoli3: [1e-06;0.0069238] (range 0.0069228)
+~M_r5p_c_ecoli1~
+In single species:
+[0.0032148;0.0032299] (range 1.5095e-05)
+In community:
+M_r5p_c_ecoli1: [unused] (range 0)
+M_r5p_c_ecoli2: [0.0011346;0.0012025] (range 6.7897e-05)
+M_r5p_c_ecoli3: [unused] (range 0)
+~M_s7p_c_ecoli1~
+In single species:
+[0.0026824;0.002695] (range 1.2595e-05)
+In community:
+M_s7p_c_ecoli1: [unused] (range 0)
+M_s7p_c_ecoli2: [0.002227;0.0023603] (range 0.00013327)
+M_s7p_c_ecoli3: [unused] (range 0)
+~M_xu5p__D_c_ecoli1~
+In single species:
+[0.0021322;0.0021372] (range 4.9998e-06)
+In community:
+M_xu5p__D_c_ecoli1: [unused] (range 0)
+M_xu5p__D_c_ecoli2: [0.00075608;0.00079565] (range 3.9561e-05)
+M_xu5p__D_c_ecoli3: [unused] (range 0)
+
+
+Detailed reaction-wise solution reports:
+~Community solution detailed solutions~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+EX_C_co2_exchg; 1; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 1; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_dha_exchg; 1.6667; NaN; 1 M_dha_exchg -> 
+EX_C_o2_exchg; -1; NaN; (<)-> 1 M_o2_exchg 
+EXCHG_ecoli2_h_p_to_h; 1; NaN; 1 M_h_p_ecoli2 (<)-> 1 M_h_exchg 
+EXCHG_ecoli2_oaa_c_to_oaa; 1; 0; 1 M_oaa_c_ecoli2 -> 1 M_oaa_exchg 
+EXCHG_ecoli2_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli2 
+EXCHG_ecoli2_glyc3p_c_to_glyc3p; 1; 0; 1 M_glyc3p_c_ecoli2 -> 1 M_glyc3p_exchg 
+EXCHG_ecoli2_o2_p_to_o2; -0.5; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli2 
+EXCHG_ecoli2_pep_c_to_pep; -1; 0; 1 M_pep_exchg -> 1 M_pep_c_ecoli2 
+EXCHG_ecoli2_dha_c_to_dha; 0.66667; 0; 1 M_dha_c_ecoli2 -> 1 M_dha_exchg 
+EXCHG_ecoli3_h_p_to_h; -1; NaN; 1 M_h_exchg (<)-> 1 M_h_p_ecoli3 
+EXCHG_ecoli3_co2_p_to_co2; 1; 0; 1 M_co2_p_ecoli3 (<)-> 1 M_co2_exchg 
+EXCHG_ecoli3_oaa_c_to_oaa; -1; 0; 1 M_oaa_exchg -> 1 M_oaa_c_ecoli3 
+EXCHG_ecoli3_h2o_p_to_h2o; 1; NaN; 1 M_h2o_p_ecoli3 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli3_glyc3p_c_to_glyc3p; -1; 0; 1 M_glyc3p_exchg -> 1 M_glyc3p_c_ecoli3 
+EXCHG_ecoli3_o2_p_to_o2; -0.5; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli3 
+EXCHG_ecoli3_pep_c_to_pep; 1; 0; 1 M_pep_c_ecoli3 -> 1 M_pep_exchg 
+EXCHG_ecoli3_dha_c_to_dha; 1; 0; 1 M_dha_c_ecoli3 -> 1 M_dha_exchg 
+Detailed solution for species ecoli2 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1; -33.8921; 1 M_adp_c_ecoli2 + 1 M_pi_c_ecoli2 + 4 M_h_p_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 + 3 M_h_c_ecoli2 
+CYTBO3_4pp; 1; -55.284; 4 M_h_c_ecoli2 + 0.5 M_o2_c_ecoli2 + 1 M_q8h2_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 4 M_h_p_ecoli2 + 1 M_q8_c_ecoli2 
+F6PA; 0.66667; 15.8529; 1 M_f6p_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_dha_c_ecoli2 
+G3PD2; -1.3333; 25.6158; 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_nadp_c_ecoli2 + 1 M_glyc3p_c_ecoli2 
+G3PD5; 0.33333; -109.0556; 1 M_glyc3p_c_ecoli2 + 1 M_q8_c_ecoli2 -> 1 M_q8h2_c_ecoli2 + 1 M_dhap_c_ecoli2 
+G6PDH2r; 1; -3.9232; 1 M_nadp_c_ecoli2 + 1 M_g6p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_6pgl_c_ecoli2 
+GLCt2pp; 1; 0; 1 M_h_p_ecoli2 + 1 M_glc__D_p_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_glc__D_c_ecoli2 
+GND; 1; 10.332; 1 M_nadp_c_ecoli2 + 1 M_6pgc_c_ecoli2 -> 1 M_nadph_c_ecoli2 + 1 M_co2_c_ecoli2 + 1 M_ru5p__D_c_ecoli2 
+HEX1; 1; -17.901; 1 M_atp_c_ecoli2 + 1 M_glc__D_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_g6p_c_ecoli2 
+NADH16pp; 0.66667; -81.2018; 4 M_h_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_q8_c_ecoli2 (<)-> 1 M_nad_c_ecoli2 + 3 M_h_p_ecoli2 + 1 M_q8h2_c_ecoli2 
+NADTRHD; 0.66667; 0.13056; 1 M_nad_c_ecoli2 + 1 M_nadph_c_ecoli2 -> 1 M_nadp_c_ecoli2 + 1 M_nadh_c_ecoli2 
+O2tpp; 0.5; NaN; 1 M_o2_p_ecoli2 (<)-> 1 M_o2_c_ecoli2 
+PGL; 1; -22.5233; 1 M_h2o_c_ecoli2 + 1 M_6pgl_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_6pgc_c_ecoli2 
+PPC; 1; -37.6982; 1 M_h2o_c_ecoli2 + 1 M_co2_c_ecoli2 + 1 M_pep_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2 + 1 M_oaa_c_ecoli2 
+RPE; 0.66667; -3.388; 1 M_ru5p__D_c_ecoli2 (<)-> 1 M_xu5p__D_c_ecoli2 
+RPI; -0.33333; 4.4117; 1 M_ru5p__D_c_ecoli2 (<)-> 1 M_r5p_c_ecoli2 
+TALA; 0.33333; 3.4773; 1 M_g3p_c_ecoli2 + 1 M_s7p_c_ecoli2 (<)-> 1 M_e4p_c_ecoli2 + 1 M_f6p_c_ecoli2 
+TKT1; 0.33333; -1.5468; 1 M_r5p_c_ecoli2 + 1 M_xu5p__D_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_s7p_c_ecoli2 
+TKT2; 0.33333; -5.8438; 1 M_e4p_c_ecoli2 + 1 M_xu5p__D_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_f6p_c_ecoli2 
+TPI; -1; 5.5753; 1 M_g3p_c_ecoli2 (<)-> 1 M_dhap_c_ecoli2 
+Detailed solution for species ecoli3 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1.25; -33.8921; 1 M_adp_c_ecoli3 + 1 M_pi_c_ecoli3 + 4 M_h_p_ecoli3 (<)-> 1 M_atp_c_ecoli3 + 1 M_h2o_c_ecoli3 + 3 M_h_c_ecoli3 
+CO2tpp; -1; NaN; 1 M_co2_c_ecoli3 (<)-> 1 M_co2_p_ecoli3 
+CYTBO3_4pp; 1; -55.284; 4 M_h_c_ecoli3 + 0.5 M_o2_c_ecoli3 + 1 M_q8h2_c_ecoli3 -> 1 M_h2o_c_ecoli3 + 4 M_h_p_ecoli3 + 1 M_q8_c_ecoli3 
+F6PA; 1; 15.8529; 1 M_f6p_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 + 1 M_dha_c_ecoli3 
+FBA; -1; 22.3932; 1 M_g3p_c_ecoli3 + 1 M_dhap_c_ecoli3 (<)-> 1 M_fdp_c_ecoli3 
+FBP; 1; -8.4178; 1 M_h2o_c_ecoli3 + 1 M_fdp_c_ecoli3 -> 1 M_pi_c_ecoli3 + 1 M_f6p_c_ecoli3 
+G3PD5; 1; -109.0556; 1 M_glyc3p_c_ecoli3 + 1 M_q8_c_ecoli3 -> 1 M_q8h2_c_ecoli3 + 1 M_dhap_c_ecoli3 
+H2Otpp; -1; NaN; 1 M_h2o_c_ecoli3 (<)-> 1 M_h2o_p_ecoli3 
+O2tpp; 0.5; NaN; 1 M_o2_p_ecoli3 (<)-> 1 M_o2_c_ecoli3 
+PPC; 0.25; -37.6982; 1 M_h2o_c_ecoli3 + 1 M_co2_c_ecoli3 + 1 M_pep_c_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_pi_c_ecoli3 + 1 M_oaa_c_ecoli3 
+PPCK; 1.25; 10.333; 1 M_atp_c_ecoli3 + 1 M_oaa_c_ecoli3 -> 1 M_adp_c_ecoli3 + 1 M_co2_c_ecoli3 + 1 M_pep_c_ecoli3 
+
+~Single-species solution detailed solution~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1.75; -33.8921; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1 
+CO2tpp; -1; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1 
+CYTBO3_4pp; 2; -55.284; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1 
+F6PA; 1.6667; 15.8529; 1 M_f6p_c_ecoli1 (<)-> 1 M_dha_c_ecoli1 + 1 M_g3p_c_ecoli1 
+FBA; -1; 22.3932; 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+FBP; 1; -8.4178; 1 M_fdp_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_f6p_c_ecoli1 + 1 M_pi_c_ecoli1 
+G3PD2; -2; 25.6158; 1 M_dhap_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 (<)-> 1 M_glyc3p_c_ecoli1 + 1 M_nadp_c_ecoli1 
+G3PD5; 2; -109.0556; 1 M_glyc3p_c_ecoli1 + 1 M_q8_c_ecoli1 -> 1 M_dhap_c_ecoli1 + 1 M_q8h2_c_ecoli1 
+G6PDH2r; 1; -3.9232; 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 
+GLCt2pp; 1; 0; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1 
+GND; 1; 10.332; 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_ru5p__D_c_ecoli1 
+H2Otpp; -1; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1 
+HEX1; 1; -17.901; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1 
+O2tpp; 1; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1 
+PGL; 1; -22.5233; 1 M_6pgl_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_6pgc_c_ecoli1 + 1 M_h_c_ecoli1 
+PPC; 0.75; -37.6982; 1 M_co2_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1 -> 1 M_h_c_ecoli1 + 1 M_oaa_c_ecoli1 + 1 M_pi_c_ecoli1 
+PPCK; 0.75; 10.333; 1 M_atp_c_ecoli1 + 1 M_oaa_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_co2_c_ecoli1 + 1 M_pep_c_ecoli1 
+RPE; 0.66667; -3.388; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+RPI; -0.33333; 4.4117; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+TALA; 0.33333; 3.4773; 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+TKT1; 0.33333; -1.5468; 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+TKT2; 0.33333; -5.8438; 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 
+TPI; -1; 5.5753; 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+EX_C_co2_exchg; 1; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 1; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_dha_exchg; 1.6667; NaN; 1 M_dha_exchg -> 
+EX_C_o2_exchg; -1; NaN; (<)-> 1 M_o2_exchg 
+EXCHG_co2_p_to_co2; 1; 0; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg 
+EXCHG_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1 
+EXCHG_h2o_p_to_h2o; 1; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg 
+EXCHG_o2_p_to_o2; -1; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1 
+EXCHG_dha_c_to_dha; 1.6667; 0; 1 M_dha_c_ecoli1 -> 1 M_dha_exchg 
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ps160_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dc2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14917
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_etoh_exchg
+Reached MDF without community is 11.2848
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fpram_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.67376
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glyc3p_exchg
+Reached MDF without community is 10.225
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5apru_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57838
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu__L_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_prpp_exchg
+Reached MDF without community is 7.6204
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uacgam_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dcacoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14774
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moadamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2fe1s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mththf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_hco3_exchg
+Reached MDF without community is 7.9334
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_adn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_alac__S_exchg
+Reached MDF without community is 15.1028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2oph_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.090909
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_thdp_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_uaagmda_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.049015
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4mop_exchg
+Reached MDF without community is 2.4927
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_uagmda_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.052683
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdca_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_fgam_exchg
+Reached MDF without community is -3.671
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ru5p__D_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pppg9_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10345
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dttp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.50206
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2mahmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cit_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cmp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prfp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35994
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_hom__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ala__D_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mql8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hpmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4crsol_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hx2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17286
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_25aics_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.46249
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dnad_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.26381
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mn2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14917
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cobalt2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hxcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17093
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acg5sa_exchg
+Reached MDF without community is 5.9101
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_malACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4fe4s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.45106
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_succoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.19234
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cdpdhdecg_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10169
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glxBIO_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5mthf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.24872
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dtdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51263
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3oddcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14081
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_q8h2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pheme_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10345
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pe160_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_kdo2lipid4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.053571
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdcap_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_gam1p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pi_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nadp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25754
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uamag_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3ohcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17484
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ni2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_bmocogdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4hbz_exchg
+Reached MDF without community is 7.6204
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uaccg_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_bmoco_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acorn_exchg
+Reached MDF without community is 5.9101
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_histd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.7893
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_h2s_exchg and the model without allowed community
+Maxyield with NaN reactions: 2.1915
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2p4c2me_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gcald_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nh4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_h2mb4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.84111
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uamr_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acg5p_exchg
+Reached MDF without community is 2.9551
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fprica_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4r5au_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55467
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ddcaACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhnpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57838
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4mpetz_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.2319
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_gln__L_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glutrna_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ala__L_exchg
+Reached MDF without community is 11.2848
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_1pyr5c_exchg
+Reached MDF without community is 1.7199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moco_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_eig3p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.83821
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_u3hga_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17143
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_b2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.18772
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_6pgc_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nadph_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25142
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ugmd_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_methf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25877
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhpmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ohpb_exchg
+Reached MDF without community is 5.7773
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acgam1p_exchg
+Reached MDF without community is 10.7358
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_26dap__LL_exchg
+Reached MDF without community is 7.1764
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pdx5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4ampm_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hhcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17286
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cu2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_so3_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.5714
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3mop_exchg
+Reached MDF without community is 7.1764
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2ahbut_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_thmmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hbcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.18772
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2dhp_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3oocoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16188
+
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_g6p_exchg==
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.94059
+Optimal yield without community without any MDF constraint: 0.94059
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: 10.225
+Reached yield without community at optimal MDF solution: 0.80645
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 10.5965
+Approximated optimal yield with community at maximal community MDF (if no warning given): 0.88571
+Number of active metabolites: 73
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+ecoli1: 3 | 0.12857
+ecoli2: 22 | 10.7304
+ecoli3: 11 | 3.8839
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli1_mthgxl_c_to_mthgxl | SCALED FLUX: -0.042857 | M_mthgxl_c_ecoli1 [1e-06;3.8757e-06] | M_mthgxl_exchg [7.1835e-05;0.00027841]
+R_EXCHG_ecoli2_fdp_c_to_fdp | SCALED FLUX: 0.37143 | M_fdp_c_ecoli2 [0.0051603;0.0051845] | M_fdp_exchg [7.1835e-05;7.2172e-05]
+R_EXCHG_ecoli2_glyc3p_c_to_glyc3p | SCALED FLUX: 0.14286 | M_glyc3p_c_ecoli2 [0.0051603;0.0052088] | M_glyc3p_exchg [7.1835e-05;7.2511e-05]
+R_EXCHG_ecoli2_q8_c_to_q8 | SCALED FLUX: -0.41071 | M_q8_c_ecoli2 [1e-06;3.8757e-06] | M_q8_exchg [7.1835e-05;0.00027841]
+R_EXCHG_ecoli2_mthgxl_c_to_mthgxl | SCALED FLUX: 0.042857 | M_mthgxl_c_ecoli2 [0.0051603;0.02] | M_mthgxl_exchg [7.1835e-05;0.00027841]
+R_EXCHG_ecoli2_q8h2_c_to_q8h2 | SCALED FLUX: 0.41071 | M_q8h2_c_ecoli2 [0.0051603;0.02] | M_q8h2_exchg [7.1835e-05;0.00027841]
+R_EXCHG_ecoli3_fdp_c_to_fdp | SCALED FLUX: -0.37143 | M_fdp_c_ecoli3 [1e-06;1.0047e-06] | M_fdp_exchg [7.1835e-05;7.2172e-05]
+R_EXCHG_ecoli3_glyc3p_c_to_glyc3p | SCALED FLUX: -0.14286 | M_glyc3p_c_ecoli3 [1e-06;1.0094e-06] | M_glyc3p_exchg [7.1835e-05;7.2511e-05]
+R_EXCHG_ecoli3_q8_c_to_q8 | SCALED FLUX: 0.41071 | M_q8_c_ecoli3 [0.0051603;0.02] | M_q8_exchg [7.1835e-05;0.00027841]
+R_EXCHG_ecoli3_q8h2_c_to_q8h2 | SCALED FLUX: -0.41071 | M_q8h2_c_ecoli3 [1e-06;3.8757e-06] | M_q8h2_exchg [7.1835e-05;0.00027841]
+R_EXCHG_ecoli3_g6p_c_to_g6p | SCALED FLUX: 0.88571 | M_g6p_c_ecoli3 [7.1835e-05;0.00039526] | M_g6p_exchg [1e-06;5.5024e-06]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli1_h_p_to_h | SCALED FLUX: 0.042857 | M_h_p_ecoli1 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli1_h2o_p_to_h2o | SCALED FLUX: -0.042857 | M_h2o_p_ecoli1 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli1_lac__D_p_to_lac__D | SCALED FLUX: 0.042857 | M_lac__D_p_ecoli1 [7.1835e-05;0.00027841] | M_lac__D_exchg [1e-06;3.8757e-06]
+R_EXCHG_ecoli2_co2_p_to_co2 | SCALED FLUX: 0.55714 | M_co2_p_ecoli2 [7.1835e-05;0.001] | M_co2_exchg [1e-06;1.3921e-05]
+R_EXCHG_ecoli2_h2o_p_to_h2o | SCALED FLUX: 0.93214 | M_h2o_p_ecoli2 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli2_pi_p_to_pi | SCALED FLUX: -0.88571 | M_pi_p_ecoli2 [0.019907;0.02] | M_pi_exchg [1.43;10]
+R_EXCHG_ecoli2_o2_p_to_o2 | SCALED FLUX: -0.28036 | M_o2_p_ecoli2 [1e-06;0.02] | M_o2_exchg [7.1835e-05;10]
+R_EXCHG_ecoli3_h2o_p_to_h2o | SCALED FLUX: 0.55357 | M_h2o_p_ecoli3 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli3_o2_p_to_o2 | SCALED FLUX: -0.27679 | M_o2_p_ecoli3 [1e-06;0.02] | M_o2_exchg [7.1835e-05;10]
+
+Species-specific uptake:
+R_EXCHG_ecoli1_glc__D_p_to_glc__D | SCALED FLUX 0
+R_EXCHG_ecoli2_glc__D_p_to_glc__D | SCALED FLUX -0.55714
+R_EXCHG_ecoli3_glc__D_p_to_glc__D | SCALED FLUX -0.44286
+
+Metabolites with non-overlapping concentration ranges between species:
+M_6pgc_c_ecoli1 [unused] & M_6pgc_c_ecoli2 [0.00091938;0.014992] & M_6pgc_c_ecoli3 [unused]
+M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [7.4765e-06;0.00012191] & M_6pgl_c_ecoli3 [unused]
+M_adp_c_ecoli1 [unused] & M_adp_c_ecoli2 [1e-06;0.0059805] & M_adp_c_ecoli3 [1e-06;0.0066667]
+M_atp_c_ecoli1 [unused] & M_atp_c_ecoli2 [3.3442e-06;0.02] & M_atp_c_ecoli3 [3e-06;0.02]
+M_co2_c_ecoli1 [unused] & M_co2_c_ecoli2 [1e-06;1.6306e-05] & M_co2_c_ecoli3 [unused]
+M_dhap_c_ecoli1 [unused] & M_dhap_c_ecoli2 [1.2052e-06;1.2166e-06] & M_dhap_c_ecoli3 [0.0024159;0.02]
+M_e4p_c_ecoli1 [unused] & M_e4p_c_ecoli2 [3.0052e-06;3.0335e-06] & M_e4p_c_ecoli3 [unused]
+M_f6p_c_ecoli1 [unused] & M_f6p_c_ecoli2 [5.2852e-05;5.31e-05] & M_f6p_c_ecoli3 [0.00030512;0.0016789]
+M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [0.0051603;0.0051845] & M_fdp_c_ecoli3 [1e-06;1.0047e-06]
+M_g3p_c_ecoli1 [unused] & M_g3p_c_ecoli2 [9.1328e-06;9.2186e-06] & M_g3p_c_ecoli3 [1e-06;2.9369e-05]
+M_g6p_c_ecoli1 [unused] & M_g6p_c_ecoli2 [0.001093;0.017823] & M_g6p_c_ecoli3 [7.1835e-05;0.00039526]
+M_glc__D_c_ecoli1 [unused] & M_glc__D_c_ecoli2 [1.7074e-05;0.00027841] & M_glc__D_c_ecoli3 [1e-06;0.00027841]
+M_glyc3p_c_ecoli1 [unused] & M_glyc3p_c_ecoli2 [0.0051603;0.0052088] & M_glyc3p_c_ecoli3 [1e-06;1.0094e-06]
+M_lac__D_c_ecoli1 [0.0051603;0.02] & M_lac__D_c_ecoli2 [unused] & M_lac__D_c_ecoli3 [unused]
+M_mthgxl_c_ecoli1 [1e-06;3.8757e-06] & M_mthgxl_c_ecoli2 [0.0051603;0.02] & M_mthgxl_c_ecoli3 [unused]
+M_nad_c_ecoli1 [unused] & M_nad_c_ecoli2 [7.572e-06;0.02] & M_nad_c_ecoli3 [unused]
+M_nadh_c_ecoli1 [unused] & M_nadh_c_ecoli2 [1e-06;0.0026413] & M_nadh_c_ecoli3 [unused]
+M_nadp_c_ecoli1 [unused] & M_nadp_c_ecoli2 [1e-06;0.0020188] & M_nadp_c_ecoli3 [unused]
+M_nadph_c_ecoli1 [unused] & M_nadph_c_ecoli2 [9.9069e-06;0.02] & M_nadph_c_ecoli3 [unused]
+M_o2_c_ecoli1 [unused] & M_o2_c_ecoli2 [1e-06;0.02] & M_o2_c_ecoli3 [1e-06;0.02]
+M_pi_c_ecoli1 [unused] & M_pi_c_ecoli2 [0.00027712;0.00027841] & M_pi_c_ecoli3 [0.00024859;0.0013678]
+M_q8_c_ecoli1 [unused] & M_q8_c_ecoli2 [1e-06;3.8757e-06] & M_q8_c_ecoli3 [0.0051603;0.02]
+M_q8h2_c_ecoli1 [unused] & M_q8h2_c_ecoli2 [0.0051603;0.02] & M_q8h2_c_ecoli3 [1e-06;3.8757e-06]
+M_r5p_c_ecoli1 [unused] & M_r5p_c_ecoli2 [0.0016352;0.0016506] & M_r5p_c_ecoli3 [unused]
+M_ru5p__D_c_ecoli1 [unused] & M_ru5p__D_c_ecoli2 [0.019938;0.02] & M_ru5p__D_c_ecoli3 [unused]
+M_s7p_c_ecoli1 [unused] & M_s7p_c_ecoli2 [0.0050805;0.0051283] & M_s7p_c_ecoli3 [unused]
+M_xu5p__D_c_ecoli1 [unused] & M_xu5p__D_c_ecoli2 [0.001087;0.0010921] & M_xu5p__D_c_ecoli3 [unused]
+M_co2_p_ecoli1 [unused] & M_co2_p_ecoli2 [7.1835e-05;0.001] & M_co2_p_ecoli3 [unused]
+M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [0.0012265;0.02] & M_glc__D_p_ecoli3 [7.1835e-05;0.02]
+M_lac__D_p_ecoli1 [7.1835e-05;0.00027841] & M_lac__D_p_ecoli2 [unused] & M_lac__D_p_ecoli3 [unused]
+M_o2_p_ecoli1 [unused] & M_o2_p_ecoli2 [1e-06;0.02] & M_o2_p_ecoli3 [1e-06;0.02]
+M_pi_p_ecoli1 [unused] & M_pi_p_ecoli2 [0.019907;0.02] & M_pi_p_ecoli3 [unused]
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
+MDF in single species with reactions occuring in community solution: 9.0572 (OptMDF in community was 10.5965, difference is 1.5392)
+>Bottleneck reactions (driving force=OptMDF):
+R_FBA_ecoli1 | 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+R_PGI_ecoli1 | 1 M_f6p_c_ecoli1 (<)-> 1 M_g6p_c_ecoli1 
+R_RPE_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+R_RPI_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+R_TALA_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+R_TKT1_ecoli1 | 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+R_TKT2_ecoli1 | 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 
+R_TPI_ecoli1 | 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+>Connecting metabolites:
+R_TPI_ecoli1-> R_FBA_ecoli1; M_dhap_c_ecoli1 
+R_TALA_ecoli1-> R_TKT2_ecoli1; M_e4p_c_ecoli1 
+R_TALA_ecoli1/R_TKT2_ecoli1-> R_PGI_ecoli1; M_f6p_c_ecoli1 
+R_TKT1_ecoli1/R_TKT2_ecoli1-> R_FBA_ecoli1/R_TALA_ecoli1/R_TPI_ecoli1; M_g3p_c_ecoli1 
+R_RPI_ecoli1-> R_TKT1_ecoli1; M_r5p_c_ecoli1 
+R_TKT1_ecoli1-> R_TALA_ecoli1; M_s7p_c_ecoli1 
+R_RPE_ecoli1-> R_TKT1_ecoli1/R_TKT2_ecoli1; M_xu5p__D_c_ecoli1 
+>Connecting metabolite ranges:
+~M_dhap_c_ecoli1~
+In single species:
+[3.3496e-05;3.3766e-05] (range 2.7034e-07)
+In community:
+M_dhap_c_ecoli1: [unused] (range 0)
+M_dhap_c_ecoli2: [1.2052e-06;1.2166e-06] (range 1.133e-08)
+M_dhap_c_ecoli3: [0.0024159;0.02] (range 0.017584)
+~M_e4p_c_ecoli1~
+In single species:
+[2.1712e-05;2.1799e-05] (range 8.744e-08)
+In community:
+M_e4p_c_ecoli1: [unused] (range 0)
+M_e4p_c_ecoli2: [3.0052e-06;3.0335e-06] (range 2.825e-08)
+M_e4p_c_ecoli3: [unused] (range 0)
+~M_f6p_c_ecoli1~
+In single species:
+[8.8139e-05;8.8317e-05] (range 1.773e-07)
+In community:
+M_f6p_c_ecoli1: [unused] (range 0)
+M_f6p_c_ecoli2: [5.2852e-05;5.31e-05] (range 2.4783e-07)
+M_f6p_c_ecoli3: [0.00030512;0.0016789] (range 0.0013738)
+~M_g3p_c_ecoli1~
+In single species:
+[0.00013697;0.00013752] (range 5.5161e-07)
+In community:
+M_g3p_c_ecoli1: [unused] (range 0)
+M_g3p_c_ecoli2: [9.1328e-06;9.2186e-06] (range 8.5851e-08)
+M_g3p_c_ecoli3: [1e-06;2.9369e-05] (range 2.8369e-05)
+~M_r5p_c_ecoli1~
+In single species:
+[0.0030587;0.003071] (range 1.2318e-05)
+In community:
+M_r5p_c_ecoli1: [unused] (range 0)
+M_r5p_c_ecoli2: [0.0016352;0.0016506] (range 1.5371e-05)
+M_r5p_c_ecoli3: [unused] (range 0)
+~M_s7p_c_ecoli1~
+In single species:
+[0.0021937;0.0022025] (range 8.8345e-06)
+In community:
+M_s7p_c_ecoli1: [unused] (range 0)
+M_s7p_c_ecoli2: [0.0050805;0.0051283] (range 4.7759e-05)
+M_s7p_c_ecoli3: [unused] (range 0)
+~M_xu5p__D_c_ecoli1~
+In single species:
+[0.0020279;0.002032] (range 4.0795e-06)
+In community:
+M_xu5p__D_c_ecoli1: [unused] (range 0)
+M_xu5p__D_c_ecoli2: [0.001087;0.0010921] (range 5.0973e-06)
+M_xu5p__D_c_ecoli3: [unused] (range 0)
+
+
+Detailed reaction-wise solution reports:
+~Community solution detailed solutions~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+D__LACt2pp; -0.042857; 0; 1 M_h_c_ecoli1 + 1 M_lac__D_c_ecoli1 (<)-> 1 M_h_p_ecoli1 + 1 M_lac__D_p_ecoli1 
+GLYOX3; 0.042857; -54.5949; 1 M_h2o_c_ecoli1 + 1 M_mthgxl_c_ecoli1 -> 1 M_h_c_ecoli1 + 1 M_lac__D_c_ecoli1 
+H2Otpp; 0.042857; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_c_ecoli1 
+EX_C_h_exchg; 0.042857; NaN; 1 M_h_exchg (<)-> 
+EX_C_co2_exchg; 0.55714; NaN; 1 M_co2_exchg (<)-> 
+EX_C_lac__D_exchg; 0.042857; NaN; 1 M_lac__D_exchg -> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 1.4429; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_o2_exchg; -0.55714; NaN; (<)-> 1 M_o2_exchg 
+EX_C_g6p_exchg; 0.88571; NaN; 1 M_g6p_exchg -> 
+EX_C_pi_exchg; -0.88571; NaN; (<)-> 1 M_pi_exchg 
+EXCHG_h_p_to_h; 0.042857; NaN; 1 M_h_p_ecoli1 (<)-> 1 M_h_exchg 
+EXCHG_h2o_p_to_h2o; -0.042857; NaN; 1 M_h2o_exchg (<)-> 1 M_h2o_p_ecoli1 
+EXCHG_lac__D_p_to_lac__D; 0.042857; 0; 1 M_lac__D_p_ecoli1 (<)-> 1 M_lac__D_exchg 
+EXCHG_mthgxl_c_to_mthgxl; -0.042857; 0; 1 M_mthgxl_exchg -> 1 M_mthgxl_c_ecoli1 
+EXCHG_ecoli2_fdp_c_to_fdp; 0.37143; 0; 1 M_fdp_c_ecoli2 -> 1 M_fdp_exchg 
+EXCHG_ecoli2_co2_p_to_co2; 0.55714; 0; 1 M_co2_p_ecoli2 (<)-> 1 M_co2_exchg 
+EXCHG_ecoli2_glc__D_p_to_glc__D; -0.55714; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli2 
+EXCHG_ecoli2_h2o_p_to_h2o; 0.93214; NaN; 1 M_h2o_p_ecoli2 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli2_glyc3p_c_to_glyc3p; 0.14286; 0; 1 M_glyc3p_c_ecoli2 -> 1 M_glyc3p_exchg 
+EXCHG_ecoli2_q8_c_to_q8; -0.41071; 0; 1 M_q8_exchg -> 1 M_q8_c_ecoli2 
+EXCHG_ecoli2_mthgxl_c_to_mthgxl; 0.042857; 0; 1 M_mthgxl_c_ecoli2 -> 1 M_mthgxl_exchg 
+EXCHG_ecoli2_pi_p_to_pi; -0.88571; 0; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli2 
+EXCHG_ecoli2_o2_p_to_o2; -0.28036; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli2 
+EXCHG_ecoli2_q8h2_c_to_q8h2; 0.41071; 0; 1 M_q8h2_c_ecoli2 -> 1 M_q8h2_exchg 
+EXCHG_ecoli3_fdp_c_to_fdp; -0.37143; 0; 1 M_fdp_exchg -> 1 M_fdp_c_ecoli3 
+EXCHG_ecoli3_glc__D_p_to_glc__D; -0.44286; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli3 
+EXCHG_ecoli3_h2o_p_to_h2o; 0.55357; NaN; 1 M_h2o_p_ecoli3 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli3_glyc3p_c_to_glyc3p; -0.14286; 0; 1 M_glyc3p_exchg -> 1 M_glyc3p_c_ecoli3 
+EXCHG_ecoli3_q8_c_to_q8; 0.41071; 0; 1 M_q8_c_ecoli3 -> 1 M_q8_exchg 
+EXCHG_ecoli3_o2_p_to_o2; -0.27679; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli3 
+EXCHG_ecoli3_q8h2_c_to_q8h2; -0.41071; 0; 1 M_q8h2_exchg -> 1 M_q8h2_c_ecoli3 
+EXCHG_ecoli3_g6p_c_to_g6p; 0.88571; 0; 1 M_g6p_c_ecoli3 -> 1 M_g6p_exchg 
+Detailed solution for species ecoli2 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 0.92857; -33.8921; 1 M_adp_c_ecoli2 + 1 M_pi_c_ecoli2 + 4 M_h_p_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 + 3 M_h_c_ecoli2 
+CO2tpp; -0.55714; NaN; 1 M_co2_c_ecoli2 (<)-> 1 M_co2_p_ecoli2 
+CYTBO3_4pp; 0.56071; -55.284; 4 M_h_c_ecoli2 + 0.5 M_o2_c_ecoli2 + 1 M_q8h2_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 4 M_h_p_ecoli2 + 1 M_q8_c_ecoli2 
+G3PD2; -0.14286; 25.6158; 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_nadp_c_ecoli2 + 1 M_glyc3p_c_ecoli2 
+G6PDH2r; 0.55714; -3.9232; 1 M_nadp_c_ecoli2 + 1 M_g6p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_6pgl_c_ecoli2 
+GLCt2pp; 0.55714; 0; 1 M_h_p_ecoli2 + 1 M_glc__D_p_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_glc__D_c_ecoli2 
+GND; 0.55714; 10.332; 1 M_nadp_c_ecoli2 + 1 M_6pgc_c_ecoli2 -> 1 M_nadph_c_ecoli2 + 1 M_co2_c_ecoli2 + 1 M_ru5p__D_c_ecoli2 
+H2Otpp; -0.93214; NaN; 1 M_h2o_c_ecoli2 (<)-> 1 M_h2o_p_ecoli2 
+HEX1; 0.55714; -17.901; 1 M_atp_c_ecoli2 + 1 M_glc__D_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_g6p_c_ecoli2 
+MGSA; 0.042857; -59.8272; 1 M_dhap_c_ecoli2 -> 1 M_pi_c_ecoli2 + 1 M_mthgxl_c_ecoli2 
+NADH16pp; 0.97143; -81.2018; 4 M_h_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_q8_c_ecoli2 (<)-> 1 M_nad_c_ecoli2 + 3 M_h_p_ecoli2 + 1 M_q8h2_c_ecoli2 
+NADTRHD; 0.97143; 0.13056; 1 M_nad_c_ecoli2 + 1 M_nadph_c_ecoli2 -> 1 M_nadp_c_ecoli2 + 1 M_nadh_c_ecoli2 
+O2tpp; 0.28036; NaN; 1 M_o2_p_ecoli2 (<)-> 1 M_o2_c_ecoli2 
+PFK; 0.37143; -18.9474; 1 M_atp_c_ecoli2 + 1 M_f6p_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_fdp_c_ecoli2 
+PGL; 0.55714; -22.5233; 1 M_h2o_c_ecoli2 + 1 M_6pgl_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_6pgc_c_ecoli2 
+PIt2rpp; 0.88571; 0; 1 M_h_p_ecoli2 + 1 M_pi_p_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2 
+RPE; 0.37143; -3.388; 1 M_ru5p__D_c_ecoli2 (<)-> 1 M_xu5p__D_c_ecoli2 
+RPI; -0.18571; 4.4117; 1 M_ru5p__D_c_ecoli2 (<)-> 1 M_r5p_c_ecoli2 
+TALA; 0.18571; 3.4773; 1 M_g3p_c_ecoli2 + 1 M_s7p_c_ecoli2 (<)-> 1 M_e4p_c_ecoli2 + 1 M_f6p_c_ecoli2 
+TKT1; 0.18571; -1.5468; 1 M_r5p_c_ecoli2 + 1 M_xu5p__D_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_s7p_c_ecoli2 
+TKT2; 0.18571; -5.8438; 1 M_e4p_c_ecoli2 + 1 M_xu5p__D_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_f6p_c_ecoli2 
+TPI; -0.18571; 5.5753; 1 M_g3p_c_ecoli2 (<)-> 1 M_dhap_c_ecoli2 
+Detailed solution for species ecoli3 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 0.44286; -33.8921; 1 M_adp_c_ecoli3 + 1 M_pi_c_ecoli3 + 4 M_h_p_ecoli3 (<)-> 1 M_atp_c_ecoli3 + 1 M_h2o_c_ecoli3 + 3 M_h_c_ecoli3 
+CYTBO3_4pp; 0.55357; -55.284; 4 M_h_c_ecoli3 + 0.5 M_o2_c_ecoli3 + 1 M_q8h2_c_ecoli3 -> 1 M_h2o_c_ecoli3 + 4 M_h_p_ecoli3 + 1 M_q8_c_ecoli3 
+FBA; -0.071429; 22.3932; 1 M_g3p_c_ecoli3 + 1 M_dhap_c_ecoli3 (<)-> 1 M_fdp_c_ecoli3 
+FBP; 0.44286; -8.4178; 1 M_h2o_c_ecoli3 + 1 M_fdp_c_ecoli3 -> 1 M_pi_c_ecoli3 + 1 M_f6p_c_ecoli3 
+G3PD5; 0.14286; -109.0556; 1 M_glyc3p_c_ecoli3 + 1 M_q8_c_ecoli3 -> 1 M_q8h2_c_ecoli3 + 1 M_dhap_c_ecoli3 
+GLCt2pp; 0.44286; 0; 1 M_h_p_ecoli3 + 1 M_glc__D_p_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_glc__D_c_ecoli3 
+H2Otpp; -0.55357; NaN; 1 M_h2o_c_ecoli3 (<)-> 1 M_h2o_p_ecoli3 
+HEX1; 0.44286; -17.901; 1 M_atp_c_ecoli3 + 1 M_glc__D_c_ecoli3 -> 1 M_adp_c_ecoli3 + 1 M_h_c_ecoli3 + 1 M_g6p_c_ecoli3 
+O2tpp; 0.27679; NaN; 1 M_o2_p_ecoli3 (<)-> 1 M_o2_c_ecoli3 
+PGI; -0.44286; 7.0102; 1 M_f6p_c_ecoli3 (<)-> 1 M_g6p_c_ecoli3 
+TPI; 0.071429; 5.5753; 1 M_dhap_c_ecoli3 (<)-> 1 M_g3p_c_ecoli3 
+
+~Single-species solution detailed solution~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+ATPS4rpp; 1; -33.8921; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1 
+CO2tpp; -0.42353; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1 
+CYTBO3_4pp; 0.84706; -55.284; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1 
+FBA; -0.070588; 22.3932; 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+FBP; 0.070588; -8.4178; 1 M_fdp_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_f6p_c_ecoli1 + 1 M_pi_c_ecoli1 
+G6PDH2r; 0.42353; -3.9232; 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 
+GLCt2pp; 1; 0; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1 
+GND; 0.42353; 10.332; 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_ru5p__D_c_ecoli1 
+H2Otpp; -1.3529; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1 
+HEX1; 1; -17.901; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1 
+NADH16pp; 0.84706; -81.2018; 4 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 + 1 M_q8_c_ecoli1 (<)-> 1 M_nad_c_ecoli1 + 1 M_q8h2_c_ecoli1 + 3 M_h_p_ecoli1 
+NADTRHD; 0.84706; 0.13056; 1 M_nad_c_ecoli1 + 1 M_nadph_c_ecoli1 -> 1 M_nadh_c_ecoli1 + 1 M_nadp_c_ecoli1 
+O2tpp; 0.42353; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1 
+PGI; -0.35294; 7.0102; 1 M_f6p_c_ecoli1 (<)-> 1 M_g6p_c_ecoli1 
+PGL; 0.42353; -22.5233; 1 M_6pgl_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_6pgc_c_ecoli1 + 1 M_h_c_ecoli1 
+PIt2rpp; 0.92941; 0; 1 M_h_p_ecoli1 + 1 M_pi_p_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1 
+RPE; 0.28235; -3.388; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
+RPI; -0.14118; 4.4117; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 
+TALA; 0.14118; 3.4773; 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 
+TKT1; 0.14118; -1.5468; 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+TKT2; 0.14118; -5.8438; 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 
+TPI; -0.070588; 5.5753; 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+EX_C_co2_exchg; 0.42353; NaN; 1 M_co2_exchg (<)-> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 1.3529; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_o2_exchg; -0.42353; NaN; (<)-> 1 M_o2_exchg 
+EX_C_g6p_exchg; 0.92941; NaN; 1 M_g6p_exchg -> 
+EX_C_pi_exchg; -0.92941; NaN; (<)-> 1 M_pi_exchg 
+EXCHG_co2_p_to_co2; 0.42353; 0; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg 
+EXCHG_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1 
+EXCHG_h2o_p_to_h2o; 1.3529; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg 
+EXCHG_pi_p_to_pi; -0.92941; 0; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli1 
+EXCHG_o2_p_to_o2; -0.42353; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1 
+EXCHG_g6p_c_to_g6p; 0.92941; 0; 1 M_g6p_c_ecoli1 -> 1 M_g6p_exchg 
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_murein5px4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.072839
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_opmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdcea_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_imp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_quln_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_imacp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.83821
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_6hmhptpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.64589
+
+==FINAL STATISTICS==
+Total number analyzed target metabolites:
+377
+Number (fraction) producible target metabolites with dG0=NaN reactions:
+282 (74.8011 pct.)
+Number (fraction) producible target metabolites without dG0=NaN reactions:
+115 (30.504 pct.)
+Maximal extra exchanges:
+11
+Minimal extra exchanges:
+7
+Mean extra exchanges:
+9.25
+Mean maximal possible yield change due to NaN reactions in MDF community advantage solutions:
+0.64589
+Mean maximal possible yield change due to NaN reactions in all solutions: 
+0.16829
+Number metabolites with found community MDF benefit:
+4
+Number metabolites without found community MDF benefit:
+373
+Mean MDF advantage (found MDF with community minus MDF without community in all cases where the community showed an advantage and where OptMDFPathway worked with the community):
+1.4427
+List of metabolites with found community MDF benefit:
+R_EX_C_alaala_exchg
+R_EX_C_e4p_exchg
+R_EX_C_dha_exchg
+R_EX_C_g6p_exchg
+List of used exchange reactions, ordered by number of community advantage solutions where they occur:
+R_EXCHG_ecoli2_glyc3p_c_to_glyc3p: 4
+R_EXCHG_ecoli3_glyc3p_c_to_glyc3p: 4
+R_EXCHG_ecoli2_fdp_c_to_fdp: 2
+R_EXCHG_ecoli2_q8_c_to_q8: 2
+R_EXCHG_ecoli2_q8h2_c_to_q8h2: 2
+R_EXCHG_ecoli3_fdp_c_to_fdp: 2
+R_EXCHG_ecoli3_q8_c_to_q8: 2
+R_EXCHG_ecoli3_q8h2_c_to_q8h2: 2
+R_EXCHG_ecoli3_g6p_c_to_g6p: 2
+R_EXCHG_ecoli1_mthgxl_c_to_mthgxl: 1
+R_EXCHG_ecoli2_dhap_c_to_dhap: 1
+R_EXCHG_ecoli2_oaa_c_to_oaa: 1
+R_EXCHG_ecoli2_alaala_c_to_alaala: 1
+R_EXCHG_ecoli2_s7p_c_to_s7p: 1
+R_EXCHG_ecoli2_mthgxl_c_to_mthgxl: 1
+R_EXCHG_ecoli2_pep_c_to_pep: 1
+R_EXCHG_ecoli2_dha_c_to_dha: 1
+R_EXCHG_ecoli2_g6p_c_to_g6p: 1
+R_EXCHG_ecoli3_e4p_c_to_e4p: 1
+R_EXCHG_ecoli3_dhap_c_to_dhap: 1
+R_EXCHG_ecoli3_oaa_c_to_oaa: 1
+R_EXCHG_ecoli3_s7p_c_to_s7p: 1
+R_EXCHG_ecoli3_pep_c_to_pep: 1
+R_EXCHG_ecoli3_dha_c_to_dha: 1
+
+
+Full run time (min): 10757.7568
+Full run time (h): 179.2959
+Full run time (days): 7.4707

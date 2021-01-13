@@ -1,0 +1,382 @@
+ASTHERISC community MDF advantage search
+
+
+=SETTINGS=
+Substrate reaction: R_EX_C_glc__D_exchg
+Maximal substrate uptake for single species (in units of the model): 1
+Minimal yield factor (i.e., minimal necessary percentage of maximal possible yield): 0.4
+Minimal absolute yield: 1e-06
+Minimal absolute MDF community advantage: 0.2
+Temperature [K] (for comparison: 25°C=77°F=298.15 K): 298.15
+Minimal absolute mdf with community: 0
+Minimal absolute flux (in units of the model) for a reaction in order to be considered 'active' ('v epsilon'): 1e-06
+Model path: ./0Astherisc/publication_runs/ecoli_models/models_and_dG0_data/ecolicore2triple.mat
+Report path: ./0Astherisc/publication_runs/ecoli_models/run_results/report__model_ecolicore2triple__maxYield_0.4__numMaxExchanges_9.txt
+Calculate and show community solution bottlenecks? false
+Calculate and show single-species bottlenecks with active reactions of the community? true
+Calculate indirect bottlenecks for selected bottleneck types? false
+Number of maximal allowed exchanges: 9
+Reactions with set minimal flux of 0:
+ R_ATPM_ecoli1
+ R_ATPM_ecoli2
+ R_ATPM_ecoli3
+'Ignored' metabolites (i.e., metabolites which are deemed to play no role thermodynamically as their concentration range is fixed to 1, so that instead of the default output '[unused]' in this case, '[1;1]' is printed instead:
+ M_h2o_c_ecoli1
+ M_h2o_c_ecoli2
+ M_h2o_c_ecoli3
+ M_h2o_p_ecoli1
+ M_h2o_p_ecoli2
+ M_h2o_p_ecoli3
+ M_h2o_e_ecoli1
+ M_h2o_e_ecoli2
+ M_h2o_e_ecoli3
+ M_h2o_exchg
+ M_h_c_ecoli1
+ M_h_c_ecoli2
+ M_h_c_ecoli3
+ M_h_p_ecoli1
+ M_h_p_ecoli2
+ M_h_p_ecoli3
+ M_h_e_ecoli1
+ M_h_e_ecoli2
+ M_h_e_ecoli3
+ M_h_exchg
+Fixed ratio ranges (ID of metabolite A, ID of metabolite B, minimal concentration ratio of A:B, maximal concentration ratio of A:B:
+ M_atp_c_ecoli1, M_adp_c_ecoli1, 3, 10
+ M_adp_c_ecoli1, M_amp_c_ecoli1, 0.5, 2
+ M_nad_c_ecoli1, M_nadh_c_ecoli1, 3, 10
+ M_nadph_c_ecoli1, M_nadp_c_ecoli1, 3, 10
+ M_atp_c_ecoli2, M_adp_c_ecoli2, 3, 10
+ M_adp_c_ecoli2, M_amp_c_ecoli2, 0.5, 2
+ M_nad_c_ecoli2, M_nadh_c_ecoli2, 3, 10
+ M_nadph_c_ecoli2, M_nadp_c_ecoli2, 3, 10
+ M_atp_c_ecoli3, M_adp_c_ecoli3, 3, 10
+ M_adp_c_ecoli3, M_amp_c_ecoli3, 0.5, 2
+ M_nad_c_ecoli3, M_nadh_c_ecoli3, 3, 10
+ M_nadph_c_ecoli3, M_nadp_c_ecoli3, 3, 10
+Target exchange reaction selection:
+ All possible ones
+
+=RUN RESULTS=
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_sl2a6o_exchg==
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.57527
+Optimal yield without community without any MDF constraint: 0.57527
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
+Reached yield without community at optimal MDF solution: 0.35
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.8044
+Approximated optimal yield with community at maximal community MDF (if no warning given): 0.2439
+Number of active metabolites: 99
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+ecoli1: 0 | 0
+ecoli2: 29 | 19.3902
+ecoli3: 30 | 8.8171
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_oaa_c_to_oaa | SCALED FLUX: 0.4878 | M_oaa_c_ecoli2 [0.0039792;0.0040104] | M_oaa_exchg [0.00017084;0.00017218]
+R_EXCHG_ecoli2_23dhdp_c_to_23dhdp | SCALED FLUX: -0.2439 | M_23dhdp_c_ecoli2 [9.4735e-06;3.6863e-05] | M_23dhdp_exchg [0.00022066;0.00085864]
+R_EXCHG_ecoli2_sl2a6o_c_to_sl2a6o | SCALED FLUX: 0.2439 | M_sl2a6o_c_ecoli2 [2.3293e-05;2.3659e-05] | M_sl2a6o_exchg [1e-06;1.0158e-06]
+R_EXCHG_ecoli3_oaa_c_to_oaa | SCALED FLUX: -0.4878 | M_oaa_c_ecoli3 [7.3344e-06;7.3919e-06] | M_oaa_exchg [0.00017084;0.00017218]
+R_EXCHG_ecoli3_23dhdp_c_to_23dhdp | SCALED FLUX: 0.2439 | M_23dhdp_c_ecoli3 [0.0051398;0.02] | M_23dhdp_exchg [0.00022066;0.00085864]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli2_h_p_to_h | SCALED FLUX: 1.7073 | M_h_p_ecoli2 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli2_h2o_p_to_h2o | SCALED FLUX: 0.97561 | M_h2o_p_ecoli2 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli2_lac__D_p_to_lac__D | SCALED FLUX: 0.4878 | M_lac__D_p_ecoli2 [2.3293e-05;0.00016042] | M_lac__D_exchg [1e-06;6.8872e-06]
+R_EXCHG_ecoli2_o2_p_to_o2 | SCALED FLUX: -0.73171 | M_o2_p_ecoli2 [1e-06;0.02] | M_o2_exchg [2.3293e-05;10]
+R_EXCHG_ecoli3_ac_p_to_ac | SCALED FLUX: 0.53659 | M_ac_p_ecoli3 [2.3293e-05;2.3475e-05] | M_ac_exchg [1e-06;1.0078e-06]
+R_EXCHG_ecoli3_h_p_to_h | SCALED FLUX: 0.80488 | M_h_p_ecoli3 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli3_co2_p_to_co2 | SCALED FLUX: 0.26829 | M_co2_p_ecoli3 [2.3293e-05;0.001] | M_co2_exchg [1e-06;4.2932e-05]
+R_EXCHG_ecoli3_nh4_p_to_nh4 | SCALED FLUX: -0.2439 | M_nh4_p_ecoli3 [1e-06;0.02] | M_nh4_exchg [2.3293e-05;10]
+R_EXCHG_ecoli3_h2o_p_to_h2o | SCALED FLUX: 0.5122 | M_h2o_p_ecoli3 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli3_o2_p_to_o2 | SCALED FLUX: -0.036585 | M_o2_p_ecoli3 [1e-06;0.02] | M_o2_exchg [2.3293e-05;10]
+R_EXCHG_ecoli3_for_p_to_for | SCALED FLUX: 0.5122 | M_for_p_ecoli3 [2.3293e-05;2.3475e-05] | M_for_exchg [1e-06;1.0078e-06]
+
+Species-specific uptake:
+R_EXCHG_ecoli1_glc__D_p_to_glc__D | SCALED FLUX 0
+R_EXCHG_ecoli2_glc__D_p_to_glc__D | SCALED FLUX -0.73171
+R_EXCHG_ecoli3_glc__D_p_to_glc__D | SCALED FLUX -0.26829
+
+Metabolites with non-overlapping concentration ranges between species:
+M_13dpg_c_ecoli1 [unused] & M_13dpg_c_ecoli2 [2.0842e-05;2.6819e-05] & M_13dpg_c_ecoli3 [unused]
+M_23dhdp_c_ecoli1 [unused] & M_23dhdp_c_ecoli2 [9.4735e-06;3.6863e-05] & M_23dhdp_c_ecoli3 [0.0051398;0.02]
+M_2ddg6p_c_ecoli1 [unused] & M_2ddg6p_c_ecoli2 [0.0029039;0.02] & M_2ddg6p_c_ecoli3 [0.019844;0.02]
+M_2pg_c_ecoli1 [unused] & M_2pg_c_ecoli2 [5.0066e-06;6.4422e-06] & M_2pg_c_ecoli3 [unused]
+M_3pg_c_ecoli1 [unused] & M_3pg_c_ecoli2 [0.00072234;0.00092947] & M_3pg_c_ecoli3 [unused]
+M_4pasp_c_ecoli1 [unused] & M_4pasp_c_ecoli2 [unused] & M_4pasp_c_ecoli3 [1e-06;1.0745e-06]
+M_6pgc_c_ecoli1 [unused] & M_6pgc_c_ecoli2 [1e-06;0.02] & M_6pgc_c_ecoli3 [1e-06;0.02]
+M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [1e-06;0.0013933] & M_6pgl_c_ecoli3 [1e-06;0.00016874]
+M_ac_c_ecoli1 [unused] & M_ac_c_ecoli2 [unused] & M_ac_c_ecoli3 [0.00054255;0.0005468]
+M_accoa_c_ecoli1 [unused] & M_accoa_c_ecoli2 [1e-06;0.02] & M_accoa_c_ecoli3 [0.0034439;0.02]
+M_acon__C_c_ecoli1 [unused] & M_acon__C_c_ecoli2 [2.7764e-05;2.8201e-05] & M_acon__C_c_ecoli3 [unused]
+M_actp_c_ecoli1 [unused] & M_actp_c_ecoli2 [unused] & M_actp_c_ecoli3 [0.00048139;0.00052133]
+M_adp_c_ecoli1 [unused] & M_adp_c_ecoli2 [1e-06;0.0066667] & M_adp_c_ecoli3 [1e-06;0.0021491]
+M_akg_c_ecoli1 [unused] & M_akg_c_ecoli2 [1.0078e-05;1.0236e-05] & M_akg_c_ecoli3 [1e-06;1.0078e-06]
+M_asp__L_c_ecoli1 [unused] & M_asp__L_c_ecoli2 [unused] & M_asp__L_c_ecoli3 [0.019841;0.019996]
+M_aspsa_c_ecoli1 [unused] & M_aspsa_c_ecoli2 [unused] & M_aspsa_c_ecoli3 [1e-06;1.0078e-06]
+M_atp_c_ecoli1 [unused] & M_atp_c_ecoli2 [3e-06;0.02] & M_atp_c_ecoli3 [9.3063e-06;0.02]
+M_cit_c_ecoli1 [unused] & M_cit_c_ecoli2 [0.01969;0.02] & M_cit_c_ecoli3 [unused]
+M_co2_c_ecoli1 [unused] & M_co2_c_ecoli2 [0.00035789;0.0003607] & M_co2_c_ecoli3 [1e-06;0.001]
+M_coa_c_ecoli1 [unused] & M_coa_c_ecoli2 [1e-06;2.0552e-05] & M_coa_c_ecoli3 [1e-06;5.8073e-06]
+M_dhap_c_ecoli1 [unused] & M_dhap_c_ecoli2 [1e-06;0.02] & M_dhap_c_ecoli3 [3.3369e-05;3.3894e-05]
+M_f6p_c_ecoli1 [unused] & M_f6p_c_ecoli2 [unused] & M_f6p_c_ecoli3 [6.5525e-05;0.01112]
+M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [unused] & M_fdp_c_ecoli3 [1e-06;1.0158e-06]
+M_for_c_ecoli1 [unused] & M_for_c_ecoli2 [unused] & M_for_c_ecoli3 [0.00054255;0.0005468]
+M_g3p_c_ecoli1 [unused] & M_g3p_c_ecoli2 [0.019844;0.02] & M_g3p_c_ecoli3 [8.2632e-05;8.328e-05]
+M_g6p_c_ecoli1 [unused] & M_g6p_c_ecoli2 [1.4354e-05;0.02] & M_g6p_c_ecoli3 [4.7576e-05;0.0080741]
+M_glc__D_c_ecoli1 [unused] & M_glc__D_c_ecoli2 [1e-06;0.00085864] & M_glc__D_c_ecoli3 [1e-06;0.00085864]
+M_glu__L_c_ecoli1 [unused] & M_glu__L_c_ecoli2 [unused] & M_glu__L_c_ecoli3 [0.019844;0.02]
+M_glyc3p_c_ecoli1 [unused] & M_glyc3p_c_ecoli2 [1e-06;0.02] & M_glyc3p_c_ecoli3 [1e-06;0.02]
+M_icit_c_ecoli1 [unused] & M_icit_c_ecoli2 [2.2953e-06;2.3315e-06] & M_icit_c_ecoli3 [unused]
+M_lac__D_c_ecoli1 [unused] & M_lac__D_c_ecoli2 [0.00054255;0.0037366] & M_lac__D_c_ecoli3 [unused]
+M_nad_c_ecoli1 [unused] & M_nad_c_ecoli2 [9.948e-06;0.02] & M_nad_c_ecoli3 [unused]
+M_nadh_c_ecoli1 [unused] & M_nadh_c_ecoli2 [1e-06;0.0020104] & M_nadh_c_ecoli3 [unused]
+M_nadp_c_ecoli1 [unused] & M_nadp_c_ecoli2 [1e-06;0.0066667] & M_nadp_c_ecoli3 [1e-06;0.0020114]
+M_nadph_c_ecoli1 [unused] & M_nadph_c_ecoli2 [3e-06;0.02] & M_nadph_c_ecoli3 [9.9432e-06;0.02]
+M_nh4_c_ecoli1 [unused] & M_nh4_c_ecoli2 [unused] & M_nh4_c_ecoli3 [0.019773;0.02]
+M_o2_c_ecoli1 [unused] & M_o2_c_ecoli2 [1e-06;0.02] & M_o2_c_ecoli3 [1e-06;0.02]
+M_oaa_c_ecoli1 [unused] & M_oaa_c_ecoli2 [0.0039792;0.0040104] & M_oaa_c_ecoli3 [7.3344e-06;7.3919e-06]
+M_pep_c_ecoli1 [unused] & M_pep_c_ecoli2 [1e-06;1.2867e-06] & M_pep_c_ecoli3 [1e-06;0.02]
+M_pi_c_ecoli1 [unused] & M_pi_c_ecoli2 [0.015543;0.02] & M_pi_c_ecoli3 [0.00011611;0.00012575]
+M_pyr_c_ecoli1 [unused] & M_pyr_c_ecoli2 [8.9238e-06;6.1781e-05] & M_pyr_c_ecoli3 [0.014722;0.014837]
+M_q8_c_ecoli1 [unused] & M_q8_c_ecoli2 [1e-06;0.02] & M_q8_c_ecoli3 [1e-06;0.02]
+M_q8h2_c_ecoli1 [unused] & M_q8h2_c_ecoli2 [1e-06;0.02] & M_q8h2_c_ecoli3 [1e-06;0.02]
+M_sl2a6o_c_ecoli1 [unused] & M_sl2a6o_c_ecoli2 [2.3293e-05;2.3659e-05] & M_sl2a6o_c_ecoli3 [unused]
+M_succoa_c_ecoli1 [unused] & M_succoa_c_ecoli2 [0.00097313;0.02] & M_succoa_c_ecoli3 [unused]
+M_thdp_c_ecoli1 [unused] & M_thdp_c_ecoli2 [0.01969;0.02] & M_thdp_c_ecoli3 [unused]
+M_ac_p_ecoli1 [unused] & M_ac_p_ecoli2 [unused] & M_ac_p_ecoli3 [2.3293e-05;2.3475e-05]
+M_co2_p_ecoli1 [unused] & M_co2_p_ecoli2 [unused] & M_co2_p_ecoli3 [2.3293e-05;0.001]
+M_for_p_ecoli1 [unused] & M_for_p_ecoli2 [unused] & M_for_p_ecoli3 [2.3293e-05;2.3475e-05]
+M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [2.3293e-05;0.02] & M_glc__D_p_ecoli3 [2.3293e-05;0.02]
+M_lac__D_p_ecoli1 [unused] & M_lac__D_p_ecoli2 [2.3293e-05;0.00016042] & M_lac__D_p_ecoli3 [unused]
+M_nh4_p_ecoli1 [unused] & M_nh4_p_ecoli2 [unused] & M_nh4_p_ecoli3 [1e-06;0.02]
+M_o2_p_ecoli1 [unused] & M_o2_p_ecoli2 [1e-06;0.02] & M_o2_p_ecoli3 [1e-06;0.02]
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
+MDF in single species with reactions occuring in community solution: 5.3162 (OptMDF in community was 7.8044, difference is 2.4882)
+>Bottleneck reactions (driving force=OptMDF):
+R_ASAD_ecoli1 | 1 M_4pasp_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 (<)-> 1 M_aspsa_c_ecoli1 + 1 M_nadp_c_ecoli1 + 1 M_pi_c_ecoli1 
+R_ASPK_ecoli1 | 1 M_asp__L_c_ecoli1 + 1 M_atp_c_ecoli1 (<)-> 1 M_4pasp_c_ecoli1 + 1 M_adp_c_ecoli1 
+R_ENO_ecoli1 | 1 M_2pg_c_ecoli1 (<)-> 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1 
+R_GAPD_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 
+R_PGK_ecoli1 | 1 M_13dpg_c_ecoli1 + 1 M_adp_c_ecoli1 (<)-> 1 M_3pg_c_ecoli1 + 1 M_atp_c_ecoli1 
+R_PGM_ecoli1 | 1 M_3pg_c_ecoli1 (<)-> 1 M_2pg_c_ecoli1 
+>Connecting metabolites:
+R_GAPD_ecoli1-> R_PGK_ecoli1; M_13dpg_c_ecoli1 
+R_PGM_ecoli1-> R_ENO_ecoli1; M_2pg_c_ecoli1 
+R_PGK_ecoli1-> R_PGM_ecoli1; M_3pg_c_ecoli1 
+R_ASPK_ecoli1-> R_ASAD_ecoli1; M_4pasp_c_ecoli1 
+R_ASPK_ecoli1-> R_PGK_ecoli1; M_adp_c_ecoli1 
+R_PGK_ecoli1-> R_ASPK_ecoli1; M_atp_c_ecoli1 
+R_GAPD_ecoli1-> R_ASAD_ecoli1; M_h_c_ecoli1 
+R_ASAD_ecoli1-> R_GAPD_ecoli1; M_pi_c_ecoli1 
+>Connecting metabolite ranges:
+~M_13dpg_c_ecoli1~
+In single species:
+[1.1666e-06;3.4252e-06] (range 2.2586e-06)
+In community:
+M_13dpg_c_ecoli1: [unused] (range 0)
+M_13dpg_c_ecoli2: [2.0842e-05;2.6819e-05] (range 5.9765e-06)
+M_13dpg_c_ecoli3: [unused] (range 0)
+~M_2pg_c_ecoli1~
+In single species:
+[1.835e-06;1.8374e-06] (range 2.3628e-09)
+In community:
+M_2pg_c_ecoli1: [unused] (range 0)
+M_2pg_c_ecoli2: [5.0066e-06;6.4422e-06] (range 1.4356e-06)
+M_2pg_c_ecoli3: [unused] (range 0)
+~M_3pg_c_ecoli1~
+In single species:
+[9.7039e-05;9.7164e-05] (range 1.2495e-07)
+In community:
+M_3pg_c_ecoli1: [unused] (range 0)
+M_3pg_c_ecoli2: [0.00072234;0.00092947] (range 0.00020713)
+M_3pg_c_ecoli3: [unused] (range 0)
+~M_4pasp_c_ecoli1~
+In single species:
+[1e-06;2.9323e-06] (range 1.9323e-06)
+In community:
+M_4pasp_c_ecoli1: [unused] (range 0)
+M_4pasp_c_ecoli2: [unused] (range 0)
+M_4pasp_c_ecoli3: [1e-06;1.0745e-06] (range 7.4546e-08)
+~M_adp_c_ecoli1~
+In single species:
+[1e-06;0.0058646] (range 0.0058636)
+In community:
+M_adp_c_ecoli1: [unused] (range 0)
+M_adp_c_ecoli2: [1e-06;0.0066667] (range 0.0066657)
+M_adp_c_ecoli3: [1e-06;0.0021491] (range 0.0021481)
+~M_atp_c_ecoli1~
+In single species:
+[3.4103e-06;0.02] (range 0.019997)
+In community:
+M_atp_c_ecoli1: [unused] (range 0)
+M_atp_c_ecoli2: [3e-06;0.02] (range 0.019997)
+M_atp_c_ecoli3: [9.3063e-06;0.02] (range 0.019991)
+~M_h_c_ecoli1~
+In single species:
+[1;1] (range 0)
+In community:
+M_h_c_ecoli1: [1;1] (range 0)
+M_h_c_ecoli2: [1;1] (range 0)
+M_h_c_ecoli3: [1;1] (range 0)
+~M_pi_c_ecoli1~
+In single species:
+[0.00031887;0.00093622] (range 0.00061735)
+In community:
+M_pi_c_ecoli1: [unused] (range 0)
+M_pi_c_ecoli2: [0.015543;0.02] (range 0.0044569)
+M_pi_c_ecoli3: [0.00011611;0.00012575] (range 9.6346e-06)
+
+
+Detailed reaction-wise solution reports:
+~Community solution detailed solutions~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+EX_C_sl2a6o_exchg; 0.2439; NaN; 1 M_sl2a6o_exchg -> 
+EX_C_h_exchg; 2.5122; NaN; 1 M_h_exchg (<)-> 
+EX_C_nh4_exchg; -0.2439; NaN; (<)-> 1 M_nh4_exchg 
+EX_C_co2_exchg; 0.26829; NaN; 1 M_co2_exchg (<)-> 
+EX_C_lac__D_exchg; 0.4878; NaN; 1 M_lac__D_exchg -> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 1.4878; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_ac_exchg; 0.53659; NaN; 1 M_ac_exchg -> 
+EX_C_for_exchg; 0.5122; NaN; 1 M_for_exchg -> 
+EX_C_o2_exchg; -0.76829; NaN; (<)-> 1 M_o2_exchg 
+EXCHG_ecoli2_h_p_to_h; 1.7073; NaN; 1 M_h_p_ecoli2 (<)-> 1 M_h_exchg 
+EXCHG_ecoli2_oaa_c_to_oaa; 0.4878; 0; 1 M_oaa_c_ecoli2 -> 1 M_oaa_exchg 
+EXCHG_ecoli2_glc__D_p_to_glc__D; -0.73171; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli2 
+EXCHG_ecoli2_h2o_p_to_h2o; 0.97561; NaN; 1 M_h2o_p_ecoli2 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli2_lac__D_p_to_lac__D; 0.4878; 0; 1 M_lac__D_p_ecoli2 (<)-> 1 M_lac__D_exchg 
+EXCHG_ecoli2_o2_p_to_o2; -0.73171; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli2 
+EXCHG_ecoli2_23dhdp_c_to_23dhdp; -0.2439; 0; 1 M_23dhdp_exchg -> 1 M_23dhdp_c_ecoli2 
+EXCHG_ecoli2_sl2a6o_c_to_sl2a6o; 0.2439; 0; 1 M_sl2a6o_c_ecoli2 -> 1 M_sl2a6o_exchg 
+EXCHG_ecoli3_ac_p_to_ac; 0.53659; 0; 1 M_ac_p_ecoli3 (<)-> 1 M_ac_exchg 
+EXCHG_ecoli3_h_p_to_h; 0.80488; NaN; 1 M_h_p_ecoli3 (<)-> 1 M_h_exchg 
+EXCHG_ecoli3_co2_p_to_co2; 0.26829; 0; 1 M_co2_p_ecoli3 (<)-> 1 M_co2_exchg 
+EXCHG_ecoli3_oaa_c_to_oaa; -0.4878; 0; 1 M_oaa_exchg -> 1 M_oaa_c_ecoli3 
+EXCHG_ecoli3_glc__D_p_to_glc__D; -0.26829; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli3 
+EXCHG_ecoli3_nh4_p_to_nh4; -0.2439; 0; 1 M_nh4_exchg (<)-> 1 M_nh4_p_ecoli3 
+EXCHG_ecoli3_h2o_p_to_h2o; 0.5122; NaN; 1 M_h2o_p_ecoli3 (<)-> 1 M_h2o_exchg 
+EXCHG_ecoli3_o2_p_to_o2; -0.036585; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli3 
+EXCHG_ecoli3_23dhdp_c_to_23dhdp; 0.2439; 0; 1 M_23dhdp_c_ecoli3 -> 1 M_23dhdp_exchg 
+EXCHG_ecoli3_for_p_to_for; 0.5122; 0; 1 M_for_p_ecoli3 (<)-> 1 M_for_exchg 
+Detailed solution for species ecoli2 (Reaction ID; Flux; dG0; Reaction string):
+ACONTa; 0.2439; 8.4676; 1 M_cit_c_ecoli2 (<)-> 1 M_h2o_c_ecoli2 + 1 M_acon__C_c_ecoli2 
+ACONTb; 0.2439; -1.6243; 1 M_h2o_c_ecoli2 + 1 M_acon__C_c_ecoli2 (<)-> 1 M_icit_c_ecoli2 
+AKGDH; 0.2439; -28.0007; 1 M_coa_c_ecoli2 + 1 M_nad_c_ecoli2 + 1 M_akg_c_ecoli2 -> 1 M_co2_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_succoa_c_ecoli2 
+ATPM; 1.5244; -27.3652; 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2 
+ATPS4rpp; 1.5244; -33.8921; 1 M_adp_c_ecoli2 + 1 M_pi_c_ecoli2 + 4 M_h_p_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 + 3 M_h_c_ecoli2 
+CS; 0.2439; -35.9172; 1 M_h2o_c_ecoli2 + 1 M_accoa_c_ecoli2 + 1 M_oaa_c_ecoli2 -> 1 M_coa_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_cit_c_ecoli2 
+CYTBO3_4pp; 1.4634; -55.284; 4 M_h_c_ecoli2 + 0.5 M_o2_c_ecoli2 + 1 M_q8h2_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 4 M_h_p_ecoli2 + 1 M_q8_c_ecoli2 
+D__LACt2pp; -0.4878; 0; 1 M_h_c_ecoli2 + 1 M_lac__D_c_ecoli2 (<)-> 1 M_h_p_ecoli2 + 1 M_lac__D_p_ecoli2 
+DHDPRy; 0.2439; -24.017; 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_23dhdp_c_ecoli2 -> 1 M_nadp_c_ecoli2 + 1 M_thdp_c_ecoli2 
+EDA; 0.73171; 16.2402; 1 M_2ddg6p_c_ecoli2 -> 1 M_pyr_c_ecoli2 + 1 M_g3p_c_ecoli2 
+EDD; 0.73171; -42.8448; 1 M_6pgc_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 1 M_2ddg6p_c_ecoli2 
+ENO; 0.73171; -3.8109; 1 M_2pg_c_ecoli2 (<)-> 1 M_h2o_c_ecoli2 + 1 M_pep_c_ecoli2 
+G3PD2; -0.73171; 25.6158; 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_nadp_c_ecoli2 + 1 M_glyc3p_c_ecoli2 
+G3PD5; 0.73171; -109.0556; 1 M_glyc3p_c_ecoli2 + 1 M_q8_c_ecoli2 -> 1 M_q8h2_c_ecoli2 + 1 M_dhap_c_ecoli2 
+G6PDH2r; 0.73171; -3.9232; 1 M_nadp_c_ecoli2 + 1 M_g6p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_6pgl_c_ecoli2 
+GAPD; 0.73171; 4.6027; 1 M_nad_c_ecoli2 + 1 M_pi_c_ecoli2 + 1 M_g3p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_13dpg_c_ecoli2 
+GLCt2pp; 0.73171; 0; 1 M_h_p_ecoli2 + 1 M_glc__D_p_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_glc__D_c_ecoli2 
+H2Otpp; -0.97561; NaN; 1 M_h2o_c_ecoli2 (<)-> 1 M_h2o_p_ecoli2 
+HEX1; 0.73171; -17.901; 1 M_atp_c_ecoli2 + 1 M_glc__D_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_g6p_c_ecoli2 
+ICDHyr; 0.2439; 5.476; 1 M_nadp_c_ecoli2 + 1 M_icit_c_ecoli2 (<)-> 1 M_nadph_c_ecoli2 + 1 M_co2_c_ecoli2 + 1 M_akg_c_ecoli2 
+LDH_D; -0.4878; 23.6803; 1 M_h_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_pyr_c_ecoli2 (<)-> 1 M_nad_c_ecoli2 + 1 M_lac__D_c_ecoli2 
+NADH16pp; 0.73171; -81.2018; 4 M_h_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_q8_c_ecoli2 (<)-> 1 M_nad_c_ecoli2 + 3 M_h_p_ecoli2 + 1 M_q8h2_c_ecoli2 
+O2tpp; 0.73171; NaN; 1 M_o2_p_ecoli2 (<)-> 1 M_o2_c_ecoli2 
+PDH; 0.2439; -34.0243; 1 M_coa_c_ecoli2 + 1 M_nad_c_ecoli2 + 1 M_pyr_c_ecoli2 -> 1 M_co2_c_ecoli2 + 1 M_accoa_c_ecoli2 + 1 M_nadh_c_ecoli2 
+PGK; -0.73171; 19.3156; 1 M_adp_c_ecoli2 + 1 M_13dpg_c_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_3pg_c_ecoli2 
+PGL; 0.73171; -22.5233; 1 M_h2o_c_ecoli2 + 1 M_6pgl_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_6pgc_c_ecoli2 
+PGM; -0.73171; -4.5204; 1 M_3pg_c_ecoli2 (<)-> 1 M_2pg_c_ecoli2 
+PPC; 0.73171; -37.6982; 1 M_h2o_c_ecoli2 + 1 M_co2_c_ecoli2 + 1 M_pep_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2 + 1 M_oaa_c_ecoli2 
+THDPS; 0.2439; 25.9972; 1 M_h2o_c_ecoli2 + 1 M_succoa_c_ecoli2 + 1 M_thdp_c_ecoli2 -> 1 M_coa_c_ecoli2 + 1 M_sl2a6o_c_ecoli2 
+Detailed solution for species ecoli3 (Reaction ID; Flux; dG0; Reaction string):
+ACKr; -0.5122; 13.6296; 1 M_adp_c_ecoli3 + 1 M_actp_c_ecoli3 (<)-> 1 M_atp_c_ecoli3 + 1 M_ac_c_ecoli3 
+ACt2rpp; -0.53659; 0; 1 M_h_c_ecoli3 + 1 M_ac_c_ecoli3 (<)-> 1 M_ac_p_ecoli3 + 1 M_h_p_ecoli3 
+ASAD; -0.2439; -20.3451; 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_4pasp_c_ecoli3 (<)-> 1 M_nadp_c_ecoli3 + 1 M_pi_c_ecoli3 + 1 M_aspsa_c_ecoli3 
+ASPK; 0.2439; 22.2743; 1 M_asp__L_c_ecoli3 + 1 M_atp_c_ecoli3 (<)-> 1 M_adp_c_ecoli3 + 1 M_4pasp_c_ecoli3 
+ASPTA; -0.2439; 2.8446; 1 M_glu__L_c_ecoli3 + 1 M_oaa_c_ecoli3 (<)-> 1 M_asp__L_c_ecoli3 + 1 M_akg_c_ecoli3 
+CO2tpp; -0.26829; NaN; 1 M_co2_c_ecoli3 (<)-> 1 M_co2_p_ecoli3 
+CYTBO3_4pp; 0.073171; -55.284; 4 M_h_c_ecoli3 + 0.5 M_o2_c_ecoli3 + 1 M_q8h2_c_ecoli3 -> 1 M_h2o_c_ecoli3 + 4 M_h_p_ecoli3 + 1 M_q8_c_ecoli3 
+DHDPS; 0.2439; -125.4543; 1 M_pyr_c_ecoli3 + 1 M_aspsa_c_ecoli3 -> 2 M_h2o_c_ecoli3 + 1 M_h_c_ecoli3 + 1 M_23dhdp_c_ecoli3 
+EDA; 0.53659; 16.2402; 1 M_2ddg6p_c_ecoli3 -> 1 M_pyr_c_ecoli3 + 1 M_g3p_c_ecoli3 
+EDD; 0.53659; -42.8448; 1 M_6pgc_c_ecoli3 -> 1 M_h2o_c_ecoli3 + 1 M_2ddg6p_c_ecoli3 
+FBA; -0.26829; 22.3932; 1 M_g3p_c_ecoli3 + 1 M_dhap_c_ecoli3 (<)-> 1 M_fdp_c_ecoli3 
+FBP; 0.26829; -8.4178; 1 M_h2o_c_ecoli3 + 1 M_fdp_c_ecoli3 -> 1 M_pi_c_ecoli3 + 1 M_f6p_c_ecoli3 
+FORtppi; 0.5122; 0; 1 M_for_c_ecoli3 -> 1 M_for_p_ecoli3 
+G3PD2; -0.04878; 25.6158; 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_dhap_c_ecoli3 (<)-> 1 M_nadp_c_ecoli3 + 1 M_glyc3p_c_ecoli3 
+G3PD5; 0.04878; -109.0556; 1 M_glyc3p_c_ecoli3 + 1 M_q8_c_ecoli3 -> 1 M_q8h2_c_ecoli3 + 1 M_dhap_c_ecoli3 
+G6PDH2r; 0.53659; -3.9232; 1 M_nadp_c_ecoli3 + 1 M_g6p_c_ecoli3 (<)-> 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_6pgl_c_ecoli3 
+GLCptspp; 0.2439; -45.4844; 1 M_pep_c_ecoli3 + 1 M_glc__D_p_ecoli3 -> 1 M_pyr_c_ecoli3 + 1 M_g6p_c_ecoli3 
+GLCt2pp; 0.02439; 0; 1 M_h_p_ecoli3 + 1 M_glc__D_p_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_glc__D_c_ecoli3 
+GLUDy; -0.2439; 36.351; 1 M_nh4_c_ecoli3 + 1 M_h_c_ecoli3 + 1 M_nadph_c_ecoli3 + 1 M_akg_c_ecoli3 (<)-> 1 M_glu__L_c_ecoli3 + 1 M_h2o_c_ecoli3 + 1 M_nadp_c_ecoli3 
+H2Otpp; -0.5122; NaN; 1 M_h2o_c_ecoli3 (<)-> 1 M_h2o_p_ecoli3 
+HEX1; 0.02439; -17.901; 1 M_atp_c_ecoli3 + 1 M_glc__D_c_ecoli3 -> 1 M_adp_c_ecoli3 + 1 M_h_c_ecoli3 + 1 M_g6p_c_ecoli3 
+NH4tpp; 0.2439; NaN; 1 M_nh4_p_ecoli3 (<)-> 1 M_nh4_c_ecoli3 
+O2tpp; 0.036585; NaN; 1 M_o2_p_ecoli3 (<)-> 1 M_o2_c_ecoli3 
+PFL; 0.5122; -19.81; 1 M_coa_c_ecoli3 + 1 M_pyr_c_ecoli3 -> 1 M_accoa_c_ecoli3 + 1 M_for_c_ecoli3 
+PGI; -0.26829; 7.0102; 1 M_f6p_c_ecoli3 (<)-> 1 M_g6p_c_ecoli3 
+PGL; 0.53659; -22.5233; 1 M_h2o_c_ecoli3 + 1 M_6pgl_c_ecoli3 -> 1 M_h_c_ecoli3 + 1 M_6pgc_c_ecoli3 
+POX; 0.02439; -200.9421; 1 M_h2o_c_ecoli3 + 1 M_pyr_c_ecoli3 + 1 M_q8_c_ecoli3 -> 1 M_co2_c_ecoli3 + 1 M_ac_c_ecoli3 + 1 M_q8h2_c_ecoli3 
+PPCK; 0.2439; 10.333; 1 M_atp_c_ecoli3 + 1 M_oaa_c_ecoli3 -> 1 M_adp_c_ecoli3 + 1 M_co2_c_ecoli3 + 1 M_pep_c_ecoli3 
+PTAr; 0.5122; 8.879; 1 M_pi_c_ecoli3 + 1 M_accoa_c_ecoli3 (<)-> 1 M_coa_c_ecoli3 + 1 M_actp_c_ecoli3 
+TPI; -0.26829; 5.5753; 1 M_g3p_c_ecoli3 (<)-> 1 M_dhap_c_ecoli3 
+
+~Single-species solution detailed solution~
+Detailed solution for species ecoli1 (Reaction ID; Flux; dG0; Reaction string):
+ACONTa; 0.24011; 8.4676; 1 M_cit_c_ecoli1 (<)-> 1 M_acon__C_c_ecoli1 + 1 M_h2o_c_ecoli1 
+ACONTb; 0.24011; -1.6243; 1 M_acon__C_c_ecoli1 + 1 M_h2o_c_ecoli1 (<)-> 1 M_icit_c_ecoli1 
+AKGDH; 0.24011; -28.0007; 1 M_akg_c_ecoli1 + 1 M_coa_c_ecoli1 + 1 M_nad_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadh_c_ecoli1 + 1 M_succoa_c_ecoli1 
+ASAD; -0.24011; -20.3451; 1 M_4pasp_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 (<)-> 1 M_aspsa_c_ecoli1 + 1 M_nadp_c_ecoli1 + 1 M_pi_c_ecoli1 
+ASPK; 0.24011; 22.2743; 1 M_asp__L_c_ecoli1 + 1 M_atp_c_ecoli1 (<)-> 1 M_4pasp_c_ecoli1 + 1 M_adp_c_ecoli1 
+ASPTA; -0.24011; 2.8446; 1 M_glu__L_c_ecoli1 + 1 M_oaa_c_ecoli1 (<)-> 1 M_akg_c_ecoli1 + 1 M_asp__L_c_ecoli1 
+ATPS4rpp; 0.52728; -33.8921; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1 
+CO2tpp; -0.24011; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1 
+CS; 0.24011; -35.9172; 1 M_accoa_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_oaa_c_ecoli1 -> 1 M_cit_c_ecoli1 + 1 M_coa_c_ecoli1 + 1 M_h_c_ecoli1 
+CYTBO3_4pp; 0.96043; -55.284; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1 
+D__LACt2pp; -1.0396; 0; 1 M_h_c_ecoli1 + 1 M_lac__D_c_ecoli1 (<)-> 1 M_h_p_ecoli1 + 1 M_lac__D_p_ecoli1 
+DHDPRy; 0.24011; -24.017; 1 M_23dhdp_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 -> 1 M_nadp_c_ecoli1 + 1 M_thdp_c_ecoli1 
+DHDPS; 0.24011; -125.4543; 1 M_aspsa_c_ecoli1 + 1 M_pyr_c_ecoli1 -> 1 M_23dhdp_c_ecoli1 + 1 M_h_c_ecoli1 + 2 M_h2o_c_ecoli1 
+EDA; 1.4035; 16.2402; 1 M_2ddg6p_c_ecoli1 -> 1 M_g3p_c_ecoli1 + 1 M_pyr_c_ecoli1 
+EDD; 1.4035; -42.8448; 1 M_6pgc_c_ecoli1 -> 1 M_2ddg6p_c_ecoli1 + 1 M_h2o_c_ecoli1 
+ENO; 0.59652; -3.8109; 1 M_2pg_c_ecoli1 (<)-> 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1 
+FBA; -0.40348; 22.3932; 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_fdp_c_ecoli1 
+FBP; 0.40348; -8.4178; 1 M_fdp_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_f6p_c_ecoli1 + 1 M_pi_c_ecoli1 
+G3PD2; -0.92326; 25.6158; 1 M_dhap_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 (<)-> 1 M_glyc3p_c_ecoli1 + 1 M_nadp_c_ecoli1 
+G3PD5; 0.92326; -109.0556; 1 M_glyc3p_c_ecoli1 + 1 M_q8_c_ecoli1 -> 1 M_dhap_c_ecoli1 + 1 M_q8h2_c_ecoli1 
+G6PDH2r; 1.4035; -3.9232; 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 
+GAPD; 0.59652; 4.6027; 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 
+GLCptspp; 0.11631; -45.4844; 1 M_pep_c_ecoli1 + 1 M_glc__D_p_ecoli1 -> 1 M_g6p_c_ecoli1 + 1 M_pyr_c_ecoli1 
+GLCt2pp; 0.88369; 0; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1 
+GLUDy; -0.24011; 36.351; 1 M_akg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_nh4_c_ecoli1 (<)-> 1 M_glu__L_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_nadp_c_ecoli1 
+H2Otpp; -1.4406; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1 
+HEX1; 0.88369; -17.901; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1 
+ICDHyr; 0.24011; 5.476; 1 M_icit_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_akg_c_ecoli1 + 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 
+LDH_D; -1.0396; 23.6803; 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 + 1 M_pyr_c_ecoli1 (<)-> 1 M_lac__D_c_ecoli1 + 1 M_nad_c_ecoli1 
+NADH16pp; 0.037168; -81.2018; 4 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 + 1 M_q8_c_ecoli1 (<)-> 1 M_nad_c_ecoli1 + 1 M_q8h2_c_ecoli1 + 3 M_h_p_ecoli1 
+NH4tpp; 0.24011; NaN; 1 M_nh4_p_ecoli1 (<)-> 1 M_nh4_c_ecoli1 
+O2tpp; 0.48022; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1 
+PDH; 0.24011; -34.0243; 1 M_coa_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pyr_c_ecoli1 -> 1 M_accoa_c_ecoli1 + 1 M_co2_c_ecoli1 + 1 M_nadh_c_ecoli1 
+PGI; -0.40348; 7.0102; 1 M_f6p_c_ecoli1 (<)-> 1 M_g6p_c_ecoli1 
+PGK; -0.59652; 19.3156; 1 M_13dpg_c_ecoli1 + 1 M_adp_c_ecoli1 (<)-> 1 M_3pg_c_ecoli1 + 1 M_atp_c_ecoli1 
+PGL; 1.4035; -22.5233; 1 M_6pgl_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_6pgc_c_ecoli1 + 1 M_h_c_ecoli1 
+PGM; -0.59652; -4.5204; 1 M_3pg_c_ecoli1 (<)-> 1 M_2pg_c_ecoli1 
+PPC; 0.48022; -37.6982; 1 M_co2_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1 -> 1 M_h_c_ecoli1 + 1 M_oaa_c_ecoli1 + 1 M_pi_c_ecoli1 
+THDPS; 0.24011; 25.9972; 1 M_h2o_c_ecoli1 + 1 M_succoa_c_ecoli1 + 1 M_thdp_c_ecoli1 -> 1 M_coa_c_ecoli1 + 1 M_sl2a6o_c_ecoli1 
+TPI; -0.40348; 5.5753; 1 M_g3p_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 
+EX_C_sl2a6o_exchg; 0.24011; NaN; 1 M_sl2a6o_exchg -> 
+EX_C_h_exchg; 2; NaN; 1 M_h_exchg (<)-> 
+EX_C_nh4_exchg; -0.24011; NaN; (<)-> 1 M_nh4_exchg 
+EX_C_co2_exchg; 0.24011; NaN; 1 M_co2_exchg (<)-> 
+EX_C_lac__D_exchg; 1.0396; NaN; 1 M_lac__D_exchg -> 
+EX_C_glc__D_exchg; -1; NaN; (<)-> 1 M_glc__D_exchg 
+EX_C_h2o_exchg; 1.4406; NaN; 1 M_h2o_exchg (<)-> 
+EX_C_o2_exchg; -0.48022; NaN; (<)-> 1 M_o2_exchg 
+EXCHG_h_p_to_h; 2; NaN; 1 M_h_p_ecoli1 (<)-> 1 M_h_exchg 
+EXCHG_co2_p_to_co2; 0.24011; 0; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg 
+EXCHG_glc__D_p_to_glc__D; -1; 0; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1 
+EXCHG_nh4_p_to_nh4; -0.24011; 0; 1 M_nh4_exchg (<)-> 1 M_nh4_p_ecoli1 
+EXCHG_h2o_p_to_h2o; 1.4406; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg 
+EXCHG_lac__D_p_to_lac__D; 1.0396; 0; 1 M_lac__D_p_ecoli1 (<)-> 1 M_lac__D_exchg 
+EXCHG_o2_p_to_o2; -0.48022; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1 
+EXCHG_sl2a6o_c_to_sl2a6o; 0.24011; 0; 1 M_sl2a6o_c_ecoli1 -> 1 M_sl2a6o_exchg 

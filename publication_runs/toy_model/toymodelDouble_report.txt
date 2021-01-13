@@ -1,0 +1,187 @@
+ASTHERISC community MDF advantage search
+With maximal MILP time 1000 s
+
+=SETTINGS=
+Substrate reaction: R_EX_C_S_exchg
+Maximal substrate uptake for single species (in units of the model): 1
+Minimal yield factor (i.e., minimal necessary percentage of maximal possible yield): 0.1
+Minimal absolute yield: 1e-06
+Minimal absolute MDF community advantage: 0.1
+Temperature [K] (for comparison: 25°C=77°F=298.15 K): 298.15
+Minimal absolute mdf with community: -Inf
+Minimal absolute flux (in units of the model) for a reaction in order to be considered 'active' ('v epsilon'): 1e-06
+Model path: ./0Astherisc/publication_runs/toy_model/toymodelDouble.mat
+Report path: ./0Astherisc/publication_runs/toy_model/toymodelDouble_report.txt
+Calculate and show community solution bottlenecks? false
+Calculate and show single-species bottlenecks with active reactions of the community? true
+Calculate indirect bottlenecks for selected bottleneck types? false
+Number of maximal allowed exchanges: Inf
+Reactions with set minimal flux of 0:
+ None
+'Ignored' metabolites (i.e., metabolites which are deemed to play no role thermodynamically as their concentration range is fixed to 1, so that instead of the default output '[unused]' in this case, '[1;1]' is printed instead:
+ None
+Fixed ratio ranges (ID of metabolite A, ID of metabolite B, minimal concentration ratio of A:B, maximal concentration ratio of A:B:
+ None
+Target exchange reaction selection:
+ R_EX_C_P_exchg
+Set dG0 values (reaction ID, dG0):
+ R_S_to_A_strain1, 4
+ R_A_to_B_strain1, -5
+ R_B_to_C_strain1, -5
+ R_C_to_P_strain1, 4
+ R_S_to_A_strain2, 4
+ R_A_to_B_strain2, -5
+ R_B_to_C_strain2, -5
+ R_C_to_P_strain2, 4
+ R_EX_C_S_exchg, NaN
+ R_EX_C_A_exchg, NaN
+ R_EX_C_C_exchg, NaN
+ R_EX_C_B_exchg, NaN
+ R_EX_C_P_exchg, NaN
+ R_EXCHG_strain1_A_c_to_A, 0
+ R_EXCHG_strain1_C_c_to_C, 0
+ R_EXCHG_strain1_P_c_to_P, 0
+ R_EXCHG_strain1_S_c_to_S, 0
+ R_EXCHG_strain1_B_c_to_B, 0
+ R_EXCHG_strain2_A_c_to_A, 0
+ R_EXCHG_strain2_C_c_to_C, 0
+ R_EXCHG_strain2_P_c_to_P, 0
+ R_EXCHG_strain2_S_c_to_S, 0
+ R_EXCHG_strain2_B_c_to_B, 0
+Set metabolite concentrations (metabolite ID, minimal concentration, maximal concentration):
+ M_S_c_strain1, 1, 10
+ M_A_c_strain1, 1, 10
+ M_X_c_strain1, 1, 10
+ M_B_c_strain1, 1, 10
+ M_C_c_strain1, 1, 10
+ M_P_c_strain1, 1, 10
+ M_A_c_strain2, 1, 10
+ M_X_c_strain2, 1, 10
+ M_S_c_strain2, 1, 10
+ M_B_c_strain2, 1, 10
+ M_C_c_strain2, 1, 10
+ M_P_c_strain2, 1, 10
+ M_S_exchg, 1, 10
+ M_A_exchg, 1, 10
+ M_C_exchg, 1, 10
+ M_B_exchg, 1, 10
+ M_P_exchg, 5, 10
+ M_community_biomass, 1, 10
+ M_community_biomass_strain1, 1, 10
+ M_community_biomass_strain2, 1, 10
+
+=RUN RESULTS=
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_P_exchg==
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1
+Optimal yield without community without any MDF constraint: 1
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: -0.19137
+Reached yield without community at optimal MDF solution: 1
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 0.46467
+Approximated optimal yield with community at maximal community MDF (if no warning given): 1
+Number of active metabolites: 11
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+strain1: 2 | 2
+strain2: 2 | 2
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_strain1_B_c_to_B | SCALED FLUX: 1 | M_B_c_strain1 [8.5268;8.5308] | M_B_exchg [7.0694;7.0727]
+R_EXCHG_strain2_B_c_to_B | SCALED FLUX: -1 | M_B_c_strain2 [5.8611;5.8639] | M_B_exchg [7.0694;7.0727]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_strain2_P_c_to_P | SCALED FLUX: 1 | M_P_c_strain2 [6.0308;6.0336] | M_P_exchg [5;5.0024]
+
+Species-specific uptake:
+R_EXCHG_strain1_S_c_to_S | SCALED FLUX -1
+R_EXCHG_strain2_S_c_to_S | SCALED FLUX 0
+
+Metabolites with non-overlapping concentration ranges between species:
+M_X_c_strain1 [1;1.3689] & M_X_c_strain2 [3.6525;10]
+M_B_c_strain1 [8.5268;8.5308] & M_B_c_strain2 [5.8611;5.8639]
+M_S_c_strain1 [8.2869;8.2908] & M_S_c_strain2 [unused]
+M_C_c_strain1 [unused] & M_C_c_strain2 [3.6525;10]
+M_P_c_strain1 [unused] & M_P_c_strain2 [6.0308;6.0336]
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution (with strain1 only):
+MDF in single species with reactions occuring in community solution: -0.19137 (OptMDF in community was 0.46467, difference is 0.65605)
+>Bottleneck reactions (driving force=OptMDF):
+R_S_to_A_strain1 | 1 M_S_c_strain1 -> 1 M_A_c_strain1 + 1 M_X_c_strain1 
+R_C_to_P_strain1 | 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1 
+R_EXCHG_strain1_P_c_to_P | 1 M_P_c_strain1 (<)-> 1 M_P_exchg 
+>Connecting metabolites:
+R_S_to_A_strain1-> R_C_to_P_strain1; M_X_c_strain1 
+R_C_to_P_strain1-> R_EXCHG_strain1_P_c_to_P; M_P_c_strain1 
+>Connecting metabolite ranges:
+~M_X_c_strain1~
+In single species:
+[2.1514;2.1514] (range 4.9829e-05)
+In community:
+M_X_c_strain1: [1;1.3689] (range 0.36894)
+M_X_c_strain2: [3.6525;10] (range 6.3475)
+~M_P_c_strain1~
+In single species:
+[4.6285;4.6286] (range 0.0001072)
+In community:
+M_P_c_strain1: [unused] (range 0)
+M_P_c_strain2: [6.0308;6.0336] (range 0.0028514)
+
+
+Detailed reaction-wise solution reports:
+~Community solution detailed solutions~
+Detailed solution for species strain1 (Reaction ID; Flux; dG0; Reaction string):
+S_to_A; 1; 4; 1 M_S_c_strain1 -> 1 M_A_c_strain1 + 1 M_X_c_strain1 
+A_to_B; 1; -5; 1 M_A_c_strain1 + 1 M_X_c_strain1 -> 1 M_B_c_strain1 
+EX_C_S_exchg; -1; NaN; (<)-> 1 M_S_exchg 
+EX_C_P_exchg; 1; NaN; 1 M_P_exchg -> 
+EXCHG_S_c_to_S; -1; 0; 1 M_S_exchg (<)-> 1 M_S_c_strain1 
+EXCHG_B_c_to_B; 1; 0; 1 M_B_c_strain1 -> 1 M_B_exchg 
+EXCHG_strain2_P_c_to_P; 1; 0; 1 M_P_c_strain2 (<)-> 1 M_P_exchg 
+EXCHG_strain2_B_c_to_B; -1; 0; 1 M_B_exchg -> 1 M_B_c_strain2 
+Detailed solution for species strain2 (Reaction ID; Flux; dG0; Reaction string):
+B_to_C; 1; -5; 1 M_B_c_strain2 -> 1 M_X_c_strain2 + 1 M_C_c_strain2 
+C_to_P; 1; 4; 1 M_X_c_strain2 + 1 M_C_c_strain2 -> 1 M_P_c_strain2 
+
+~Single-species solution detailed solution~
+Detailed solution for species strain1 (Reaction ID; Flux; dG0; Reaction string):
+S_to_A; 1; 4; 1 M_S_c_strain1 -> 1 M_A_c_strain1 + 1 M_X_c_strain1 
+A_to_B; 1; -5; 1 M_A_c_strain1 + 1 M_X_c_strain1 -> 1 M_B_c_strain1 
+B_to_C; 1; -5; 1 M_B_c_strain1 -> 1 M_X_c_strain1 + 1 M_C_c_strain1 
+C_to_P; 1; 4; 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1 
+EX_C_S_exchg; -1; NaN; (<)-> 1 M_S_exchg 
+EX_C_P_exchg; 1; NaN; 1 M_P_exchg -> 
+EXCHG_P_c_to_P; 1; 0; 1 M_P_c_strain1 (<)-> 1 M_P_exchg 
+EXCHG_S_c_to_S; -1; 0; 1 M_S_exchg (<)-> 1 M_S_c_strain1 
+
+==FINAL STATISTICS==
+Total number analyzed target metabolites:
+1
+Number (fraction) producible target metabolites with dG0=NaN reactions:
+1 (100 pct.)
+Number (fraction) producible target metabolites without dG0=NaN reactions:
+1 (100 pct.)
+Maximal extra exchanges:
+2
+Minimal extra exchanges:
+2
+Mean extra exchanges:
+2
+Mean maximal possible yield change due to NaN reactions in MDF community advantage solutions:
+0
+Mean maximal possible yield change due to NaN reactions in all solutions: 
+0
+Number metabolites with found community MDF benefit:
+1
+Number metabolites without found community MDF benefit:
+0
+Mean MDF advantage (found MDF with community minus MDF without community in all cases where the community showed an advantage and where OptMDFPathway worked with the community):
+0.65605
+List of metabolites with found community MDF benefit:
+R_EX_C_P_exchg
+List of used exchange reactions, ordered by number of community advantage solutions where they occur:
+R_EXCHG_strain1_B_c_to_B: 1
+R_EXCHG_strain2_B_c_to_B: 1
+
+
+Full run time (min): 0.39502
+Full run time (h): 0.0065837
+Full run time (days): 0.00027432

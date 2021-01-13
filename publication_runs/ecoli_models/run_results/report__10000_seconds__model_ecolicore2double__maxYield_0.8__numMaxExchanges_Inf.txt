@@ -1,0 +1,1570 @@
+ASTHERISC community MDF advantage search
+
+
+=SETTINGS=
+Substrate reaction: R_EX_C_glc__D_exchg
+Maximal substrate uptake for single species (in units of the model): 1
+Minimal yield factor (i.e., minimal necessary percentage of maximal possible yield): 0.8
+Minimal absolute yield: 1e-06
+Minimal absolute MDF community advantage: 0.2
+Temperature [K] (for comparison: 25°C=77°F=298.15 K): 298.15
+Minimal absolute mdf with community: 0
+Minimal absolute flux (in units of the model) for a reaction in order to be considered 'active' ('v epsilon'): 1e-06
+Model path: ./0Astherisc/publication_runs/ecoli_models/models_and_dG0_data/ecolicore2double.mat
+Report path: ./0Astherisc/publication_runs/ecoli_models/run_results/report__10000_seconds__model_ecolicore2double__maxYield_0.8__numMaxExchanges_Inf.txt
+Calculate and show community solution bottlenecks? false
+Calculate and show single-species bottlenecks with active reactions of the community? true
+Calculate indirect bottlenecks for selected bottleneck types? false
+Number of maximal allowed exchanges: Inf
+Reactions with set minimal flux of 0:
+ R_ATPM_ecoli1
+ R_ATPM_ecoli2
+'Ignored' metabolites (i.e., metabolites which are deemed to play no role thermodynamically as their concentration range is fixed to 1, so that instead of the default output '[unused]' in this case, '[1;1]' is printed instead:
+ M_h2o_c_ecoli1
+ M_h2o_c_ecoli2
+ M_h2o_p_ecoli1
+ M_h2o_p_ecoli2
+ M_h2o_e_ecoli1
+ M_h2o_e_ecoli2
+ M_h2o_exchg
+ M_h_c_ecoli1
+ M_h_c_ecoli2
+ M_h_p_ecoli1
+ M_h_p_ecoli2
+ M_h_e_ecoli1
+ M_h_e_ecoli2
+ M_h_exchg
+Fixed ratio ranges (ID of metabolite A, ID of metabolite B, minimal concentration ratio of A:B, maximal concentration ratio of A:B:
+ M_atp_c_ecoli1, M_adp_c_ecoli1, 3, 10
+ M_adp_c_ecoli1, M_amp_c_ecoli1, 0.5, 2
+ M_nad_c_ecoli1, M_nadh_c_ecoli1, 3, 10
+ M_nadph_c_ecoli1, M_nadp_c_ecoli1, 3, 10
+ M_atp_c_ecoli2, M_adp_c_ecoli2, 3, 10
+ M_adp_c_ecoli2, M_amp_c_ecoli2, 0.5, 2
+ M_nad_c_ecoli2, M_nadh_c_ecoli2, 3, 10
+ M_nadph_c_ecoli2, M_nadp_c_ecoli2, 3, 10
+Target exchange reaction selection:
+ R_EX_C_hmbil_exchg
+ R_EX_C_iscssh_exchg
+ R_EX_C_dhgly_exchg
+ R_EX_C_fmn_exchg
+ R_EX_C_o2_exchg
+ R_EX_C_prlp_exchg
+ R_EX_C_prbamp_exchg
+ R_EX_C_ribflv_exchg
+ R_EX_C_5drib_exchg
+ R_EX_C_pydx5p_exchg
+ R_EX_C_orot5p_exchg
+ R_EX_C_3c4mop_exchg
+ R_EX_C_udp_exchg
+ R_EX_C_actp_exchg
+ R_EX_C_dtbt_exchg
+ R_EX_C_bmoco1gdp_exchg
+ R_EX_C_glu5p_exchg
+ R_EX_C_ckdo_exchg
+ R_EX_C_pro__L_exchg
+ R_EX_C_coa_exchg
+ R_EX_C_udcpp_exchg
+ R_EX_C_ara5p_exchg
+ R_EX_C_paps_exchg
+ R_EX_C_cyst__L_exchg
+ R_EX_C_hgmeACP_exchg
+ R_EX_C_gdp_exchg
+ R_EX_C_1hdecg3p_exchg
+ R_EX_C_ctp_exchg
+ R_EX_C_3php_exchg
+ R_EX_C_uama_exchg
+ R_EX_C_ipdp_exchg
+ R_EX_C_xmp_exchg
+ R_EX_C_k_exchg
+ R_EX_C_uppg3_exchg
+ R_EX_C_flxso_exchg
+ R_EX_C_23dhmp_exchg
+ R_EX_C_ACP_exchg
+ R_EX_C_lipidAds_exchg
+ R_EX_C_tdcoa_exchg
+ R_EX_C_leu__L_exchg
+ R_EX_C_amp_exchg
+ R_EX_C_hdd2coa_exchg
+ R_EX_C_mptamp_exchg
+ R_EX_C_mlthf_exchg
+ R_EX_C_4c2me_exchg
+ R_EX_C_udcpdp_exchg
+ R_EX_C_accoa_exchg
+ R_EX_C_2ohph_exchg
+ R_EX_C_5aprbu_exchg
+ R_EX_C_glu1sa_exchg
+ R_EX_C_td2coa_exchg
+ R_EX_C_gly_exchg
+ R_EX_C_8aonn_exchg
+ R_EX_C_sheme_exchg
+ R_EX_C_dctp_exchg
+ R_EX_C_glyc__R_exchg
+ R_EX_C_3hmrsACP_exchg
+ R_EX_C_mthgxl_exchg
+ R_EX_C_2mecdp_exchg
+ R_EX_C_2dmmq8_exchg
+ R_EX_C_cpppg3_exchg
+ R_EX_C_glyc_exchg
+ R_EX_C_fadh2_exchg
+ R_EX_C_3hddcoa_exchg
+ R_EX_C_pyr_exchg
+ R_EX_C_iscu__2fe2s_exchg
+ R_EX_C_aps_exchg
+ R_EX_C_hisp_exchg
+ R_EX_C_26dap__M_exchg
+ R_EX_C_r5p_exchg
+ R_EX_C_4ppcys_exchg
+ R_EX_C_acald_exchg
+ R_EX_C_nadh_exchg
+ R_EX_C_anth_exchg
+ R_EX_C_pmeACP_exchg
+ R_EX_C_adp_exchg
+ R_EX_C_pmtcoa_exchg
+ R_EX_C_ddcacoa_exchg
+ R_EX_C_ura_exchg
+ R_EX_C_val__L_exchg
+ R_EX_C_scl_exchg
+ R_EX_C_glu__D_exchg
+ R_EX_C_3mob_exchg
+ R_EX_C_aspsa_exchg
+ R_EX_C_dd2coa_exchg
+ R_EX_C_nad_exchg
+ R_EX_C_murein5p5p_exchg
+ R_EX_C_co2_exchg
+ R_EX_C_dhptd_exchg
+ R_EX_C_cbp_exchg
+ R_EX_C_rhcys_exchg
+ R_EX_C_5aop_exchg
+ R_EX_C_orn_exchg
+ R_EX_C_2fe2s_exchg
+ R_EX_C_ps161_exchg
+ R_EX_C_asn__L_exchg
+ R_EX_C_zn2_exchg
+ R_EX_C_5caiz_exchg
+ R_EX_C_succ_exchg
+ R_EX_C_lys__L_exchg
+ R_EX_C_cdp_exchg
+ R_EX_C_fe2_exchg
+ R_EX_C_h2o_exchg
+ R_EX_C_dump_exchg
+ R_EX_C_gtp_exchg
+ R_EX_C_amet_exchg
+ R_EX_C_dmlz_exchg
+ R_EX_C_gmp_exchg
+ R_EX_C_moadcoo_exchg
+ R_EX_C_acon__C_exchg
+ R_EX_C_egmeACP_exchg
+ R_EX_C_pap_exchg
+ R_EX_C_epmeACP_exchg
+ R_EX_C_malcoa_exchg
+ R_EX_C_hdcoa_exchg
+ R_EX_C_3htdcoa_exchg
+ R_EX_C_iscu__2fe2s2_exchg
+ R_EX_C_grdp_exchg
+ R_EX_C_cdpdhdec9eg_exchg
+ R_EX_C_cpmp_exchg
+ R_EX_C_sl26da_exchg
+ R_EX_C_6hmhpt_exchg
+ R_EX_C_1hdec9eg3p_exchg
+ R_EX_C_trnaglu_exchg
+ R_EX_C_dgtp_exchg
+ R_EX_C_na1_exchg
+ R_EX_C_23dhdp_exchg
+ R_EX_C_meoh_exchg
+ R_EX_C_4abz_exchg
+ R_EX_C_dad__5_exchg
+ R_EX_C_prbatp_exchg
+ R_EX_C_aacoa_exchg
+ R_EX_C_dhpt_exchg
+ R_EX_C_glyclt_exchg
+ R_EX_C_air_exchg
+ R_EX_C_gar_exchg
+ R_EX_C_phom_exchg
+ R_EX_C_pser__L_exchg
+ R_EX_C_ser__L_exchg
+ R_EX_C_met__L_exchg
+ R_EX_C_icit_exchg
+ R_EX_C_iasp_exchg
+ R_EX_C_dad__2_exchg
+ R_EX_C_his__L_exchg
+ R_EX_C_3hhdcoa_exchg
+ R_EX_C_akg_exchg
+ R_EX_C_lipidX_exchg
+ R_EX_C_octdp_exchg
+ R_EX_C_glc__D_exchg
+ R_EX_C_3omrsACP_exchg
+ R_EX_C_flxr_exchg
+ R_EX_C_dxyl5p_exchg
+ R_EX_C_dcamp_exchg
+ R_EX_C_iscs_exchg
+ R_EX_C_thf_exchg
+ R_EX_C_ade_exchg
+ R_EX_C_alaala_exchg
+ R_EX_C_acglu_exchg
+ R_EX_C_argsuc_exchg
+ R_EX_C_gam6p_exchg
+ R_EX_C_moadcosh_exchg
+ R_EX_C_iscu__4fe4s_exchg
+ R_EX_C_cl_exchg
+ R_EX_C_pa160_exchg
+ R_EX_C_cys__L_exchg
+ R_EX_C_ogmeACP_exchg
+ R_EX_C_lac__D_exchg
+ R_EX_C_10fthf_exchg
+ R_EX_C_s7p_exchg
+ R_EX_C_sl2a6o_exchg
+ R_EX_C_ppp9_exchg
+ R_EX_C_6pgl_exchg
+ R_EX_C_dtmp_exchg
+ R_EX_C_3ohdcoa_exchg
+ R_EX_C_xu5p__D_exchg
+ R_EX_C_dhf_exchg
+ R_EX_C_db4p_exchg
+ R_EX_C_orot_exchg
+ R_EX_C_uri_exchg
+ R_EX_C_pimACP_exchg
+ R_EX_C_kdolipid4_exchg
+ R_EX_C_btcoa_exchg
+ R_EX_C_mg2_exchg
+ R_EX_C_dpcoa_exchg
+ R_EX_C_cbasp_exchg
+ R_EX_C_pan4p_exchg
+ R_EX_C_pnto__R_exchg
+ R_EX_C_datp_exchg
+ R_EX_C_duri_exchg
+ R_EX_C_3hocoa_exchg
+ R_EX_C_u23ga_exchg
+ R_EX_C_grxox_exchg
+ R_EX_C_fdp_exchg
+ R_EX_C_forBIO_exchg
+ R_EX_C_2h3oppan_exchg
+ R_EX_C_pant__R_exchg
+ R_EX_C_thr__L_exchg
+ R_EX_C_lipidA_exchg
+ R_EX_C_ppbng_exchg
+ R_EX_C_2obut_exchg
+ R_EX_C_mpt_exchg
+ R_EX_C_pe161_exchg
+ R_EX_C_aicar_exchg
+ R_EX_C_3otdcoa_exchg
+ R_EX_C_3c2hmp_exchg
+ R_EX_C_atp_exchg
+ R_EX_C_malcoame_exchg
+ R_EX_C_2dmmql8_exchg
+ R_EX_C_23dhmb_exchg
+ R_EX_C_4ppan_exchg
+ R_EX_C_ac_exchg
+ R_EX_C_2ippm_exchg
+ R_EX_C_ugmda_exchg
+ R_EX_C_frdp_exchg
+ R_EX_C_hcys__L_exchg
+ R_EX_C_2ddg6p_exchg
+ R_EX_C_amob_exchg
+ R_EX_C_arg__L_exchg
+ R_EX_C_ahdt_exchg
+ R_EX_C_dadp_exchg
+ R_EX_C_gmeACP_exchg
+ R_EX_C_3odcoa_exchg
+ R_EX_C_dhor__S_exchg
+ R_EX_C_glu5sa_exchg
+ R_EX_C_mdhdhf_exchg
+ R_EX_C_btn_exchg
+ R_EX_C_ump_exchg
+ R_EX_C_gthrd_exchg
+ R_EX_C_utp_exchg
+ R_EX_C_pa161_exchg
+ R_EX_C_acser_exchg
+ R_EX_C_so4_exchg
+ R_EX_C_grxrd_exchg
+ R_EX_C_ca2_exchg
+ R_EX_C_3c3hmp_exchg
+ R_EX_C_gthox_exchg
+ R_EX_C_u3aga_exchg
+ R_EX_C_fe3_exchg
+ R_EX_C_q8_exchg
+ R_EX_C_2dr1p_exchg
+ R_EX_C_dscl_exchg
+ R_EX_C_5aizc_exchg
+ R_EX_C_mqn8_exchg
+ R_EX_C_ile__L_exchg
+ R_EX_C_ddca_exchg
+ R_EX_C_oc2coa_exchg
+ R_EX_C_fad_exchg
+ R_EX_C_palmACP_exchg
+ R_EX_C_damp_exchg
+ R_EX_C_ahcys_exchg
+ R_EX_C_dann_exchg
+ R_EX_C_dmpp_exchg
+ R_EX_C_3ophb_exchg
+ R_EX_C_25drapp_exchg
+ R_EX_C_occoa_exchg
+ R_EX_C_citr__L_exchg
+ R_EX_C_mobd_exchg
+ R_EX_C_hdceap_exchg
+ R_EX_C_thmpp_exchg
+ R_EX_C_ps160_exchg
+ R_EX_C_dc2coa_exchg
+ R_EX_C_etoh_exchg
+ R_EX_C_fpram_exchg
+ R_EX_C_glyc3p_exchg
+ R_EX_C_5apru_exchg
+ R_EX_C_glu__L_exchg
+ R_EX_C_prpp_exchg
+ R_EX_C_uacgam_exchg
+ R_EX_C_dcacoa_exchg
+ R_EX_C_moadamp_exchg
+ R_EX_C_2fe1s_exchg
+ R_EX_C_mththf_exchg
+ R_EX_C_hco3_exchg
+ R_EX_C_adn_exchg
+ R_EX_C_alac__S_exchg
+ R_EX_C_2oph_exchg
+ R_EX_C_uaagmda_exchg
+ R_EX_C_4mop_exchg
+ R_EX_C_uagmda_exchg
+ R_EX_C_hdca_exchg
+ R_EX_C_hdeACP_exchg
+ R_EX_C_fgam_exchg
+ R_EX_C_ru5p__D_exchg
+ R_EX_C_pppg9_exchg
+ R_EX_C_dttp_exchg
+ R_EX_C_2mahmp_exchg
+ R_EX_C_cit_exchg
+ R_EX_C_cmp_exchg
+ R_EX_C_prfp_exchg
+ R_EX_C_hom__L_exchg
+ R_EX_C_ala__D_exchg
+ R_EX_C_mql8_exchg
+ R_EX_C_hpmeACP_exchg
+ R_EX_C_4crsol_exchg
+ R_EX_C_hx2coa_exchg
+ R_EX_C_25aics_exchg
+ R_EX_C_dnad_exchg
+ R_EX_C_mn2_exchg
+ R_EX_C_3hdcoa_exchg
+ R_EX_C_cobalt2_exchg
+ R_EX_C_hxcoa_exchg
+ R_EX_C_acg5sa_exchg
+ R_EX_C_malACP_exchg
+ R_EX_C_4fe4s_exchg
+ R_EX_C_succoa_exchg
+ R_EX_C_cdpdhdecg_exchg
+ R_EX_C_glxBIO_exchg
+ R_EX_C_5mthf_exchg
+ R_EX_C_dtdp_exchg
+ R_EX_C_3oddcoa_exchg
+ R_EX_C_q8h2_exchg
+ R_EX_C_pheme_exchg
+ R_EX_C_pe160_exchg
+ R_EX_C_kdo2lipid4_exchg
+ R_EX_C_hdcap_exchg
+ R_EX_C_gam1p_exchg
+ R_EX_C_pi_exchg
+ R_EX_C_nadp_exchg
+ R_EX_C_uamag_exchg
+ R_EX_C_3ohcoa_exchg
+ R_EX_C_ni2_exchg
+ R_EX_C_bmocogdp_exchg
+ R_EX_C_4hbz_exchg
+ R_EX_C_uaccg_exchg
+ R_EX_C_bmoco_exchg
+ R_EX_C_acorn_exchg
+ R_EX_C_histd_exchg
+ R_EX_C_h2s_exchg
+ R_EX_C_2p4c2me_exchg
+ R_EX_C_gcald_exchg
+ R_EX_C_nh4_exchg
+ R_EX_C_h2mb4p_exchg
+ R_EX_C_uamr_exchg
+ R_EX_C_acg5p_exchg
+ R_EX_C_fprica_exchg
+ R_EX_C_4r5au_exchg
+ R_EX_C_ddcaACP_exchg
+ R_EX_C_dhnpt_exchg
+ R_EX_C_4mpetz_exchg
+ R_EX_C_gln__L_exchg
+ R_EX_C_glutrna_exchg
+ R_EX_C_ala__L_exchg
+ R_EX_C_1pyr5c_exchg
+ R_EX_C_moco_exchg
+ R_EX_C_eig3p_exchg
+ R_EX_C_u3hga_exchg
+ R_EX_C_b2coa_exchg
+ R_EX_C_6pgc_exchg
+ R_EX_C_nadph_exchg
+ R_EX_C_ugmd_exchg
+ R_EX_C_methf_exchg
+ R_EX_C_dhpmp_exchg
+ R_EX_C_ohpb_exchg
+ R_EX_C_acgam1p_exchg
+ R_EX_C_26dap__LL_exchg
+ R_EX_C_pdx5p_exchg
+ R_EX_C_4ampm_exchg
+ R_EX_C_3hhcoa_exchg
+ R_EX_C_cu2_exchg
+ R_EX_C_so3_exchg
+ R_EX_C_3mop_exchg
+ R_EX_C_2ahbut_exchg
+ R_EX_C_thmmp_exchg
+ R_EX_C_3hbcoa_exchg
+ R_EX_C_2dhp_exchg
+ R_EX_C_3oocoa_exchg
+ R_EX_C_murein5px4p_exchg
+ R_EX_C_opmeACP_exchg
+ R_EX_C_hdcea_exchg
+ R_EX_C_iscu_exchg
+ R_EX_C_imp_exchg
+ R_EX_C_quln_exchg
+ R_EX_C_imacp_exchg
+ R_EX_C_6hmhptpp_exchg
+
+=RUN RESULTS=
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hmbil_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscssh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhgly_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35862
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fmn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.005332
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_o2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prlp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35994
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prbamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35994
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ribflv_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0053335
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5drib_exchg and the model without allowed community
+Maxyield with NaN reactions: 6.6775e-05
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pydx5p_exchg
+Reached MDF without community is 5.3227
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_orot5p_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3c4mop_exchg
+Reached MDF without community is 1.8696
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_udp_exchg
+Reached MDF without community is -15.3652
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_actp_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dtbt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_bmoco1gdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12786
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu5p_exchg
+Reached MDF without community is 0.85997
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ckdo_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.34223
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pro__L_exchg
+Reached MDF without community is 1.7199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.21704
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_udcpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.074877
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ara5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_paps_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51919
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cyst__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57976
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hgmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5553
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_1hdecg3p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.22222
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ctp_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3php_exchg
+Reached MDF without community is -3.671
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uama_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ipdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.79316
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_xmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.59975
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_k_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_uppg3_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_flxso_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_23dhmp_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_lipidAds_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0625
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_tdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12996
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_leu__L_exchg
+Reached MDF without community is 2.4927
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_amp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55467
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdd2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12357
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mptamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.20779
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mlthf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25259
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4c2me_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_udcpdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.074877
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_accoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.20265
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2ohph_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.090824
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5aprbu_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55153
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glu1sa_exchg and the model without allowed community
+Maxyield with NaN reactions: 1
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_td2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13107
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gly_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.010834
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_8aonn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.31858
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_sheme_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.098361
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dctp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5777
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glyc__R_exchg and the model without allowed community
+Maxyield with NaN reactions: 3.3186e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hmrsACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_mthgxl_exchg
+Reached MDF without community is 13.4747
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2mecdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.9137
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2dmmq8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cpppg3_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glyc_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fadh2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.010268
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hddcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13953
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pyr_exchg
+Reached MDF without community is 12.6629
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu__2fe2s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_aps_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.53341
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hisp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.78296
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_26dap__M_exchg
+Reached MDF without community is 7.1764
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_r5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4ppcys_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.36271
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acald_exchg
+Reached MDF without community is 15.1028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nadh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25551
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_anth_exchg
+Reached MDF without community is 7.6204
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_adp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.54232
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pmtcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12259
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ddcacoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13828
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ura_exchg
+Reached MDF without community is -15.3652
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_val__L_exchg
+Reached MDF without community is 11.8184
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_scl_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.098361
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu__D_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3mob_exchg
+Reached MDF without community is 12.2745
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_aspsa_exchg
+Reached MDF without community is 5.3823
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dd2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13953
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nad_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.26099
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_murein5p5p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.070395
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_co2_exchg
+Reached MDF without community is 9.2754
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhptd_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.4583e-05
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cbp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_rhcys_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.458e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5aop_exchg and the model without allowed community
+Maxyield with NaN reactions: 1
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_orn_exchg
+Reached MDF without community is 5.9101
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2fe2s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.93805
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ps161_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_asn__L_exchg
+Reached MDF without community is 4.2002
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_zn2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5caiz_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.62914
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_succ_exchg
+Reached MDF without community is 7.9599
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_lys__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cdp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fe2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_h2o_exchg
+Reached MDF without community is 9.2754
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dump_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.61028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gtp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.54286
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_amet_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.29275
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dmlz_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.010566
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.56826
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moadcoo_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acon__C_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_egmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pap_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.023621
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_epmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_malcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.20075
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12357
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3htdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13107
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu__2fe2s2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_grdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.40482
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cdpdhdec9eg_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10169
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cpmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55849
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_sl26da_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_6hmhpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.68688
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_1hdec9eg3p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.22222
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_trnaglu_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dgtp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51919
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_na1_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_23dhdp_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_meoh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4abz_exchg
+Reached MDF without community is 7.6204
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dad__5_exchg and the model without allowed community
+Maxyield with NaN reactions: 6.6771e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prbatp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.3547
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_aacoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.19005
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.34687
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glyclt_exchg and the model without allowed community
+Maxyield with NaN reactions: 6.6371e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_air_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.65068
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gar_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.010717
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_phom_exchg
+Reached MDF without community is 7.1764
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pser__L_exchg
+Reached MDF without community is -3.671
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ser__L_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_met__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.62391
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_icit_exchg
+Reached MDF without community is 5.9019
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_iasp_exchg
+Reached MDF without community is 7.6204
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dad__2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.53282
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_his__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.87705
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hhdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12357
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_akg_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_lipidX_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.125
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_octdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10281
+
+INFO: Maximal yield of -1 is smaller than minimal yield for R_EX_C_glc__D_exchg and the model without allowed community
+Maxyield with NaN reactions: -1
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3omrsACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_flxr_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_dxyl5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dcamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.42945
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscs_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_thf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.26511
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ade_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.002709
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_alaala_exchg
+Reached MDF without community is 9.2754
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acglu_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_argsuc_exchg
+Reached MDF without community is -15.3652
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_gam6p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moadcosh_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu__4fe4s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cl_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pa160_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11765
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cys__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 1.0564
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ogmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_lac__D_exchg
+Reached MDF without community is 12.2745
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_10fthf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25808
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_s7p_exchg
+Reached MDF without community is 10.7358
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_sl2a6o_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ppp9_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10345
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_6pgl_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dtmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.52366
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3ohdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12457
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_xu5p__D_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.27116
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_db4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.010769
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_orot_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uri_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pimACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_kdolipid4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.057692
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_btcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.18544
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mg2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dpcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.21926
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cbasp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pan4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.36395
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pnto__R_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_datp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.50782
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_duri_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.63001
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hocoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16018
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_u23ga_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10714
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_grxox_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_fdp_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_forBIO_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.00024411
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2h3oppan_exchg and the model without allowed community
+Maxyield with NaN reactions: 3.3186e-05
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pant__R_exchg
+Reached MDF without community is -3.671
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_thr__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_lipidA_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0625
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ppbng_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2obut_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.33365
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pe161_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_aicar_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.61104
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3otdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.13219
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3c2hmp_exchg
+Reached MDF without community is 6.8202
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_atp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.5305
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_malcoame_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16163
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2dmmql8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_23dhmb_exchg
+Reached MDF without community is 12.2745
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4ppan_exchg
+Reached MDF without community is -3.671
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ac_exchg
+Reached MDF without community is 12.2745
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2ippm_exchg
+Reached MDF without community is 12.087
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ugmda_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_frdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.27176
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hcys__L_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.74564
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2ddg6p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_amob_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_arg__L_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ahdt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.56171
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dadp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51864
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3odcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15063
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_dhor__S_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu5sa_exchg
+Reached MDF without community is 1.7199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mdhdhf_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.4583e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_btn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.12497
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ump_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gthrd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_utp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pa161_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11765
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acser_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_so4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_grxrd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ca2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3c3hmp_exchg
+Reached MDF without community is 15.1028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gthox_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_u3aga_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15789
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fe3_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_q8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2dr1p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.98185
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dscl_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.098361
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5aizc_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.62914
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mqn8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ile__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ddca_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.33333
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_oc2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16018
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fad_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.010275
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_palmACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_damp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.52992
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ahcys_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.4579e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dann_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.1533
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dmpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.79316
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3ophb_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.090824
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_25drapp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_occoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.15852
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_citr__L_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mobd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdceap_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_thmpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0052717
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ps160_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dc2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14917
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_etoh_exchg
+Reached MDF without community is 11.2848
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fpram_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.67376
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glyc3p_exchg
+Reached MDF without community is 10.225
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5apru_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57838
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_glu__L_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_prpp_exchg
+Reached MDF without community is 7.6204
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uacgam_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dcacoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14774
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moadamp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2fe1s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mththf_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.4583e-05
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_hco3_exchg
+Reached MDF without community is 7.9334
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_adn_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0027026
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_alac__S_exchg
+Reached MDF without community is 15.1028
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2oph_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.090909
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_uaagmda_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.049015
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4mop_exchg
+Reached MDF without community is 2.4927
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_uagmda_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.052683
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdca_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_fgam_exchg
+Reached MDF without community is -3.671
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ru5p__D_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pppg9_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10345
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dttp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.50206
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_2mahmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0053925
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cit_exchg
+Reached MDF without community is 7.9599
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_cmp_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_prfp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.35994
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_hom__L_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ala__D_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0013818
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mql8_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hpmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4crsol_exchg and the model without allowed community
+Maxyield with NaN reactions: 2.2192e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hx2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17286
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_25aics_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.46249
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dnad_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.26381
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_mn2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hdcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14917
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cobalt2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hxcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17093
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acg5sa_exchg
+Reached MDF without community is 5.9101
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_malACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4fe4s_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.45106
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_succoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.19234
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cdpdhdecg_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10169
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glxBIO_exchg and the model without allowed community
+Maxyield with NaN reactions: 6.6372e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_5mthf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.24872
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dtdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.51263
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3oddcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.14081
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_q8h2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pheme_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10345
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pe160_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.11111
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_kdo2lipid4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.053571
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdcap_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_gam1p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_pi_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nadp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25754
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uamag_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3ohcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17484
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ni2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_bmocogdp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.10419
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_4hbz_exchg
+Reached MDF without community is 7.6204
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uaccg_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_bmoco_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16524
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acorn_exchg
+Reached MDF without community is 5.9101
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_histd_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.7893
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_h2s_exchg and the model without allowed community
+Maxyield with NaN reactions: 2.1915
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2p4c2me_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_gcald_exchg and the model without allowed community
+Maxyield with NaN reactions: 6.6371e-05
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nh4_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_h2mb4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.84111
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_uamr_exchg
+Reached MDF without community is -15.3652
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acg5p_exchg
+Reached MDF without community is 2.9551
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_fprica_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4r5au_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.55467
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_ddcaACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhnpt_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57838
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4mpetz_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.2319
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_gln__L_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_glutrna_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ala__L_exchg
+Reached MDF without community is 11.2848
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_1pyr5c_exchg
+Reached MDF without community is 1.7199
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_moco_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.32945
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_eig3p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.83821
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_u3hga_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17143
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_b2coa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.18772
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_6pgc_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_nadph_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25142
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ugmd_exchg
+Reached MDF without community is -15.3652
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_methf_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25877
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_dhpmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_ohpb_exchg
+Reached MDF without community is 5.7773
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_acgam1p_exchg
+Reached MDF without community is 10.7358
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_26dap__LL_exchg
+Reached MDF without community is 7.1764
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_pdx5p_exchg
+Reached MDF without community is 10.7358
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_4ampm_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0053937
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hhcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.17286
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_cu2_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_so3_exchg and the model without allowed community
+Maxyield with NaN reactions: 4.5714
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_3mop_exchg
+Reached MDF without community is 7.1764
+
+WARNING: MILP time excess with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2ahbut_exchg
+Reached MDF without community is 7.1764
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_thmmp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.0052728
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3hbcoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.18772
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_2dhp_exchg
+Reached MDF without community is -3.671
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_3oocoa_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.16188
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_murein5px4p_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.072839
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_opmeACP_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_hdcea_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.25
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_iscu_exchg and the model without allowed community
+Maxyield with NaN reactions: 0
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_imp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.57497
+
+INFO: MILP infeasible with OptMDFPathway-based MILP2 and allowed community for R_EX_C_quln_exchg
+Reached MDF without community is 7.9599
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_imacp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.83821
+
+INFO: Maximal yield of 0 is smaller than minimal yield for R_EX_C_6hmhptpp_exchg and the model without allowed community
+Maxyield with NaN reactions: 0.64589
+
+==FINAL STATISTICS==
+Total number analyzed target metabolites:
+374
+Number (fraction) producible target metabolites with dG0=NaN reactions:
+313 (83.6898 pct.)
+Number (fraction) producible target metabolites without dG0=NaN reactions:
+112 (29.9465 pct.)
+Mean extra exchanges:
+N/A
+Mean maximal possible yield change due to NaN reactions in MDF community advantage solutions:
+0.64589
+Mean maximal possible yield change due to NaN reactions in all solutions: 
+0.17192
+Number metabolites with found community MDF benefit:
+0
+Number metabolites without found community MDF benefit:
+374
+Mean MDF advantage (found MDF with community minus MDF without community in all cases where the community showed an advantage and where OptMDFPathway worked with the community):
+N/A
+List of metabolites with found community MDF benefit:
+List of used exchange reactions, ordered by number of community advantage solutions where they occur:
+
+
+Full run time (min): 6355.5597
+Full run time (h): 105.926
+Full run time (days): 4.4136
