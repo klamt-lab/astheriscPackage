@@ -207,7 +207,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         end
     end
     finalReport = finalReport + "\n=RUN RESULTS=";
-    
+
     %% Set all given reaction's flux minimum to 0 (especially useful for ATPM reactions)
     for reactionWithSetMinimumZero = reactionsWithSetMinimumZero
         cnap.reacMin(PSBCNAFindReactionInCellstring(reactionWithSetMinimumZero, cnapReactionIdsCellstring)) = 0;
@@ -1138,7 +1138,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         finalReport = finalReport + "Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: " + num2str(maxyieldWithNaNReactions) + "\n";
         finalReport = finalReport + "Optimal yield without community without any MDF constraint: " + num2str(maxyield) + "\n";
         finalReport = finalReport + "Optimal MDF without community with minimal necessary yield as minimal yield constraint: " + num2str(optmdfWithoutCommunity) + "\n";
-        finalReport = finalReport + "Reached yield without community at optimal MDF solution: " + reachedYieldWithoutCommunity + "\n";
+        finalReport = finalReport + "Reached yield without community at optimal MDF solution (this yield is a lower bound): " + reachedYieldWithoutCommunity + "\n";
         finalReport = finalReport + "Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): " + num2str(optmdfWithCommunity) + "\n";
         finalReport = finalReport + "Approximated optimal yield with community at maximal community MDF (if no warning given): " + num2str(reachedYield) + "\n";
         finalReport = finalReport + "Number of active metabolites: " + num2str(length(activeMetaboliteIndices)) + "\n";
@@ -1235,7 +1235,7 @@ function concentrationString = pAddConcentrationString(minConcentration, maxConc
     if ~isnan(maxConcentrationConversion)
         maxConcentration = maxConcentrationConversion;
     end
-    if minConcentration == maxConcentration == 1
+    if (minConcentration == 1) && (maxConcentration == 1)
         if ~isempty(ignoredMetabolites)
             if ismember(metaboliteId, ignoredMetabolites)
                 concentrationString = "[1;1]";
