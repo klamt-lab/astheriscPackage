@@ -1,4 +1,4 @@
-function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, speciesIds, dG0sAndUncertainties)
+function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, dfCommunity, speciesIds, dG0sAndUncertainties)
     % Creates CellNetAnalyzer val files for the given pyredcom community
     % model and the given associated flux distribution vector. These val
     % files can be used to visualize flux pathways on CellNetAnalyzer maps.
@@ -20,10 +20,11 @@ function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, s
         fileContent = "";
         return
     end
-    
+
     fileContent = "";
+    exchangeString = "Detailed solution for exchange reactions:\n";
     for singleSpecies = speciesIds
-        fileContent = fileContent + "Detailed solution for species " + singleSpecies + " (Reaction ID; Flux; dG0; Reaction string):\n";
+        fileContent = fileContent + "Detailed solution for species " + singleSpecies + " (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):\n";
         activeReactionIDs = cnap.reacID(abs(vCommunity) > vEpsilon, :);
         for activeReactionIDIndex = 1:length(cellstr(activeReactionIDs))
             activeReactionIDString = getIdAsString(activeReactionIDs(activeReactionIDIndex,:));
@@ -33,14 +34,25 @@ function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, s
             activeReactionIDString = strrep(activeReactionIDString, "___", "");
             activeReactionIDStringSplit = strsplit(activeReactionIDString, "_");
 
+            fileLine = "";
             if (activeReactionIDStringSplit(end) == singleSpecies) || ((singleSpecies == speciesIds(1)) && (sum(speciesIds == activeReactionIDStringSplit(end)) == 0))
                 activeReactionIDString = strrep(activeReactionIDString, "_" + singleSpecies, "");
-                if isnan(dG0sAndUncertainties(activeReactionIndex))
-                    dG0string = "NaN";
-                else
-                    dG0string = dG0sAndUncertainties(activeReactionIndex);
+                dG0 = dG0sAndUncertainties(activeReactionIndex);
+                if isnan(dG0)
+                    dG0 = "NaN";
                 end
-                fileContent = fileContent + activeReactionIDString + "; " + vCommunity(activeReactionIndex) + "; " + dG0string + "; ";
+                flux = vCommunity(activeReactionIndex);
+                if flux < 0
+                    direction = "reverse";
+                else
+                    direction = "forward";
+                end
+                df = -dfCommunity(activeReactionIndex);
+                if isnan(df)
+                    df = "NaN";
+                end
+                fileLine = fileLine + activeReactionIDString + "; " + flux + "; " + direction + "; " + dG0 + "; " + df + "; ";
+
                 % Create reaction string
                 metaboliteMatrixColumn = cnap.stoichMat(:, activeReactionIndex);
                 if vCommunity(activeReactionIndex) > 0
@@ -69,12 +81,16 @@ function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, s
                         reactionString = reactionString + "+ ";
                     end
                 end
-                fileContent = fileContent + reactionString + "\n";
+
+                fileLine = fileLine + reactionString + "\n";
+
+                if (sum(speciesIds == activeReactionIDStringSplit(end)) == 0) % e.g. EX_C_ and EXCHG_ reactions
+                    exchangeString = exchangeString + fileLine;
+                else
+                    fileContent = fileContent + fileLine;
+                end
             end
         end
-        % valFilePath = valFilePathBase + singleSpecies + ".val";
-        % file = fopen(valFilePath, "wt");
-        % fprintf(file, fileContent);
-        % fclose(file);
     end
+    fileContent = fileContent + exchangeString;
 end

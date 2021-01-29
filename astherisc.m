@@ -442,7 +442,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
             minimalMdf = minimalMdfWithCommunity;
         end
         measureMilp2Time = tic;
-        [mdfCommunityAndHigherMdf, vCommunityAndHigherMdf, ~, dfsCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, minimalMdf, false,...
+        [mdfCommunityAndHigherMdf, vCommunityAndHigherMdf, ~, dfsCommunityAndHigherMdf] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, minimalMdf, false,...
             cnapWithCommunityAndAllExchanges,...
             RT,...
             dG0sAndUncertainties,...
@@ -508,7 +508,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
             end
             while 1
                 currentMinimalMdf = currentMinimalMdf + stepSize;
-                [newOptmdfWithCommunity, newVOptMdf, ~, dfsCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, currentMinimalMdf, false,...
+                [newOptmdfWithCommunity, newVOptMdf, ~, newDfsWithCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, currentMinimalMdf, false,...
                     cnapWithCommunityAndAllExchanges,...
                     RT,...
                     dG0sAndUncertainties,...
@@ -523,6 +523,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
                     optmdfWithCommunity = newOptmdfWithCommunity;
                     mdfConstraint = optmdfWithCommunity;
                     vOptMdf = newVOptMdf;
+                    dfsOptMdf = newDfsWithCommunity;
                 end
             end
         end
@@ -536,6 +537,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         if isnan(optmdfWithCommunity)
             errorOptMdfCommunity = true;
             vOptMdf = vCommunityAndHigherMdf;
+            dfsOptMdf = dfsCommunityAndHigherMdf;
             mdfConstraint = mdfCommunityAndHigherMdf - 0.00001;
             optmdfWithCommunity = mdfCommunityAndHigherMdf - 0.00001;
         else
@@ -592,7 +594,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
                 d_maxyield(1) = 0;
                 d_maxyield = d_maxyield';
 
-                [newOptmdfWithCommunity, newVOptMdf, ~, dfsCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, mdfConstraint, false,...
+                [newOptmdfWithCommunity, newVOptMdf, ~, newDfsWithCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, mdfConstraint, false,...
                     cnapWithCommunityAndAllExchanges,...
                     RT,...
                     dG0sAndUncertainties,...
@@ -607,6 +609,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
                     optmdfWithCommunity = newOptmdfWithCommunity;
                     mdfConstraint = newOptmdfWithCommunity;
                     vOptMdf = newVOptMdf;
+                    dfsOptMdf = newDfsWithCommunity;
                     maxyieldCommunityAtOptmdf = currentMinimalYield;
                 end
             end
@@ -630,7 +633,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
 
         % -> STEP 2C: Calculate exact optimal MDF at the approximated optimal yield
         cnapWithMaxyieldMaxmdfReactionsOnly = pGetCnapWithBlockedReactionsWhereVIsZero(cnapWithCommunityAndAllExchanges, vOptMdf, vEpsilon);
-        [mdfWithMaxyieldMaxmdf, vWithMaxyieldMaxmdf, ~, dfsCommunity] = CNAcomputeOptMDFpathway_ratio_range_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices,...
+        [mdfWithMaxyieldMaxmdf, vWithMaxyieldMaxmdf, ~, dfsWithMaxyieldMaxmdf] = CNAcomputeOptMDFpathway_ratio_range_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices,...
             cnapWithMaxyieldMaxmdfReactionsOnly,...
             RT,...
             dG0sAndUncertainties,...
@@ -643,6 +646,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
             optmdfWithCommunity = mdfWithMaxyieldMaxmdf - 0.0001;
             mdfConstraint = mdfWithMaxyieldMaxmdf - 0.0001;
             vOptMdf = vWithMaxyieldMaxmdf;
+            dfsOptMdf = dfsWithMaxyieldMaxmdf;
             exactCommunityMdfCalculationError = false;
             mdfAdvantage = mdfConstraint - optmdfWithoutCommunity;
             mdfAdvantages = [mdfAdvantages mdfAdvantage];
@@ -655,7 +659,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         % community MDF & yield at this MDF
         cnapWithCommunityAndMinimalFluxReactionsOnly = pGetCnapWithBlockedReactionsWhereVIsZero(cnapWithCommunityAndAllExchanges, vOptMdf, vEpsilon);
         if ~errorOptMdfCommunity
-            [mdfMinimalFlux, vMinimalFlux, ~, dfsCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, mdfConstraint - abs(mdfConstraint)*.000001, true,...
+            [mdfMinimalFlux, vMinimalFlux, ~, dfsMinimalFlux] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, allNondefaultExchangeReactionIndices, mdfConstraint - abs(mdfConstraint)*.000001, true,...
                 cnapWithCommunityAndMinimalFluxReactionsOnly,...
                 RT,...
                 dG0sAndUncertainties,...
@@ -670,6 +674,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
             else
                 errorOptMdfMinimalFlux = false;
                 vOptMdf = vMinimalFlux;
+                dfsOptMdf = dfsMinimalFlux;
             end
         else
             errorOptMdfMinimalFlux = true;
@@ -1064,7 +1069,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         % -> STEP 6B: Community model bottleneck calculation
         if showCommunityModelBottlenecks
             [allBottleneckReactionsStr, directBottlenecksStr, indirectBottlenecksStr] = getDirectAndIndirectBottlenecks(numMaxExchanges, allNondefaultExchangeReactionIndices, cnapWithCommunityAndMinimalFluxReactions,...
-                                                                    dfsCommunity, RT, dG0sAndUncertainties,...
+                                                                    dfsOptMdf, RT, dG0sAndUncertainties,...
                                                                     minConcentrationsMat, maxConcentrationsMat,...
                                                                     D, d, fixedConcentrationRatioRanges,...
                                                                     optmdfWithCommunity, speciesIds, vOptMdf, vEpsilon, calculateIndirectBottlenecks,...
@@ -1093,12 +1098,12 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         detailedSolutionString = "\nDetailed reaction-wise solution reports:";
         % Community solution
         detailedSolutionString = detailedSolutionString + "\n~Community solution detailed solutions~\n";
-        detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vOptMdf, vEpsilon, speciesIds, dG0sAndUncertainties);
+        detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vOptMdf, vEpsilon, dfsOptMdf, speciesIds, dG0sAndUncertainties);
         % Single-species solution
         detailedSolutionString = detailedSolutionString + "\n~Single-species solution detailed solution~\n";
         firstSpecies = speciesIds(1);
         if ~isempty(vWithSingleSpecies)
-            detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vWithSingleSpecies, vEpsilon, firstSpecies, dG0sAndUncertainties);
+            detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vWithSingleSpecies, vEpsilon, dfsWithSingleSpecies, firstSpecies, dG0sAndUncertainties);
         end
         % --> Get species-specific substrate uptake string
         speciesUptakeAsStr = "";
@@ -1148,7 +1153,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         finalReport = finalReport + "Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):\n" + defaultExchangesAsStr + "\n";
         finalReport = finalReport + "Species-specific uptake:\n" + speciesUptakeAsStr + "\n";
         if showCommunityModelBottlenecks
-            finalReport = finalReport + "All bottleneck reactions:\n" + allBottleneckReactionsStr + "\n";
+            finalReport = finalReport + "Community solution bottleneck reactions:\n";
             finalReport = finalReport + "Direct bottleneck reactions:\n" + directBottlenecksStr + "\n";
             finalReport = finalReport + "Indirect bottleneck reactions:\n" + indirectBottlenecksStr + "\n";
         end
