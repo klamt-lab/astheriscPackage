@@ -4,8 +4,6 @@ exchangeMinConcentration = 1;
 exchangeMaxConcentration = 10;
 nondefaultConcentrationsMat = [
     "M_P_exchg" 5 10;
-    % "M_P_c_strain1" 5 10;
-    % "M_P_c_strain2" 5 10;
 ];
 basePath = "./0Astherisc/publication_runs/toy_model/";
 baseName = "toymodelDouble";
@@ -38,10 +36,7 @@ calculateIndirectBottlenecks = false;
 exchangeReactionSelection = ["R_EX_C_P_exchg"];
 modelPath = savePath;
 ignoredMetabolites = [];
-fixedRatiosNameMat = [
-       % "M_B_c_species1"   "M_A_c_species1" 5 1e100;
-       % "M_B_c_species2"   "M_A_c_species2" 5 1e100;
-];
+fixedRatiosNameMat = [];
 minimalYieldFactor = 0.1;
 numMaxExchanges = inf;
 reportPath = "./0Astherisc/publication_runs/toy_model/toymodelDouble_report.txt";

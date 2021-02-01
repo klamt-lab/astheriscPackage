@@ -1,5 +1,10 @@
 function [mdf, v, conc, dfs]= CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, exchange_reaction_indices, minimal_mdf, minimize_flux_sum, cnap, RT, G0, Cmin, Cmax, D, d, fixed_ratios)
 %
+% This OptMDFpathway version (with a minimal MDF constraint) is called "OptMDF3"
+% (if "minimize_flux_sum" is false) or "OptMDF4" (if "minimize_flux_sum" is
+% true), both with the given maximal extra exchange number, in ASTHERISC's publication. The original OptMDFpathway
+% function annotation follows:
+%
 % This function calculates a pathway (flux vector v) with the maximal
 % max-min driving force (MDF),i.e., a pathway with associated metabolite
 % concentrations where the minimum driving force of all participating

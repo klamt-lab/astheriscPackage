@@ -69,7 +69,7 @@ Maxyield with NaN reactions: 0.27468
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.57527
 Optimal yield without community without any MDF constraint: 0.57527
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.35714
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.35714
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.4
 Number of active metabolites: 104
@@ -455,7 +455,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.856
 Optimal yield without community without any MDF constraint: 0.856
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.5136
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.5136
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.61538
 Number of active metabolites: 111
@@ -953,7 +953,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.7925
 Optimal yield without community without any MDF constraint: 1.7925
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 9.4868
-Reached yield without community at optimal MDF solution: 1.5
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.5
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 12.2744
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.2
 Number of active metabolites: 88
@@ -1258,7 +1258,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.74306
 Optimal yield without community without any MDF constraint: 0.74306
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.45455
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.45455
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.47183
 Number of active metabolites: 104
@@ -1551,7 +1551,7 @@ EXCHG_o2_p_to_o2; -2.0279; 0; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.79259
 Optimal yield without community without any MDF constraint: 0.79259
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.51786
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.51786
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.53936
 Number of active metabolites: 114
@@ -1996,7 +1996,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.5544
 Optimal yield without community without any MDF constraint: 0.5544
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.33264
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.33264
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6203
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.39383
 Number of active metabolites: 138
@@ -2406,7 +2406,7 @@ Maxyield with NaN reactions: 0.058995
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.89623
 Optimal yield without community without any MDF constraint: 0.89623
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 11.2943
-Reached yield without community at optimal MDF solution: 0.59375
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.59375
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 12.2744
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.6
 Number of active metabolites: 106
@@ -2732,7 +2732,7 @@ Maxyield with NaN reactions: 0.53371
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.7925
 Optimal yield without community without any MDF constraint: 1.7925
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 11.8184
-Reached yield without community at optimal MDF solution: 1.0755
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.0755
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 12.2744
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.2273
 Number of active metabolites: 72
@@ -2806,8 +2806,10 @@ MDF in single species with reactions occuring in community solution: 10.2364 (Op
 >Bottleneck reactions (driving force=OptMDF):
 R_PFK_3_ecoli1 | 1 M_atp_c_ecoli1 + 1 M_s7p_c_ecoli1 -> 1 M_h_c_ecoli1 + 1 M_s17bp_c_ecoli1 + 1 M_adp_c_ecoli1 
 R_PGI_ecoli1 | 1 M_f6p_c_ecoli1 (<)-> 1 M_g6p_c_ecoli1 
+R_PGL_ecoli1 | 1 M_h2o_c_ecoli1 + 1 M_6pgl_c_ecoli1 -> 1 M_h_c_ecoli1 + 1 M_6pgc_c_ecoli1 
 R_RPE_ecoli1 | 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_xu5p__D_c_ecoli1 
 R_TKT1_ecoli1 | 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 
+R_GND_ecoli1 | 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_ru5p__D_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_co2_c_ecoli1 
 R_G6PDH2r_ecoli1 | 1 M_nadp_c_ecoli1 + 1 M_g6p_c_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_6pgl_c_ecoli1 + 1 M_nadph_c_ecoli1 
 R_FBA3_ecoli1 | 1 M_s17bp_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 + 1 M_e4p_c_ecoli1 
 R_TKT2_ecoli1 | 1 M_xu5p__D_c_ecoli1 + 1 M_e4p_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_f6p_c_ecoli1 
@@ -2820,10 +2822,13 @@ R_RPI_ecoli1-> R_TKT1_ecoli1; M_r5p_c_ecoli1
 R_RPE_ecoli1-> R_TKT1_ecoli1/R_TKT2_ecoli1; M_xu5p__D_c_ecoli1 
 R_PFK_3_ecoli1-> R_FBA3_ecoli1; M_s17bp_c_ecoli1 
 R_TKT1_ecoli1/R_TKT2_ecoli1-> R_TPI_ecoli1; M_g3p_c_ecoli1 
+R_PGL_ecoli1-> R_GND_ecoli1; M_6pgc_c_ecoli1 
 R_FBA3_ecoli1-> R_TKT2_ecoli1; M_e4p_c_ecoli1 
+R_GND_ecoli1-> R_RPE_ecoli1/R_RPI_ecoli1; M_ru5p__D_c_ecoli1 
 R_TKT2_ecoli1-> R_PGI_ecoli1; M_f6p_c_ecoli1 
 R_TKT1_ecoli1-> R_PFK_3_ecoli1; M_s7p_c_ecoli1 
 R_PGI_ecoli1-> R_G6PDH2r_ecoli1; M_g6p_c_ecoli1 
+R_G6PDH2r_ecoli1-> R_PGL_ecoli1; M_6pgl_c_ecoli1 
 >Connecting metabolite ranges:
 ~M_dhap_c_ecoli1~
 In single species:
@@ -2855,12 +2860,24 @@ In single species:
 In community:
 M_g3p_c_ecoli1: [unused] (range 0)
 M_g3p_c_ecoli2: [1.491e-05;3.5004e-05] (range 2.0094e-05)
+~M_6pgc_c_ecoli1~
+In single species:
+[0.00023997;0.00024236] (range 2.3902e-06)
+In community:
+M_6pgc_c_ecoli1: [unused] (range 0)
+M_6pgc_c_ecoli2: [0.00023334;0.00056802] (range 0.00033468)
 ~M_e4p_c_ecoli1~
 In single species:
 [0.00045138;0.00045437] (range 2.9923e-06)
 In community:
 M_e4p_c_ecoli1: [unused] (range 0)
 M_e4p_c_ecoli2: [0.0022934;0.01264] (range 0.010347)
+~M_ru5p__D_c_ecoli1~
+In single species:
+[0.019934;0.02] (range 6.5964e-05)
+In community:
+M_ru5p__D_c_ecoli1: [unused] (range 0)
+M_ru5p__D_c_ecoli2: [0.0085191;0.02] (range 0.011481)
 ~M_f6p_c_ecoli1~
 In single species:
 [0.00023733;0.0002397] (range 2.3639e-06)
@@ -2879,6 +2896,12 @@ In single species:
 In community:
 M_g6p_c_ecoli1: [unused] (range 0)
 M_g6p_c_ecoli2: [0.00032523;0.002393] (range 0.0020678)
+~M_6pgl_c_ecoli1~
+In single species:
+[1.6877e-06;1.7045e-06] (range 1.6809e-08)
+In community:
+M_6pgl_c_ecoli1: [unused] (range 0)
+M_6pgl_c_ecoli2: [3.7337e-06;2.7473e-05] (range 2.3739e-05)
 
 
 Detailed reaction-wise solution reports:
@@ -2993,7 +3016,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.79851
 Optimal yield without community without any MDF constraint: 0.79851
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.57391
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.57391
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.58156
 Number of active metabolites: 131
@@ -3372,7 +3395,7 @@ Reached MDF without community is 8.8528
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.38078
 Optimal yield without community without any MDF constraint: 0.38078
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 8.5976
-Reached yield without community at optimal MDF solution: 0.24691
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.24691
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 8.8527
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.24499
 Number of active metabolites: 134
@@ -3758,7 +3781,7 @@ Reached MDF without community is 8.8528
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.9386
 Optimal yield without community without any MDF constraint: 0.9386
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.57534
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.57534
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.66667
 Number of active metabolites: 88
@@ -4101,7 +4124,7 @@ Reached MDF without community is 2.4927
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 2.0123
 Optimal yield without community without any MDF constraint: 2.0067
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 5.4705
-Reached yield without community at optimal MDF solution: 1.2857
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.2857
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9783
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.835
 Number of active metabolites: 83
@@ -4498,7 +4521,7 @@ Reached MDF without community is 8.8528
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.94059
 Optimal yield without community without any MDF constraint: 0.94059
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 4.9425
-Reached yield without community at optimal MDF solution: 0.66667
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.66667
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.4136
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.77419
 Number of active metabolites: 70
@@ -4552,7 +4575,7 @@ M_g3p_c_ecoli1 [unused] & M_g3p_c_ecoli2 [7.058e-05;0.0020953]
 M_glcn_p_ecoli1 [unused] & M_glcn_p_ecoli2 [1.9895e-05;0.02]
 M_6pgc_c_ecoli1 [unused] & M_6pgc_c_ecoli2 [8.6943e-06;0.013605]
 M_e4p_c_ecoli1 [unused] & M_e4p_c_ecoli2 [0.00067368;0.02]
-M_man1p_c_ecoli1 [1.9895e-05;0.02] & M_man1p_c_ecoli2 [unused]
+M_man1p_c_ecoli1 [1.9895e-05;0.02] & M_man1p_c_ecoli2 [1e-06;1e-06]
 M_ru5p__D_c_ecoli1 [unused] & M_ru5p__D_c_ecoli2 [0.0022551;0.02]
 M_glcn_c_ecoli1 [unused] & M_glcn_c_ecoli2 [1e-06;0.0010053]
 M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [1e-06;9.9207e-06]
@@ -4565,7 +4588,7 @@ M_f6p_c_ecoli1 [unused] & M_f6p_c_ecoli2 [0.019986;0.02]
 M_s7p_c_ecoli1 [unused] & M_s7p_c_ecoli2 [4.478e-05;0.02]
 M_g6p_c_ecoli1 [unused] & M_g6p_c_ecoli2 [1.2261e-05;0.017001]
 M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [1e-06;0.02]
-M_man6p_c_ecoli1 [unused] & M_man6p_c_ecoli2 [unused]
+M_man6p_c_ecoli1 [unused] & M_man6p_c_ecoli2 [0.00082744;0.00082744]
 M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [1e-06;0.0013866]
 M_nadph_c_ecoli1 [unused] & M_nadph_c_ecoli2 [3e-06;0.02]
 M_nadh_c_ecoli1 [unused] & M_nadh_c_ecoli2 [1e-06;0.0066667]
@@ -4588,13 +4611,13 @@ In single species:
 [7.3425e-06;7.3469e-06] (range 4.3934e-09)
 In community:
 M_man1p_c_ecoli1: [1.9895e-05;0.02] (range 0.01998)
-M_man1p_c_ecoli2: [unused] (range 0)
+M_man1p_c_ecoli2: [1e-06;1e-06] (range 0)
 ~M_man6p_c_ecoli1~
 In single species:
 [0.0022407;0.002242] (range 1.3407e-06)
 In community:
 M_man6p_c_ecoli1: [unused] (range 0)
-M_man6p_c_ecoli2: [unused] (range 0)
+M_man6p_c_ecoli2: [0.00082744;0.00082744] (range 0)
 
 
 Detailed reaction-wise solution reports:
@@ -4774,7 +4797,7 @@ Reached MDF without community is 1.7199
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.55579
 Optimal yield without community without any MDF constraint: 0.55579
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.6204
-Reached yield without community at optimal MDF solution: 0.43662
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.43662
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.49477
 Number of active metabolites: 130
@@ -4888,13 +4911,13 @@ R_FBA_ecoli1/R_TPI_ecoli1-> R_GAPD_ecoli1; M_g3p_c_ecoli1
 >Connecting metabolite ranges:
 ~M_dhap_c_ecoli1~
 In single species:
-[unused] (range 0)
+[0.0047561;0.0047561] (range 0)
 In community:
 M_dhap_c_ecoli1: [unused] (range 0)
 M_dhap_c_ecoli2: [0.0017531;0.0019565] (range 0.0002034)
 ~M_g3p_c_ecoli1~
 In single species:
-[unused] (range 0)
+[0.00012676;0.00012676] (range 0)
 In community:
 M_g3p_c_ecoli1: [0.019971;0.02] (range 2.8895e-05)
 M_g3p_c_ecoli2: [7.457e-06;8.3222e-06] (range 8.6521e-07)
@@ -5165,7 +5188,7 @@ Reached MDF without community is 13.1607
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.16212
 Optimal yield without community without any MDF constraint: 0.16212
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.10255
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.10255
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.11738
 Number of active metabolites: 161
@@ -5271,7 +5294,7 @@ M_lac__L_c_ecoli1 [1e-06;0.02] & M_lac__L_c_ecoli2 [unused]
 M_lac__D_c_ecoli1 [unused] & M_lac__D_c_ecoli2 [1e-06;0.02]
 M_amp_c_ecoli1 [1e-06;0.013333] & M_amp_c_ecoli2 [unused]
 M_udp_c_ecoli1 [2.7185e-06;0.012828] & M_udp_c_ecoli2 [unused]
-M_4pasp_c_ecoli1 [unused] & M_4pasp_c_ecoli2 [unused]
+M_4pasp_c_ecoli1 [unused] & M_4pasp_c_ecoli2 [1.0004e-06;1.0004e-06]
 M_23dhdp_c_ecoli1 [unused] & M_23dhdp_c_ecoli2 [1e-06;0.02]
 M_succoa_c_ecoli1 [unused] & M_succoa_c_ecoli2 [8.7049e-05;0.02]
 
@@ -5659,7 +5682,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1
 Optimal yield without community without any MDF constraint: 1
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.9599
-Reached yield without community at optimal MDF solution: 0.6
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.6
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 8.8527
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.66667
 Number of active metabolites: 69
@@ -5934,7 +5957,7 @@ WARNING: Approximated optimal yield at approximated optimal MDF for the communit
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.45148
 Optimal yield without community without any MDF constraint: 0.45148
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.27273
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.27273
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6203
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.27162
 Number of active metabolites: 167
@@ -6370,7 +6393,7 @@ Maxyield with NaN reactions: 0.08969
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.86992
 Optimal yield without community without any MDF constraint: 0.86992
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.52747
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.52747
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.63235
 Number of active metabolites: 118
@@ -6431,14 +6454,14 @@ M_akg_c_ecoli1 [1e-06;0.0025188] & M_akg_c_ecoli2 [unused]
 M_fru_c_ecoli1 [unused] & M_fru_c_ecoli2 [1e-06;0.00049797]
 M_aspsa_c_ecoli1 [1e-06;0.00010896] & M_aspsa_c_ecoli2 [unused]
 M_glyclt_c_ecoli1 [1e-06;0.02] & M_glyclt_c_ecoli2 [unused]
-M_asp__L_c_ecoli1 [unused] & M_asp__L_c_ecoli2 [unused]
+M_asp__L_c_ecoli1 [0.02;0.02] & M_asp__L_c_ecoli2 [unused]
 M_o2_c_ecoli1 [unused] & M_o2_c_ecoli2 [1e-06;0.02]
 M_glc__D_c_ecoli1 [unused] & M_glc__D_c_ecoli2 [4.0163e-05;0.02]
 M_o2_p_ecoli1 [unused] & M_o2_p_ecoli2 [1e-06;0.02]
 M_gln__L_c_ecoli1 [unused] & M_gln__L_c_ecoli2 [1e-06;0.02]
 M_hco3_c_ecoli1 [unused] & M_hco3_c_ecoli2 [1e-06;0.00032392]
 M_glc__D_p_ecoli1 [unused] & M_glc__D_p_ecoli2 [1e-06;0.02]
-M_4pasp_c_ecoli1 [unused] & M_4pasp_c_ecoli2 [unused]
+M_4pasp_c_ecoli1 [1e-06;1e-06] & M_4pasp_c_ecoli2 [unused]
 M_succoa_c_ecoli1 [4.6549e-06;0.02] & M_succoa_c_ecoli2 [unused]
 
 Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
@@ -6482,7 +6505,7 @@ M_atp_c_ecoli2: [3e-06;0.02] (range 0.019997)
 In single species:
 [1e-06;1.3846e-06] (range 3.8459e-07)
 In community:
-M_4pasp_c_ecoli1: [unused] (range 0)
+M_4pasp_c_ecoli1: [1e-06;1e-06] (range 0)
 M_4pasp_c_ecoli2: [unused] (range 0)
 
 
@@ -6755,7 +6778,7 @@ WARNING: The minimal absolute flux sum with the optimal MDF could not be calcula
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.6724
 Optimal yield without community without any MDF constraint: 1.6724
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.6204
-Reached yield without community at optimal MDF solution: 1.1019
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.1019
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9463
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.1535
 Number of active metabolites: 134
@@ -7123,7 +7146,7 @@ WARNING: Approximated optimal yield at approximated optimal MDF for the communit
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.0125
 Optimal yield without community without any MDF constraint: 1.0125
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.63077
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.63077
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6203
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.60784
 Number of active metabolites: 159
@@ -7538,7 +7561,7 @@ Maxyield with NaN reactions: 0.52197
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.54872
 Optimal yield without community without any MDF constraint: 0.54872
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.33333
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.33333
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.35338
 Number of active metabolites: 135
@@ -8077,7 +8100,7 @@ Maxyield with NaN reactions: 0.51075
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.34967
 Optimal yield without community without any MDF constraint: 0.34967
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.22383
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.22383
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.22342
 Number of active metabolites: 170
@@ -8609,7 +8632,7 @@ Reached MDF without community is 13.1607
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.1386
 Optimal yield without community without any MDF constraint: 0.1386
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.095861
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.095861
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.10526
 Number of active metabolites: 150
@@ -9048,7 +9071,7 @@ Maxyield with NaN reactions: 0.10345
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.94059
 Optimal yield without community without any MDF constraint: 0.94059
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 9.6517
-Reached yield without community at optimal MDF solution: 0.56436
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.56436
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 11.0041
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.77778
 Number of active metabolites: 76
@@ -9438,7 +9461,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.34853
 Optimal yield without community without any MDF constraint: 0.34853
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.20961
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.20961
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.23211
 Number of active metabolites: 168
@@ -9563,7 +9586,7 @@ M_coa_c_ecoli1 [6.1435e-06;0.02] & M_coa_c_ecoli2 [unused]
 M_acald_c_ecoli1 [1e-06;0.02] & M_acald_c_ecoli2 [unused]
 M_4ppcys_c_ecoli1 [2.5025e-05;0.02] & M_4ppcys_c_ecoli2 [unused]
 M_2ddg6p_c_ecoli1 [1.5559e-06;0.02] & M_2ddg6p_c_ecoli2 [unused]
-M_4pasp_c_ecoli1 [unused] & M_4pasp_c_ecoli2 [unused]
+M_4pasp_c_ecoli1 [unused] & M_4pasp_c_ecoli2 [1e-06;1e-06]
 M_succoa_c_ecoli1 [1.0795e-05;0.02] & M_succoa_c_ecoli2 [unused]
 
 Bottleneck reactions (driving force=OptMDF) of single-species solution (with ecoli1 only):
@@ -9608,7 +9631,7 @@ In single species:
 [1e-06;1.3846e-06] (range 3.8459e-07)
 In community:
 M_4pasp_c_ecoli1: [unused] (range 0)
-M_4pasp_c_ecoli2: [unused] (range 0)
+M_4pasp_c_ecoli2: [1e-06;1e-06] (range 0)
 
 
 Detailed reaction-wise solution reports:
@@ -9938,7 +9961,7 @@ WARNING: The minimal absolute flux sum with the optimal MDF could not be calcula
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.60725
 Optimal yield without community without any MDF constraint: 0.60725
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.36435
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.36435
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6203
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.375
 Number of active metabolites: 136
@@ -10533,7 +10556,7 @@ Maxyield with NaN reactions: 0.071856
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 2.1169
 Optimal yield without community without any MDF constraint: 2.0616
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 8.8528
-Reached yield without community at optimal MDF solution: 1.237
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.237
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 10.8356
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.5242
 Number of active metabolites: 112
@@ -10892,7 +10915,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.1176
 Optimal yield without community without any MDF constraint: 1.1176
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 9.1466
-Reached yield without community at optimal MDF solution: 1
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 9.4077
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.71084
 Number of active metabolites: 75
@@ -11098,7 +11121,7 @@ WARNING: Approximated optimal yield at approximated optimal MDF for the communit
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.3677
 Optimal yield without community without any MDF constraint: 0.3677
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.22062
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.22062
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.22096
 Number of active metabolites: 151
@@ -11524,7 +11547,7 @@ WARNING: Approximated optimal yield at approximated optimal MDF for the communit
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.3
 Optimal yield without community without any MDF constraint: 1.3
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.8
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.8
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6203
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.78367
 Number of active metabolites: 117
@@ -12015,7 +12038,7 @@ Maxyield with NaN reactions: 0.030748
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.79851
 Optimal yield without community without any MDF constraint: 0.79851
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.56364
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.56364
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.55556
 Number of active metabolites: 114
@@ -12433,7 +12456,7 @@ Maxyield with NaN reactions: 0.26087
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 2.1169
 Optimal yield without community without any MDF constraint: 2.0616
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.6204
-Reached yield without community at optimal MDF solution: 1.4167
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.4167
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.7547
 Number of active metabolites: 106
@@ -12736,7 +12759,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.79259
 Optimal yield without community without any MDF constraint: 0.79259
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.54808
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.54808
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.52158
 Number of active metabolites: 137
@@ -13278,7 +13301,7 @@ Maxyield with NaN reactions: 0.029777
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.45943
 Optimal yield without community without any MDF constraint: 0.45943
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 8.2325
-Reached yield without community at optimal MDF solution: 0.28571
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.28571
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 8.5619
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.28571
 Number of active metabolites: 109
@@ -13664,7 +13687,7 @@ WARNING: The minimal absolute flux sum with the optimal MDF could not be calcula
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.56628
 Optimal yield without community without any MDF constraint: 0.56628
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.33977
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.33977
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6203
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.3508
 Number of active metabolites: 144
@@ -14100,7 +14123,7 @@ Maxyield with NaN reactions: 0.24522
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.2056
 Optimal yield without community without any MDF constraint: 1.2056
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.73585
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.73585
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.6689
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.7371
 Number of active metabolites: 167
@@ -14575,7 +14598,7 @@ Maxyield with NaN reactions: 0.3
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.79259
 Optimal yield without community without any MDF constraint: 0.79259
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.47556
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.47556
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.5
 Number of active metabolites: 113
@@ -14881,7 +14904,7 @@ EXCHG_lys__L_p_to_lys__L; 0.49556; 0; 1 M_lys__L_p_ecoli1 -> 1 M_lys__L_exchg
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.285
 Optimal yield without community without any MDF constraint: 1.285
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.8
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.8
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.83133
 Number of active metabolites: 105
@@ -15360,7 +15383,7 @@ Reached MDF without community is 7.1764
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.5286
 Optimal yield without community without any MDF constraint: 1.5286
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 5.3823
-Reached yield without community at optimal MDF solution: 1.1087
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.1087
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.98611
 Number of active metabolites: 110
@@ -15670,7 +15693,7 @@ Maxyield with NaN reactions: 0.67857
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.1846
 Optimal yield without community without any MDF constraint: 1.1818
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 5.9019
-Reached yield without community at optimal MDF solution: 1
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1
 Number of active metabolites: 79
@@ -15889,7 +15912,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.74923
 Optimal yield without community without any MDF constraint: 0.74923
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.59302
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.59302
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.5
 Number of active metabolites: 107
@@ -16222,7 +16245,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.2682
 Optimal yield without community without any MDF constraint: 1.2682
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.81818
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.81818
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.78523
 Number of active metabolites: 115
@@ -16569,7 +16592,7 @@ Reached MDF without community is 8.8528
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 2.1169
 Optimal yield without community without any MDF constraint: 2.0616
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.6204
-Reached yield without community at optimal MDF solution: 1.2381
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.2381
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9598
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.7851
 Number of active metabolites: 89
@@ -16816,7 +16839,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.79851
 Optimal yield without community without any MDF constraint: 0.79851
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.4791
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.4791
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.56391
 Number of active metabolites: 113
@@ -17238,7 +17261,7 @@ Maxyield with NaN reactions: 0.37752
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.2682
 Optimal yield without community without any MDF constraint: 1.2682
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.8
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.8
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.8125
 Number of active metabolites: 125
@@ -17597,7 +17620,7 @@ Reached MDF without community is 12.2745
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.3375
 Optimal yield without community without any MDF constraint: 1.3375
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.8025
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.8025
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.9125
 Number of active metabolites: 118
@@ -17949,7 +17972,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.6086
 Optimal yield without community without any MDF constraint: 1.5569
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 5.7773
-Reached yield without community at optimal MDF solution: 1
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 6.3398
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.5
 Number of active metabolites: 62
@@ -18171,7 +18194,7 @@ Reached MDF without community is 8.8528
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 2.0196
 Optimal yield without community without any MDF constraint: 2.0196
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.6204
-Reached yield without community at optimal MDF solution: 1.2118
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.2118
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 8.8527
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.4432
 Number of active metabolites: 122
@@ -18486,7 +18509,7 @@ WARNING: Approximated optimal yield at approximated optimal MDF for the communit
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.69343
 Optimal yield without community without any MDF constraint: 0.69343
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.42246
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.42246
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.41667
 Number of active metabolites: 122
@@ -18825,7 +18848,7 @@ Maxyield with NaN reactions: 0.20465
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 1.7258
 Optimal yield without community without any MDF constraint: 1.7258
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 3.9912
-Reached yield without community at optimal MDF solution: 1.0667
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 1.0667
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 5.9192
 Approximated optimal yield with community at maximal community MDF (if no warning given): 1.3371
 Number of active metabolites: 129
@@ -19154,7 +19177,7 @@ Maxyield with NaN reactions: 0
 Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.72519
 Optimal yield without community without any MDF constraint: 0.72519
 Optimal MDF without community with minimal necessary yield as minimal yield constraint: 7.1764
-Reached yield without community at optimal MDF solution: 0.52174
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.52174
 Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 7.9822
 Approximated optimal yield with community at maximal community MDF (if no warning given): 0.49699
 Number of active metabolites: 132
@@ -19774,6 +19797,6 @@ R_EXCHG_ecoli2_fuc__L_p_to_fuc__L: 1
 R_EXCHG_ecoli2_h2s_p_to_h2s: 1
 
 
-Full run time (min): 5593.4744
-Full run time (h): 93.2246
-Full run time (days): 3.8844
+Full run time (min): 5595.3952
+Full run time (h): 93.2566
+Full run time (days): 3.8857

@@ -16,7 +16,7 @@ function [fileContent] = getValFileString(cnap, vCommunity, vEpsilon, speciesIds
     %
     % OUTPUT
     % CellNetAnalyzer .val files for every species with the given file path
-    
+
     fileContent = "";
     for singleSpecies = speciesIds
         fileContent = fileContent + ".val file for species " + singleSpecies + ":\n";
@@ -34,10 +34,5 @@ function [fileContent] = getValFileString(cnap, vCommunity, vEpsilon, speciesIds
             end
         end
         fileContent = fileContent + "\n## Dont delete this line\n";
-        
-        % valFilePath = valFilePathBase + singleSpecies + ".val";
-        % file = fopen(valFilePath, "wt");
-        % fprintf(file, fileContent);
-        % fclose(file);
     end
 end

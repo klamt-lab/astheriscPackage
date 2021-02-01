@@ -1,5 +1,9 @@
 function [mdf, v, conc, dfs]= CNAcomputeOptMDFpathway_ratio_range_max_exchanges(maximalMilpRunTime, numMaxExchanges, exchange_reaction_indices, cnap, RT, G0, Cmin, Cmax, D, d, fixed_ratios)
 %
+% This OptMDFpathway version (with a metabolite concentration *range*)
+% is called "OptMDF2" in ASTHERISC's publication. The original OptMDFpathway
+% function annotation follows:
+%
 % This function calculates a pathway (flux vector v) with the maximal
 % max-min driving force (MDF),i.e., a pathway with associated metabolite
 % concentrations where the minimum driving force of all participating

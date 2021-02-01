@@ -1565,6 +1565,6 @@ List of metabolites with found community MDF benefit:
 List of used exchange reactions, ordered by number of community advantage solutions where they occur:
 
 
-Full run time (min): 6355.5597
-Full run time (h): 105.926
-Full run time (days): 4.4136
+Full run time (min): 6355.7171
+Full run time (h): 105.9286
+Full run time (days): 4.4137

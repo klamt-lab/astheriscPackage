@@ -1,4 +1,7 @@
 function [cMins, cMaxs, activeMetaboliteIndices, errorConcentrationRanges] = getConcentrationRanges(numMaxExchanges, exchangeIndices, minMdf, cnap, D, d, dG0sAndUncertainties, RT, minConcentrationsMat, maxConcentrationsMat, fixedConcentrationRatioRanges, activeMetaboliteIndices, maximalMilpRunTime)
+    % This OptMDFpathway version (where minimal and maximal MDF constraints are calculated under
+    % the given minimal MDF constraint) is called OptMDF5 in ASTHERISC's publication.
+
     % --> Get CPLEX obj
     [~, ~, ~, ~, ~, ~, ~, ~, ~, obj, ~, ~, cVars] = max_min_driving_force_pathway_higher_mdf_max_exchanges(maximalMilpRunTime, numMaxExchanges, exchangeIndices, minMdf - abs(minMdf)*.0001, false, cnap.stoichMat,...
         cnap.stoichMat(cnap.specInternal, :), cnap.reacMin, cnap.reacMax, D, d,...
@@ -35,4 +38,3 @@ function [cMins, cMaxs, activeMetaboliteIndices, errorConcentrationRanges] = get
         cMaxs(activeMetaboliteIndex) = cMax;
     end
 end
-
