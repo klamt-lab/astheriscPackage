@@ -11,9 +11,20 @@ This packages's sister program CommModelPy, which creates community models in a 
 In order to run the ASTHERISC package, you need the following prerequisites:
 * MATLAB in a version >= 2018a
 * The MATLAB package <i>CellNetAnalyzer</i> in a version >=2019.1 which is available [from here](https://www2.mpi-magdeburg.mpg.de/projects/cna/cna.html)
-* The CPLEX solver (the ASTHERISC package was tested with version 12.9 and 12.8)
+* The CPLEX solver in a version >=12.8
 
-Once you have installed <i>CellNetAnalyzer</i> in a configuration which allows it to use the CPLEX solver (this is explained in <i>CellNetAnalyzer's</i> manual), you can run the ASTHERISC package as follows:
+As a point of reference for compatible prerequisity versions, ASTHERISC was successfully tested with the following configurations (although ASTHERISC might also work well with other versions and version combinations, this was just not tested):
+* MATLAB 2018a & *CellNetAnalyzer* 2019.2 & CPLEX 12.8
+* MATLAB 2018a & *CellNetAnalyzer* 2019.2 & CPLEX 12.9
+* MATLAB 2019b & *CellNetAnalyzer* 2020.3 & CPLEX 12.10
+
+Once you have installed <i>CellNetAnalyzer</i> in a configuration which allows it to use the CPLEX solver as it is explained in <i>CellNetAnalyzer's</i> manual, you have to add the following lines to "startcna.m" in *CellNetAnalyzer*'s main folder (where $CPLEX_FOLDER has to be replaed by the folder where you installed CPLEX):
+<pre>
+cnan.cplex_remote.transport_name= 'processtransport';
+cnan.cplex_remote.transport_args= {'$CPLEX_FOLDER/cplex/bin/x86-64_linux/cplex', '-worker=process'};
+</pre>
+
+Once you've done this, you can run the ASTHERISC package as follows:
 * Download this repository and put it into a folder called "0Astherisc" in <i>CellNetAnalyzer</i>'s main folder
 * Start <i>CellNetAnalyzer</i> as described in its manual
 * Add the ASTHERISC package's folder to MATLAB's path
@@ -88,6 +99,8 @@ Each shown run in the publication was performed using the MATLAB scripts startin
 reports, which were also the basis for the tables in the publication's Results section, can be generated using the "publication_run_result_statistics.py" Python script.
 Additionally, the ComModelPy-generated SBML models were converted into .mat files using "loadAndSavePublicationCommunityModelsAsMat.m" and are stored in the "models_and_dG0_data" subfolder where one can
 find the .mat files, the original SBML files and the JSONs containing the used dG0 data.
+
+A report of the exact given 3-Deoxy-D-manno-octulosonate 8-phosphate (kdo8p) synthesis example in ASTHERISC's publication can be directly created with the "kdo8p_example.m" script, in which only the reactions used in the shown example are allowed. The reason for this separated script is that, depending on the CPLEX version and computational capability of the used computer or cluster, other alternative results for the kdo8p synthesis may arise, although all of them are equally valid since they reach the same optimal MDF. In other words, the kdo8p synthesis example given in ATHERISC's publication may arise as well as other possibilities to enhance the OptMDF in the given range.
 
 The subfolder "submodules" contains scripts which are internally used by "astherisc.m".
 
