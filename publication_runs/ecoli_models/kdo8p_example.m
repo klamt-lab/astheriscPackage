@@ -5,9 +5,8 @@ generalEcolicore2doubleModelPath;
 reportPath = "./0Astherisc/publication_runs/ecoli_models/run_results/kdo8p_example.txt";
 exchangeReactionSelection = ["R_EX_C_kdo8p_exchg"];
 maximalMilpRunTime = 50;
+showCommunityModelBottlenecks = true;
 
-% Create temporary model in which only the example
-% reactions are allowed.
 allowedReactionsNames = [
     "R_A5PISO_ecoli1"
     "R_ADK1_ecoli1"

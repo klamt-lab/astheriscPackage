@@ -1,0 +1,324 @@
+ASTHERISC community MDF advantage search
+
+
+=SETTINGS=
+Substrate reaction: R_EX_C_glc__D_exchg
+Maximal substrate uptake for single species (in units of the model): 1
+Minimal yield factor (i.e., minimal necessary percentage of maximal possible yield): 0.98
+Minimal absolute yield: 1e-06
+Minimal absolute MDF community advantage: 0.2
+Temperature [K] (for comparison: 25°C=77°F=298.15 K): 298.15
+Minimal absolute mdf with community: 0
+Minimal absolute flux (in units of the model) for a reaction in order to be considered 'active' ('v epsilon'): 1e-06
+Model path: ./0Astherisc/publication_runs/ecoli_models/models_and_dG0_data/ecolicore2double_kdo8p_only.mat
+Report path: ./0Astherisc/publication_runs/ecoli_models/run_results/kdo8p_example.txt
+Calculate and show community solution bottlenecks? true
+Calculate and show single-species bottlenecks with active reactions of the community? true
+Calculate indirect bottlenecks for selected bottleneck types? false
+Show original single-strain solution (not the one which is recalculated from the community solution) in a verbose form? false
+Number of maximal allowed exchanges: 9
+Reactions with set minimal flux of 0:
+ R_ATPM_ecoli1
+ R_ATPM_ecoli2
+'Ignored' metabolites (i.e., metabolites which are deemed to play no role thermodynamically as their concentration range is fixed to 1, so that instead of the default output '[unused]' in this case, '[1;1]' is printed instead:
+ M_h2o_c_ecoli1
+ M_h2o_c_ecoli2
+ M_h2o_p_ecoli1
+ M_h2o_p_ecoli2
+ M_h2o_e_ecoli1
+ M_h2o_e_ecoli2
+ M_h2o_exchg
+ M_h_c_ecoli1
+ M_h_c_ecoli2
+ M_h_p_ecoli1
+ M_h_p_ecoli2
+ M_h_e_ecoli1
+ M_h_e_ecoli2
+ M_h_exchg
+Fixed ratio ranges (ID of metabolite A, ID of metabolite B, minimal concentration ratio of A:B, maximal concentration ratio of A:B:
+ M_atp_c_ecoli1, M_adp_c_ecoli1, 3, 10
+ M_adp_c_ecoli1, M_amp_c_ecoli1, 0.5, 2
+ M_nad_c_ecoli1, M_nadh_c_ecoli1, 3, 10
+ M_nadph_c_ecoli1, M_nadp_c_ecoli1, 3, 10
+ M_atp_c_ecoli2, M_adp_c_ecoli2, 3, 10
+ M_adp_c_ecoli2, M_amp_c_ecoli2, 0.5, 2
+ M_nad_c_ecoli2, M_nadh_c_ecoli2, 3, 10
+ M_nadph_c_ecoli2, M_nadp_c_ecoli2, 3, 10
+Target exchange reaction selection:
+ R_EX_C_kdo8p_exchg
+
+=RUN RESULTS=
+==TARGET WITH COMMUNITY ADVANTAGE: R_EX_C_kdo8p_exchg==
+WARNING: Approximated optimal yield at approximated optimal MDF for the community could not be calculated, this is possible e.g. due to timeouts.
+Optimal yield without community and with deactivated dG0=NaN reactions without any MDF constraint: 0.74775
+Optimal yield without community without any MDF constraint: 0.74775
+Optimal MDF without community with minimal necessary yield as minimal yield constraint: 2.2737
+Reached yield without community at optimal MDF solution (this yield is a lower bound): 0.74775
+Optimal MDF with community with minimal necessary yield as minimal yield constraint (if no warning given): 2.872
+Approximated optimal yield with community at maximal community MDF (if no warning given): 0.73311
+Number of active metabolites: 73
+
+Number of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:
+ecoli1: 28 | 13.8547
+ecoli2: 16 | 4.3598
+
+Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli1_kdo8p_c_to_kdo8p | SCALED FLUX: 0.73311 | M_kdo8p_c_ecoli1 [3.1852e-06;0.02] | M_kdo8p_exchg [1e-06;0.0062791]
+R_EXCHG_ecoli1_6pgc_c_to_6pgc | SCALED FLUX: -0.30068 | M_6pgc_c_ecoli1 [1e-06;0.00074141] | M_6pgc_exchg [3.1852e-06;0.0023615]
+R_EXCHG_ecoli1_dha_c_to_dha | SCALED FLUX: 0.60135 | M_dha_c_ecoli1 [0.00059826;0.00059905] | M_dha_exchg [0.00018783;0.00018808]
+R_EXCHG_ecoli2_6pgc_c_to_6pgc | SCALED FLUX: 0.30068 | M_6pgc_c_ecoli2 [1.0145e-05;0.0075218] | M_6pgc_exchg [3.1852e-06;0.0023615]
+R_EXCHG_ecoli2_dha_c_to_dha | SCALED FLUX: -0.60135 | M_dha_c_ecoli2 [5.8969e-05;5.9048e-05] | M_dha_exchg [0.00018783;0.00018808]
+
+Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
+R_EXCHG_ecoli1_h_p_to_h | SCALED FLUX: 0.43243 | M_h_p_ecoli1 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli1_co2_p_to_co2 | SCALED FLUX: 0.13514 | M_co2_p_ecoli1 [3.1852e-06;0.001] | M_co2_exchg [1e-06;0.00031396]
+R_EXCHG_ecoli1_h2o_p_to_h2o | SCALED FLUX: 1.3007 | M_h2o_p_ecoli1 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli1_pi_p_to_pi | SCALED FLUX: -0.43243 | M_pi_p_ecoli1 [0.019973;0.02] | M_pi_exchg [0.063619;10]
+R_EXCHG_ecoli1_o2_p_to_o2 | SCALED FLUX: -0.35135 | M_o2_p_ecoli1 [1e-06;0.02] | M_o2_exchg [3.1852e-06;10]
+R_EXCHG_ecoli2_h_p_to_h | SCALED FLUX: 0.30068 | M_h_p_ecoli2 [1;1] | M_h_exchg [1;1]
+R_EXCHG_ecoli2_h2o_p_to_h2o | SCALED FLUX: 0.30068 | M_h2o_p_ecoli2 [1;1] | M_h2o_exchg [1;1]
+R_EXCHG_ecoli2_pi_p_to_pi | SCALED FLUX: -0.30068 | M_pi_p_ecoli2 [0.00011672;0.02] | M_pi_exchg [0.063619;10]
+R_EXCHG_ecoli2_o2_p_to_o2 | SCALED FLUX: -0.15034 | M_o2_p_ecoli2 [1e-06;0.02] | M_o2_exchg [3.1852e-06;10]
+
+Species-specific uptake:
+R_EXCHG_ecoli1_glc__D_p_to_glc__D | SCALED FLUX -1
+R_EXCHG_ecoli2_glc__D_p_to_glc__D | SCALED FLUX 0
+
+Metabolites with non-overlapping concentration ranges between species:
+M_dha_c_ecoli1 [0.00059826;0.00059905] & M_dha_c_ecoli2 [5.8969e-05;5.9048e-05]
+M_f6p_c_ecoli1 [0.00037078;0.00037128] & M_f6p_c_ecoli2 [1e-06;1.0027e-06]
+M_g3p_c_ecoli1 [0.00032482;0.00032525] & M_g3p_c_ecoli2 [9.0047e-05;9.0286e-05]
+M_g6p_c_ecoli1 [0.019973;0.02] & M_g6p_c_ecoli2 [1.9629e-06;5.3238e-06]
+M_13dpg_c_ecoli1 [1e-06;1e-06] & M_13dpg_c_ecoli2 [unused]
+M_2ddg6p_c_ecoli1 [1e-06;0.02] & M_2ddg6p_c_ecoli2 [unused]
+M_2pg_c_ecoli1 [1e-06;1.2863e-05] & M_2pg_c_ecoli2 [unused]
+M_3pg_c_ecoli1 [1.9729e-05;0.00025378] & M_3pg_c_ecoli2 [unused]
+M_6pgl_c_ecoli1 [unused] & M_6pgl_c_ecoli2 [1e-06;2.7122e-06]
+M_amp_c_ecoli1 [1e-06;0.013333] & M_amp_c_ecoli2 [unused]
+M_ara5p_c_ecoli1 [1e-06;3.8739e-06] & M_ara5p_c_ecoli2 [unused]
+M_co2_c_ecoli1 [1e-06;0.001] & M_co2_c_ecoli2 [unused]
+M_dhap_c_ecoli1 [unused] & M_dhap_c_ecoli2 [0.002719;0.0027262]
+M_e4p_c_ecoli1 [4.1645e-06;0.0002421] & M_e4p_c_ecoli2 [unused]
+M_fdp_c_ecoli1 [unused] & M_fdp_c_ecoli2 [0.0065364;0.0065712]
+M_glc__D_c_ecoli1 [4.6483e-06;0.0062791] & M_glc__D_c_ecoli2 [unused]
+M_glyc3p_c_ecoli1 [unused] & M_glyc3p_c_ecoli2 [1e-06;0.02]
+M_kdo8p_c_ecoli1 [3.1852e-06;0.02] & M_kdo8p_c_ecoli2 [unused]
+M_pep_c_ecoli1 [1e-06;1.8788e-05] & M_pep_c_ecoli2 [unused]
+M_pyr_c_ecoli1 [1e-06;0.02] & M_pyr_c_ecoli2 [unused]
+M_r5p_c_ecoli1 [2.2402e-05;0.0013023] & M_r5p_c_ecoli2 [unused]
+M_ru5p__D_c_ecoli1 [1.1864e-06;4.5958e-06] & M_ru5p__D_c_ecoli2 [unused]
+M_s7p_c_ecoli1 [6.0694e-06;0.00035284] & M_s7p_c_ecoli2 [unused]
+M_xu5p__D_c_ecoli1 [1.4823e-05;0.00011302] & M_xu5p__D_c_ecoli2 [unused]
+M_co2_p_ecoli1 [3.1852e-06;0.001] & M_co2_p_ecoli2 [unused]
+M_glc__D_p_ecoli1 [1.4805e-05;0.02] & M_glc__D_p_ecoli2 [unused]
+
+Bottleneck reactions (driving force=OptMDF) of community solution:
+Direct bottleneck reactions:
+R_F6PA_ecoli1 | 1 M_f6p_c_ecoli1 (<)-> 1 M_dha_c_ecoli1 + 1 M_g3p_c_ecoli1
+R_GAPD_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1
+R_PGI_ecoli1 | 1 M_g6p_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1
+R_PIt2rpp_ecoli1 | 1 M_h_p_ecoli1 + 1 M_pi_p_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1
+R_F6PA_ecoli2 | 1 M_g3p_c_ecoli2 + 1 M_dha_c_ecoli2 (<)-> 1 M_f6p_c_ecoli2
+R_FBA_ecoli2 | 1 M_fdp_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_dhap_c_ecoli2
+R_PFK_ecoli2 | 1 M_atp_c_ecoli2 + 1 M_f6p_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_fdp_c_ecoli2
+R_TPI_ecoli2 | 1 M_dhap_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2
+R_EXCHG_ecoli1_dha_c_to_dha | 1 M_dha_c_ecoli1 (<)-> 1 M_dha_exchg
+R_EXCHG_ecoli2_dha_c_to_dha | 1 M_dha_exchg (<)-> 1 M_dha_c_ecoli2
+>Connecting metabolites:
+R_F6PA_ecoli1-> R_EXCHG_ecoli1_dha_c_to_dha; M_dha_c_ecoli1
+R_PGI_ecoli1-> R_F6PA_ecoli1; M_f6p_c_ecoli1
+R_F6PA_ecoli1-> R_GAPD_ecoli1; M_g3p_c_ecoli1
+R_PIt2rpp_ecoli1-> R_GAPD_ecoli1; M_pi_c_ecoli1
+R_FBA_ecoli2/R_TPI_ecoli2-> R_F6PA_ecoli2; M_g3p_c_ecoli2
+R_F6PA_ecoli2-> R_PFK_ecoli2; M_f6p_c_ecoli2
+R_EXCHG_ecoli2_dha_c_to_dha-> R_F6PA_ecoli2; M_dha_c_ecoli2
+R_PFK_ecoli2-> R_FBA_ecoli2; M_fdp_c_ecoli2
+R_FBA_ecoli2-> R_TPI_ecoli2; M_dhap_c_ecoli2
+R_EXCHG_ecoli1_dha_c_to_dha-> R_EXCHG_ecoli2_dha_c_to_dha; M_dha_exchg
+
+Bottleneck reactions (driving force=OptMDF) of single-species solution as calculated back from community solution:
+MDF in single species with reactions occuring in community solution: 2.2737 (OptMDF in community was 2.872, difference is 0.59831)
+>Bottleneck reactions (driving force=OptMDF):
+R_FBA_ecoli1 | 1 M_fdp_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1
+R_GAPD_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1
+R_PIt2rpp_ecoli1 | 1 M_h_p_ecoli1 + 1 M_pi_p_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1
+R_TPI_ecoli1 | 1 M_dhap_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1
+>Connecting metabolites:
+R_FBA_ecoli1-> R_TPI_ecoli1; M_dhap_c_ecoli1
+R_FBA_ecoli1/R_TPI_ecoli1-> R_GAPD_ecoli1; M_g3p_c_ecoli1
+R_PIt2rpp_ecoli1-> R_GAPD_ecoli1; M_pi_c_ecoli1
+>Connecting metabolite ranges:
+~M_dhap_c_ecoli1~
+In single species:
+[0.0047548;0.0047574] (range 2.6175e-06)
+In community:
+M_dhap_c_ecoli1: [unused] (range 0)
+M_dhap_c_ecoli2: [0.002719;0.0027262] (range 7.2297e-06)
+~M_g3p_c_ecoli1~
+In single species:
+[0.00020045;0.00020045] (range 0)
+In community:
+M_g3p_c_ecoli1: [0.00032482;0.00032525] (range 4.3155e-07)
+M_g3p_c_ecoli2: [9.0047e-05;9.0286e-05] (range 2.3943e-07)
+~M_pi_c_ecoli1~
+In single species:
+[0.0079931;0.0079931] (range 0)
+In community:
+M_pi_c_ecoli1: [0.0062708;0.0062791] (range 8.3314e-06)
+M_pi_c_ecoli2: [3.6645e-05;0.0062791] (range 0.0062425)
+
+
+Detailed reaction-wise solution reports:
+~Detailed solution of community solution~
+Detailed solution for species ecoli1 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
+A5PISO; 0.73311; forward; -2.4481; -2.872; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_ara5p_c_ecoli1
+ADK1; 0.16554; forward; -0.19453; -7.6204; 1 M_amp_c_ecoli1 + 1 M_atp_c_ecoli1 (<)-> 2 M_adp_c_ecoli1
+ATPS4rpp; 0.76351; forward; -33.8921; -15.6143; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1
+CO2tpp; -0.13514; reverse; NaN; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1
+CYTBO3_4pp; 0.7027; forward; -55.284; -50.4354; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1
+EDA; 0.16554; forward; 16.2402; -13.0839; 1 M_2ddg6p_c_ecoli1 -> 1 M_g3p_c_ecoli1 + 1 M_pyr_c_ecoli1
+EDD; 0.16554; forward; -42.8448; -24.0099; 1 M_6pgc_c_ecoli1 -> 1 M_2ddg6p_c_ecoli1 + 1 M_h2o_c_ecoli1
+ENO; 0.56757; forward; -3.8109; -3.085; 1 M_2pg_c_ecoli1 (<)-> 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1
+F6PA; 0.60135; forward; 15.8529; -2.872; 1 M_f6p_c_ecoli1 (<)-> 1 M_dha_c_ecoli1 + 1 M_g3p_c_ecoli1
+GAPD; 0.56757; forward; 4.6027; -2.872; 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1
+GLCt2pp; 1; forward; 0; -2.872; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1
+GND; 0.13514; forward; 10.332; -26.4811; 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_ru5p__D_c_ecoli1
+H2Otpp; -1.3007; reverse; NaN; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1
+HEX1; 1; forward; -17.901; -20.7367; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1
+KDOPS; 0.73311; forward; -66.5142; -21.015; 1 M_ara5p_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1 -> 1 M_kdo8p_c_ecoli1 + 1 M_pi_c_ecoli1
+NADH16pp; 0.7027; forward; -81.2018; -75.4941; 4 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 + 1 M_q8_c_ecoli1 (<)-> 1 M_nad_c_ecoli1 + 1 M_q8h2_c_ecoli1 + 3 M_h_p_ecoli1
+NADTRHD; 0.13514; forward; 0.13056; -8.3004; 1 M_nad_c_ecoli1 + 1 M_nadph_c_ecoli1 -> 1 M_nadh_c_ecoli1 + 1 M_nadp_c_ecoli1
+O2tpp; 0.35135; forward; NaN; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1
+PGI; 1; forward; 7.0102; -2.872; 1 M_g6p_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1
+PGK; -0.56757; reverse; 19.3156; -6.2155; 1 M_13dpg_c_ecoli1 + 1 M_adp_c_ecoli1 (<)-> 1 M_3pg_c_ecoli1 + 1 M_atp_c_ecoli1
+PGM; -0.56757; reverse; -4.5204; -2.872; 1 M_3pg_c_ecoli1 (<)-> 1 M_2pg_c_ecoli1
+PIt2rpp; 0.43243; forward; 0; -2.872; 1 M_h_p_ecoli1 + 1 M_pi_p_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1
+PPS; 0.16554; forward; 0.41266; -30.555; 1 M_atp_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_pyr_c_ecoli1 -> 1 M_amp_c_ecoli1 + 2 M_h_c_ecoli1 + 1 M_pep_c_ecoli1 + 1 M_pi_c_ecoli1
+RPE; -0.39865; reverse; -3.388; -2.872; 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_ru5p__D_c_ecoli1
+RPI; 0.19932; forward; 4.4117; -2.872; 1 M_r5p_c_ecoli1 (<)-> 1 M_ru5p__D_c_ecoli1
+TALA; -0.19932; reverse; 3.4773; -2.872; 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1
+TKT1; -0.19932; reverse; -1.5468; -2.872; 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1
+TKT2; -0.19932; reverse; -5.8438; -12.9378; 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1
+Detailed solution for species ecoli2 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
+ATPS4rpp; 0.30068; forward; -33.8921; -2.872; 1 M_adp_c_ecoli2 + 1 M_pi_c_ecoli2 + 4 M_h_p_ecoli2 (<)-> 1 M_atp_c_ecoli2 + 1 M_h2o_c_ecoli2 + 3 M_h_c_ecoli2
+CYTBO3_4pp; 0.30068; forward; -55.284; -50.4354; 4 M_h_c_ecoli2 + 0.5 M_o2_c_ecoli2 + 1 M_q8h2_c_ecoli2 -> 1 M_h2o_c_ecoli2 + 4 M_h_p_ecoli2 + 1 M_q8_c_ecoli2
+F6PA; -0.60135; reverse; 15.8529; -2.872; 1 M_g3p_c_ecoli2 + 1 M_dha_c_ecoli2 (<)-> 1 M_f6p_c_ecoli2
+FBA; 0.30068; forward; 22.3932; -2.872; 1 M_fdp_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2 + 1 M_dhap_c_ecoli2
+G3PD2; -0.10023; reverse; 25.6158; -47.9447; 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_dhap_c_ecoli2 (<)-> 1 M_nadp_c_ecoli2 + 1 M_glyc3p_c_ecoli2
+G3PD5; 0.10023; forward; -109.0556; -89.4499; 1 M_glyc3p_c_ecoli2 + 1 M_q8_c_ecoli2 -> 1 M_q8h2_c_ecoli2 + 1 M_dhap_c_ecoli2
+G6PDH2r; 0.30068; forward; -3.9232; -2.872; 1 M_nadp_c_ecoli2 + 1 M_g6p_c_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_nadph_c_ecoli2 + 1 M_6pgl_c_ecoli2
+H2Otpp; -0.30068; reverse; NaN; NaN; 1 M_h2o_c_ecoli2 (<)-> 1 M_h2o_p_ecoli2
+NADH16pp; 0.20045; forward; -81.2018; -75.4941; 4 M_h_c_ecoli2 + 1 M_nadh_c_ecoli2 + 1 M_q8_c_ecoli2 (<)-> 1 M_nad_c_ecoli2 + 3 M_h_p_ecoli2 + 1 M_q8h2_c_ecoli2
+NADTRHD; 0.20045; forward; 0.13056; -8.3004; 1 M_nad_c_ecoli2 + 1 M_nadph_c_ecoli2 -> 1 M_nadp_c_ecoli2 + 1 M_nadh_c_ecoli2
+O2tpp; 0.15034; forward; NaN; NaN; 1 M_o2_p_ecoli2 (<)-> 1 M_o2_c_ecoli2
+PFK; 0.30068; forward; -18.9474; -2.872; 1 M_atp_c_ecoli2 + 1 M_f6p_c_ecoli2 -> 1 M_adp_c_ecoli2 + 1 M_h_c_ecoli2 + 1 M_fdp_c_ecoli2
+PGI; -0.30068; reverse; 7.0102; -2.872; 1 M_f6p_c_ecoli2 (<)-> 1 M_g6p_c_ecoli2
+PGL; 0.30068; forward; -22.5233; -5.3381; 1 M_h2o_c_ecoli2 + 1 M_6pgl_c_ecoli2 -> 1 M_h_c_ecoli2 + 1 M_6pgc_c_ecoli2
+PIt2rpp; 0.30068; forward; 0; -2.872; 1 M_h_p_ecoli2 + 1 M_pi_p_ecoli2 (<)-> 1 M_h_c_ecoli2 + 1 M_pi_c_ecoli2
+TPI; 0.30068; forward; 5.5753; -2.872; 1 M_dhap_c_ecoli2 (<)-> 1 M_g3p_c_ecoli2
+Detailed solution for exchange reactions:
+EX_C_kdo8p_exchg; 0.73311; forward; NaN; NaN; 1 M_kdo8p_exchg ->
+EX_C_h_exchg; 0.73311; forward; NaN; NaN; 1 M_h_exchg (<)->
+EX_C_co2_exchg; 0.13514; forward; NaN; NaN; 1 M_co2_exchg (<)->
+EX_C_glc__D_exchg; -1; reverse; NaN; NaN; (<)-> 1 M_glc__D_exchg
+EX_C_h2o_exchg; 1.6014; forward; NaN; NaN; 1 M_h2o_exchg (<)->
+EX_C_o2_exchg; -0.50169; reverse; NaN; NaN; (<)-> 1 M_o2_exchg
+EX_C_pi_exchg; -0.73311; reverse; NaN; NaN; (<)-> 1 M_pi_exchg
+EXCHG_h_p_to_h; 0.43243; forward; NaN; NaN; 1 M_h_p_ecoli1 (<)-> 1 M_h_exchg
+EXCHG_co2_p_to_co2; 0.13514; forward; 0; -17.1231; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg
+EXCHG_kdo8p_c_to_kdo8p; 0.73311; forward; 0; -24.549; 1 M_kdo8p_c_ecoli1 -> 1 M_kdo8p_exchg
+EXCHG_glc__D_p_to_glc__D; -1; reverse; 0; -15.4049; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1
+EXCHG_h2o_p_to_h2o; 1.3007; forward; NaN; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg
+EXCHG_6pgc_c_to_6pgc; -0.30068; reverse; 0; -2.872; 1 M_6pgc_exchg -> 1 M_6pgc_c_ecoli1
+EXCHG_pi_p_to_pi; -0.43243; reverse; 0; -2.872; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli1
+EXCHG_o2_p_to_o2; -0.35135; reverse; 0; -27.421; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1
+EXCHG_dha_c_to_dha; 0.60135; forward; 0; -2.872; 1 M_dha_c_ecoli1 -> 1 M_dha_exchg
+EXCHG_ecoli2_h_p_to_h; 0.30068; forward; NaN; NaN; 1 M_h_p_ecoli2 (<)-> 1 M_h_exchg
+EXCHG_ecoli2_h2o_p_to_h2o; 0.30068; forward; NaN; NaN; 1 M_h2o_p_ecoli2 (<)-> 1 M_h2o_exchg
+EXCHG_ecoli2_6pgc_c_to_6pgc; 0.30068; forward; 0; -11.0652; 1 M_6pgc_c_ecoli2 -> 1 M_6pgc_exchg
+EXCHG_ecoli2_pi_p_to_pi; -0.30068; reverse; 0; -15.6143; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli2
+EXCHG_ecoli2_o2_p_to_o2; -0.15034; reverse; 0; -27.421; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli2
+EXCHG_ecoli2_dha_c_to_dha; -0.60135; reverse; 0; -2.872; 1 M_dha_exchg -> 1 M_dha_c_ecoli2
+
+~Detailed solution of single-strain solution, recalculated from community solution reactions~
+Detailed solution for species ecoli1 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
+A5PISO; 0.74775; forward; -2.4481; -2.2737; 1 M_ru5p__D_c_ecoli1 (<)-> 1 M_ara5p_c_ecoli1
+ATPS4rpp; 0.74775; forward; -33.8921; -19.1979; 1 M_adp_c_ecoli1 + 1 M_pi_c_ecoli1 + 4 M_h_p_ecoli1 (<)-> 1 M_atp_c_ecoli1 + 3 M_h_c_ecoli1 + 1 M_h2o_c_ecoli1
+CO2tpp; -0.018018; reverse; NaN; NaN; 1 M_co2_c_ecoli1 (<)-> 1 M_co2_p_ecoli1
+CYTBO3_4pp; 0.78378; forward; -55.284; -74.9844; 4 M_h_c_ecoli1 + 0.5 M_o2_c_ecoli1 + 1 M_q8h2_c_ecoli1 -> 1 M_h2o_c_ecoli1 + 1 M_q8_c_ecoli1 + 4 M_h_p_ecoli1
+ENO; 0.74775; forward; -3.8109; -3.8109; 1 M_2pg_c_ecoli1 (<)-> 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1
+FBA; 0.4955; forward; 22.3932; -2.2737; 1 M_fdp_c_ecoli1 (<)-> 1 M_dhap_c_ecoli1 + 1 M_g3p_c_ecoli1
+G6PDH2r; 0.018018; forward; -3.9232; -22.7645; 1 M_g6p_c_ecoli1 + 1 M_nadp_c_ecoli1 (<)-> 1 M_6pgl_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadph_c_ecoli1
+GAPD; 0.74775; forward; 4.6027; -2.2737; 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1
+GLCt2pp; 1; forward; 0; -2.2737; 1 M_glc__D_p_ecoli1 + 1 M_h_p_ecoli1 -> 1 M_glc__D_c_ecoli1 + 1 M_h_c_ecoli1
+GND; 0.018018; forward; 10.332; -18.2065; 1 M_6pgc_c_ecoli1 + 1 M_nadp_c_ecoli1 -> 1 M_co2_c_ecoli1 + 1 M_nadph_c_ecoli1 + 1 M_ru5p__D_c_ecoli1
+H2Otpp; -1.5135; reverse; NaN; NaN; 1 M_h2o_c_ecoli1 (<)-> 1 M_h2o_p_ecoli1
+HEX1; 1; forward; -17.901; -9.2065; 1 M_atp_c_ecoli1 + 1 M_glc__D_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_g6p_c_ecoli1 + 1 M_h_c_ecoli1
+KDOPS; 0.74775; forward; -66.5142; -26.9971; 1 M_ara5p_c_ecoli1 + 1 M_h2o_c_ecoli1 + 1 M_pep_c_ecoli1 -> 1 M_kdo8p_c_ecoli1 + 1 M_pi_c_ecoli1
+NADH16pp; 0.78378; forward; -81.2018; -50.9452; 4 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1 + 1 M_q8_c_ecoli1 (<)-> 1 M_nad_c_ecoli1 + 1 M_q8h2_c_ecoli1 + 3 M_h_p_ecoli1
+NADTRHD; 0.036036; forward; 0.13056; -11.2848; 1 M_nad_c_ecoli1 + 1 M_nadph_c_ecoli1 -> 1 M_nadh_c_ecoli1 + 1 M_nadp_c_ecoli1
+O2tpp; 0.39189; forward; NaN; NaN; 1 M_o2_p_ecoli1 (<)-> 1 M_o2_c_ecoli1
+PFK; 0.4955; forward; -18.9474; -4.9235; 1 M_atp_c_ecoli1 + 1 M_f6p_c_ecoli1 -> 1 M_adp_c_ecoli1 + 1 M_fdp_c_ecoli1 + 1 M_h_c_ecoli1
+PGI; 0.98198; forward; 7.0102; -9.737; 1 M_g6p_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1
+PGK; -0.74775; reverse; 19.3156; -2.2737; 1 M_13dpg_c_ecoli1 + 1 M_adp_c_ecoli1 (<)-> 1 M_3pg_c_ecoli1 + 1 M_atp_c_ecoli1
+PGL; 0.018018; forward; -22.5233; -22.5233; 1 M_6pgl_c_ecoli1 + 1 M_h2o_c_ecoli1 -> 1 M_6pgc_c_ecoli1 + 1 M_h_c_ecoli1
+PGM; -0.74775; reverse; -4.5204; -9.7982; 1 M_3pg_c_ecoli1 (<)-> 1 M_2pg_c_ecoli1
+PIt2rpp; 0.74775; forward; 0; -2.2737; 1 M_h_p_ecoli1 + 1 M_pi_p_ecoli1 (<)-> 1 M_h_c_ecoli1 + 1 M_pi_c_ecoli1
+RPE; -0.48649; reverse; -3.388; -2.2737; 1 M_xu5p__D_c_ecoli1 (<)-> 1 M_ru5p__D_c_ecoli1
+RPI; 0.24324; forward; 4.4117; -2.2737; 1 M_r5p_c_ecoli1 (<)-> 1 M_ru5p__D_c_ecoli1
+TALA; -0.24324; reverse; 3.4773; -2.2737; 1 M_e4p_c_ecoli1 + 1 M_f6p_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1
+TKT1; -0.24324; reverse; -1.5468; -2.2737; 1 M_g3p_c_ecoli1 + 1 M_s7p_c_ecoli1 (<)-> 1 M_r5p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1
+TKT2; -0.24324; reverse; -5.8438; -2.2737; 1 M_f6p_c_ecoli1 + 1 M_g3p_c_ecoli1 (<)-> 1 M_e4p_c_ecoli1 + 1 M_xu5p__D_c_ecoli1
+TPI; 0.4955; forward; 5.5753; -2.2737; 1 M_dhap_c_ecoli1 (<)-> 1 M_g3p_c_ecoli1
+Detailed solution for exchange reactions:
+EX_C_kdo8p_exchg; 0.74775; forward; NaN; NaN; 1 M_kdo8p_exchg ->
+EX_C_h_exchg; 0.74775; forward; NaN; NaN; 1 M_h_exchg (<)->
+EX_C_co2_exchg; 0.018018; forward; NaN; NaN; 1 M_co2_exchg (<)->
+EX_C_glc__D_exchg; -1; reverse; NaN; NaN; (<)-> 1 M_glc__D_exchg
+EX_C_h2o_exchg; 1.5135; forward; NaN; NaN; 1 M_h2o_exchg (<)->
+EX_C_o2_exchg; -0.39189; reverse; NaN; NaN; (<)-> 1 M_o2_exchg
+EX_C_pi_exchg; -0.74775; reverse; NaN; NaN; (<)-> 1 M_pi_exchg
+EXCHG_h_p_to_h; 0.74775; forward; NaN; NaN; 1 M_h_p_ecoli1 (<)-> 1 M_h_exchg
+EXCHG_co2_p_to_co2; 0.018018; forward; 0; -17.1231; 1 M_co2_p_ecoli1 (<)-> 1 M_co2_exchg
+EXCHG_kdo8p_c_to_kdo8p; 0.74775; forward; 0; -17.4163; 1 M_kdo8p_c_ecoli1 -> 1 M_kdo8p_exchg
+EXCHG_glc__D_p_to_glc__D; -1; reverse; 0; -24.549; 1 M_glc__D_exchg (<)-> 1 M_glc__D_p_ecoli1
+EXCHG_h2o_p_to_h2o; 1.5135; forward; NaN; NaN; 1 M_h2o_p_ecoli1 (<)-> 1 M_h2o_exchg
+EXCHG_pi_p_to_pi; -0.74775; reverse; 0; -15.4049; 1 M_pi_exchg (<)-> 1 M_pi_p_ecoli1
+EXCHG_o2_p_to_o2; -0.39189; reverse; 0; -39.9538; 1 M_o2_exchg (<)-> 1 M_o2_p_ecoli1
+
+==FINAL STATISTICS==
+Total number analyzed target metabolites:
+1
+Number (fraction) producible target metabolites with dG0=NaN reactions:
+1 (100 pct.)
+Number (fraction) producible target metabolites without dG0=NaN reactions:
+1 (100 pct.)
+Maximal extra exchanges:
+5
+Minimal extra exchanges:
+5
+Mean extra exchanges:
+5
+Mean maximal possible yield change due to NaN reactions in MDF community advantage solutions:
+0
+Mean maximal possible yield change due to NaN reactions in all solutions:
+0
+Number metabolites with found community MDF benefit:
+1
+Number metabolites without found community MDF benefit:
+0
+Mean MDF advantage (found MDF with community minus MDF without community in all cases where the community showed an advantage and where OptMDFPathway worked with the community):
+0.59831
+List of metabolites with found community MDF benefit:
+R_EX_C_kdo8p_exchg
+List of used exchange reactions, ordered by number of community advantage solutions where they occur:
+R_EXCHG_ecoli1_kdo8p_c_to_kdo8p: 1
+R_EXCHG_ecoli1_6pgc_c_to_6pgc: 1
+R_EXCHG_ecoli1_dha_c_to_dha: 1
+R_EXCHG_ecoli2_6pgc_c_to_6pgc: 1
+R_EXCHG_ecoli2_dha_c_to_dha: 1
+
+
+Full run time (min): 0.83794
+Full run time (h): 0.013966
+Full run time (days): 0.0005819
