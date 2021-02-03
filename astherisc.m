@@ -5,7 +5,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
     modelPath, reportPath, reportHeader,...
     showCommunityModelBottlenecks, showSingleSpeciesBottlenecks, calculateIndirectBottlenecks,...
     reactionsWithSetMinimumZero, ignoredMetabolites, fixedRatiosNameMat, exchangeReactionSelection,...
-    maximalMilpRunTime, verboseSettings, printValFiles)
+    maximalMilpRunTime, verboseSettings, printValFiles, getDetailedOriginalSingleStrainSolution)
     %% Algorithmic Search of THERmodynamic advantages In stoichiometric Single-species Community models
     % This is the ASTHERISC package's main function astherisc. For more about ASTHERISC itself, read the "README.md" in the same folder as this script.
     %
@@ -46,6 +46,9 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
     % printValFiles: bool ~ If true, CellNetAnalyzer .val file strings (which can be e.g. directly copied into a separate text file) will be added to the text reports for each target metabolite with a community advantage,
     %                       including .val file strings for the single-species solution using the active community reactions as well as the community solution itself,
     %                       in the latter case separated for each single species of the community.
+    % getDetailedOriginalSingleStrainSolution: bool ~ If true, the original single-strain solution (i.e., not the single-strain solution recalculated from the active community reactions)
+    %                                                 is printed in the results files in the form of a minimal absolute flux solution. If set in the bottleneck parameters,
+    %                                                 the corresponding bottlenecks are also printed.
     %
     % ==OUTPUTS==
     % finalReport : String ~ The final text report. It will be also exported as text file to reportPath.
@@ -93,6 +96,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
     finalReport = finalReport + "Calculate and show community solution bottlenecks? " + showCommunityModelBottlenecks + "\n";
     finalReport = finalReport + "Calculate and show single-species bottlenecks with active reactions of the community? " + showSingleSpeciesBottlenecks + "\n";
     finalReport = finalReport + "Calculate indirect bottlenecks for selected bottleneck types? " + calculateIndirectBottlenecks + "\n";
+    finalReport = finalReport + "Show original single-strain solution (not the one which is recalculated from the community solution) in a verbose form? " + getDetailedOriginalSingleStrainSolution + "\n";
     finalReport = finalReport + "Number of maximal allowed exchanges: " + numMaxExchanges + "\n";
     finalReport = finalReport + "Reactions with set minimal flux of 0:\n";
     if isempty(reactionsWithSetMinimumZero)
@@ -415,6 +419,34 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         end
 
         reachedYieldWithoutCommunity = vWithoutCommunity(PSBCNAFindReactionInCellstring(targetProductReaction, cnapReactionIdsCellstring)) / -vWithoutCommunity(PSBCNAFindReactionInCellstring(targetSubstrateReaction, cnapReactionIdsCellstring));
+
+        % -> (Optional) STEP 1B: Get minimal flux solution with solution without community
+        originalSingleSpeciesBottleneckReport = "";
+        if getDetailedOriginalSingleStrainSolution
+            [optmdfMinimalFluxWithoutCommunity, vMinimalFluxWithoutCommunity, ~, dfsMinimalFluxWithoutCommunity] = CNAcomputeOptMDFpathway_higher_mdf_max_exchanges(maximalMilpRunTime, inf, [], optmdfWithoutCommunity - abs(optmdfWithoutCommunity)*.000001, true,...
+                    cnapWithoutCommunity,...
+                    RT,...
+                    dG0sAndUncertainties,...
+                    minConcentrationsMat,...
+                    maxConcentrationsMat,...
+                    D,...
+                    d,...
+                    fixedConcentrationRatioRanges);
+
+            [~, directBottlenecksStrSingle, indirectBottlenecksStrSingle, ~] = getDirectAndIndirectBottlenecks(inf, [], cnapWithoutCommunity,...
+                    dfsMinimalFluxWithoutCommunity, RT, dG0sAndUncertainties,...
+                    minConcentrationsMat, maxConcentrationsMat,...
+                    D, d, fixedConcentrationRatioRanges,...
+                    optmdfMinimalFluxWithoutCommunity, speciesIds, vMinimalFluxWithoutCommunity, vEpsilon, calculateIndirectBottlenecks,...
+                    maximalMilpRunTime);
+
+            originalSingleSpeciesBottleneckReport = originalSingleSpeciesBottleneckReport + "Bottleneck reactions (driving force=OptMDF) of single-species solution (at maximal MDF, not recalculated from community solution reactions):\n";
+            originalSingleSpeciesBottleneckReport = originalSingleSpeciesBottleneckReport + "MDF in single species solution: " + optmdfMinimalFluxWithoutCommunity + "\n";
+            originalSingleSpeciesBottleneckReport = originalSingleSpeciesBottleneckReport + ">Bottleneck reactions (driving force=OptMDF):\n" + directBottlenecksStrSingle + "\n";
+            if calculateIndirectBottlenecks
+                originalSingleSpeciesBottleneckReport = originalSingleSpeciesBottleneckReport + ">Indirect bottleneck reactions:\n" + indirectBottlenecksStrSingle;
+            end
+        end
 
 
         % -> STEP 2A:
@@ -1040,7 +1072,7 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
                 if difference < 0
                     hasNumericError = true;
                 end
-                singleSpeciesBottlenecksStr = singleSpeciesBottlenecksStr + "Bottleneck reactions (driving force=OptMDF) of single-species solution (with " + currentSpecies + " only):\n";
+                singleSpeciesBottlenecksStr = singleSpeciesBottlenecksStr + "Bottleneck reactions (driving force=OptMDF) of single-species solution as calculated back from community solution:\n";
                 singleSpeciesBottlenecksStr = singleSpeciesBottlenecksStr + "MDF in single species with reactions occuring in community solution: " + mdfWithSingleSpecies + " (OptMDF in community was "+optmdfWithCommunity+", difference is "+difference+")\n";
                 singleSpeciesBottlenecksStr = singleSpeciesBottlenecksStr + ">Bottleneck reactions (driving force=OptMDF):\n" + directBottlenecksStr;
                 singleSpeciesBottlenecksStr = singleSpeciesBottlenecksStr + ">Connecting metabolite ranges:\n" + connectionMetaboliteStr;
@@ -1087,7 +1119,13 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
             valFileString = valFileString + "\n~Community solution .val files~\n";
             valFileString = valFileString + getValFileString(cnap, vOptMdf, vEpsilon, speciesIds);
             % Single-species solution
-            valFileString = valFileString + "\n~Single-species solution .val file~\n";
+            if getDetailedOriginalSingleStrainSolution
+                valFileString = valFileString + "\n~Single-species solution (at maximal MDF, not recalculated from community solution reactions) .val file~\n";
+                firstSpecies = speciesIds(1);
+                valFileString = valFileString + getValFileString(cnap, vMinimalFluxWithoutCommunity, vEpsilon, firstSpecies);
+            end
+            % Single-species solution (recalculated from community solution)
+            valFileString = valFileString + "\n~Single-species solution (recalculated from community solution) .val file~\n";
             firstSpecies = speciesIds(1);
             valFileString = valFileString + getValFileString(cnap, vWithSingleSpecies, vEpsilon, firstSpecies);
         else
@@ -1096,11 +1134,15 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
 
         % --> Get solution reaction data string
         detailedSolutionString = "\nDetailed reaction-wise solution reports:";
+        if getDetailedOriginalSingleStrainSolution
+            detailedSolutionString = detailedSolutionString + "\n~Detailed solution of single-strain solution (at maximal MDF, not recalculated from community solution reactions)~\n";
+            detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vMinimalFluxWithoutCommunity, vEpsilon, dfsMinimalFluxWithoutCommunity, speciesIds, dG0sAndUncertainties);
+        end
         % Community solution
-        detailedSolutionString = detailedSolutionString + "\n~Community solution detailed solutions~\n";
+        detailedSolutionString = detailedSolutionString + "\n~Detailed solution of community solution~\n";
         detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vOptMdf, vEpsilon, dfsOptMdf, speciesIds, dG0sAndUncertainties);
         % Single-species solution
-        detailedSolutionString = detailedSolutionString + "\n~Single-species solution detailed solution~\n";
+        detailedSolutionString = detailedSolutionString + "\n~Detailed solution of single-strain solution, recalculated from community solution reactions~\n";
         firstSpecies = speciesIds(1);
         if ~isempty(vWithSingleSpecies)
             detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vWithSingleSpecies, vEpsilon, dfsWithSingleSpecies, firstSpecies, dG0sAndUncertainties);
@@ -1152,14 +1194,15 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         finalReport = finalReport + "Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):\n" + extraExchangesAsStr + "\n";
         finalReport = finalReport + "Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):\n" + defaultExchangesAsStr + "\n";
         finalReport = finalReport + "Species-specific uptake:\n" + speciesUptakeAsStr + "\n";
+        finalReport = finalReport + "Metabolites with non-overlapping concentration ranges between species:\n" + numOverlappingMetabolitesStr + "\n";
         if showCommunityModelBottlenecks
-            finalReport = finalReport + "Community solution bottleneck reactions:\n";
+            finalReport = finalReport + "Bottleneck reactions (driving force=OptMDF) of community solution:\n";
             finalReport = finalReport + "Direct bottleneck reactions:\n" + directBottlenecksStr + "\n";
             if calculateIndirectBottlenecks
                 finalReport = finalReport + "Indirect bottleneck reactions:\n" + indirectBottlenecksStr + "\n";
             end
         end
-        finalReport = finalReport + "Metabolites with non-overlapping concentration ranges between species:\n" + numOverlappingMetabolitesStr + "\n";
+        finalReport = finalReport + originalSingleSpeciesBottleneckReport;
         finalReport = finalReport + singleSpeciesBottlenecksStr + "\n";
         finalReport = finalReport + valFileString;
         finalReport = finalReport + detailedSolutionString;

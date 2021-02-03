@@ -15,3 +15,4 @@ exchangeReactionSelection = [];
 maximalMilpRunTime = 1000;
 verboseSettings = false;
 printValFiles = false;
+getDetailedOriginalSingleStrainSolution = false;
