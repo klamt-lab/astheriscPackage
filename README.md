@@ -11,7 +11,7 @@ This packages's sister program CommModelPy, which creates community models in a 
 In order to run the ASTHERISC package, you need the following prerequisites:
 * MATLAB in a version >= 2018a
 * The MATLAB package <i>CellNetAnalyzer</i> in a version >=2019.1 which is available [from here](https://www2.mpi-magdeburg.mpg.de/projects/cna/cna.html)
-* The CPLEX solver (the ASTHERISC package was tested with version 12.9)
+* The CPLEX solver (the ASTHERISC package was tested with version 12.9 and 12.8)
 
 Once you have installed <i>CellNetAnalyzer</i> in a configuration which allows it to use the CPLEX solver (this is explained in <i>CellNetAnalyzer's</i> manual), you can run the ASTHERISC package as follows:
 * Download this repository and put it into a folder called "0Astherisc" in <i>CellNetAnalyzer</i>'s main folder
