@@ -136,26 +136,6 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
     %% Get species IDs
     [speciesIds] = getSpeciesIdsFromCommunityModel(cnap);
 
-    %% Get species-specific substrate uptake reaction IDs
-    targetSubstrate = strrep(targetSubstrateReaction, "R_EX_C_", "");
-    targetSubstrate = strrep(targetSubstrate, "_exchg", "");
-    speciesSubstrateReactions = [];
-    for speciesId = speciesIds
-        try
-            reactionId = "R_EXCHG_" + speciesId + "_" + targetSubstrate + "_p_to_" + targetSubstrate;
-            PSBCNAFindReactionInCellstring(reactionId, cnapReactionIdsCellstring); % Throws error if ID is not correct
-        catch
-            try
-                reactionId = "R_EXCHG_" + speciesId + "_" + targetSubstrate + "_c_to_" + targetSubstrate;
-                PSBCNAFindReactionInCellstring(reactionId, cnapReactionIdsCellstring); % Throws error if ID is not correct
-            catch
-                reactionId = "R_EXCHG_" + speciesId + "_" + targetSubstrate + "_to_" + targetSubstrate;
-                PSBCNAFindReactionInCellstring(reactionId, cnapReactionIdsCellstring); % Throws error if ID is not correct
-            end
-        end
-        speciesSubstrateReactions = [speciesSubstrateReactions reactionId];
-    end
-
     %% Get all default community input and output metabolites
     defaultMetabolites = [];
     for i = 1:numel(cellstr(cnap.reacID))
@@ -887,7 +867,6 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         numOverlappingMetabolitesStr = occuringMetabolitesStr + nonOccuringMetabolitesStr;
         % Post-process output string of non-overlapping metabolite
         % concentration ranges
-        numOverlappingMetabolitesStr = numOverlappingMetabolitesStr;
         numOverlappingMetabolitesStr = strrep(numOverlappingMetabolitesStr, " & X", "\n");
         if numOverlappingMetabolitesStr == "X"
             numOverlappingMetabolitesStr = "";
@@ -935,9 +914,6 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
             reactionIndex = PSBCNAFindReactionInCellstring(reactionId, cnapReactionIdsCellstring);
             scaledFlux = fluxScaleVector * vOptMdf(reactionIndex);
             if abs(scaledFlux) < vEpsilon
-                continue
-            end
-            if ismember(reactionId, speciesSubstrateReactions)
                 continue
             end
             exchangeReportAsStr = reactionId + " | SCALED FLUX: " + num2str(scaledFlux);
@@ -1142,17 +1118,12 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         detailedSolutionString = detailedSolutionString + "\n~Detailed solution of community solution~\n";
         detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vOptMdf, vEpsilon, dfsOptMdf, speciesIds, dG0sAndUncertainties);
         % Single-species solution
-        detailedSolutionString = detailedSolutionString + "\n~Detailed solution of single-strain solution, recalculated from community solution reactions~\n";
+        detailedSolutionString = detailedSolutionString + "\n~Detailed solution of single-strain solution (recalculated back from community solution reactions)~\n";
         firstSpecies = speciesIds(1);
         if ~isempty(vWithSingleSpecies)
             detailedSolutionString = detailedSolutionString + getDetailedSolutionString(cnap, vWithSingleSpecies, vEpsilon, dfsWithSingleSpecies, firstSpecies, dG0sAndUncertainties);
         end
-        % --> Get species-specific substrate uptake string
-        speciesUptakeAsStr = "";
-        for speciesSubstrateReaction = speciesSubstrateReactions
-            scaledFlux = fluxScaleVector * vOptMdf(PSBCNAFindReactionInCellstring(speciesSubstrateReaction, cnapReactionIdsCellstring));
-            speciesUptakeAsStr = speciesUptakeAsStr + speciesSubstrateReaction + " | SCALED FLUX " + num2str(scaledFlux) + "\n";
-        end
+
 
         % --> Set output variables
         uniqueProductsWithCommunityBenefit = [uniqueProductsWithCommunityBenefit targetProductReaction];
@@ -1193,7 +1164,6 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         finalReport = finalReport + "\nNumber of active reactions | Absolute total flux per species; Both with minimal absolute flux sum solution and substrate uptake scaled to maximum:\n" + speciesSpecificReactionReport + "\n";
         finalReport = finalReport + "Extra exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):\n" + extraExchangesAsStr + "\n";
         finalReport = finalReport + "Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):\n" + defaultExchangesAsStr + "\n";
-        finalReport = finalReport + "Species-specific uptake:\n" + speciesUptakeAsStr + "\n";
         finalReport = finalReport + "Metabolites with non-overlapping concentration ranges between species:\n" + numOverlappingMetabolitesStr + "\n";
         if showCommunityModelBottlenecks
             finalReport = finalReport + "Bottleneck reactions (driving force=OptMDF) of community solution:\n";

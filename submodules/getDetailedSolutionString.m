@@ -22,9 +22,9 @@ function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, d
     end
 
     fileContent = "";
-    exchangeString = "Detailed solution for exchange reactions:\n";
+    exchangeString = "Active reactions of exchange compartment<->environment exchange reactions:\n";
     for singleSpecies = speciesIds
-        fileContent = fileContent + "Detailed solution for species " + singleSpecies + " (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):\n";
+        fileContent = fileContent + "Active reactions associated with species " + singleSpecies + " (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):\n";
         activeReactionIDs = cnap.reacID(abs(vCommunity) > vEpsilon, :);
         for activeReactionIDIndex = 1:length(cellstr(activeReactionIDs))
             activeReactionIDString = getIdAsString(activeReactionIDs(activeReactionIDIndex,:));
@@ -32,63 +32,69 @@ function [fileContent] = getDetailedSolutionString(cnap, vCommunity, vEpsilon, d
             activeReactionIDString = "___" + activeReactionIDString;
             activeReactionIDString = strrep(activeReactionIDString, "___R_", "");
             activeReactionIDString = strrep(activeReactionIDString, "___", "");
+
             activeReactionIDStringSplit = strsplit(activeReactionIDString, "_");
+            isEXCHGReactionOfSpecies = (activeReactionIDStringSplit(1) == "EXCHG") && (activeReactionIDStringSplit(2) == singleSpecies);
+            isEXCReaction = (activeReactionIDStringSplit(1) == "EX") && (activeReactionIDStringSplit(2) == "C");
+            isFirstSpecies = (singleSpecies == speciesIds(1));
+            if ~(activeReactionIDStringSplit(end) == singleSpecies) && ~isEXCHGReactionOfSpecies && ~(isEXCReaction && isFirstSpecies)
+                continue
+            end
 
             fileLine = "";
-            if (activeReactionIDStringSplit(end) == singleSpecies) || ((singleSpecies == speciesIds(1)) && (sum(speciesIds == activeReactionIDStringSplit(end)) == 0))
-                activeReactionIDString = strrep(activeReactionIDString, "_" + singleSpecies, "");
-                dG0 = dG0sAndUncertainties(activeReactionIndex);
-                if isnan(dG0)
-                    dG0 = "NaN";
-                end
-                flux = vCommunity(activeReactionIndex);
-                if flux < 0
-                    direction = "reverse";
-                else
-                    direction = "forward";
-                end
-                df = -dfCommunity(activeReactionIndex);
-                if isnan(df)
-                    df = "NaN";
-                end
-                fileLine = fileLine + activeReactionIDString + "; " + flux + "; " + direction + "; " + dG0 + "; " + df + "; ";
+            dG0 = dG0sAndUncertainties(activeReactionIndex);
+            if isnan(dG0)
+                dG0 = "NaN";
+            end
+            flux = vCommunity(activeReactionIndex);
+            if flux < 0
+                direction = "reverse";
+            else
+                direction = "forward";
+            end
+            df = -dfCommunity(activeReactionIndex);
+            if isnan(df)
+                df = "NaN";
+            end
+            fileLine = fileLine + activeReactionIDString + "; " + flux + "; " + direction + "; " + dG0 + "; " + df + "; ";
 
-                % Create reaction string
-                metaboliteMatrixColumn = cnap.stoichMat(:, activeReactionIndex);
-                if vCommunity(activeReactionIndex) > 0
-                    eductMetaboliteIndices = find(metaboliteMatrixColumn < 0)';
-                    productMetaboliteIndices = find(metaboliteMatrixColumn > 0)';
-                else
-                    eductMetaboliteIndices = find(metaboliteMatrixColumn > 0)';
-                    productMetaboliteIndices = find(metaboliteMatrixColumn < 0)';
-                    metaboliteMatrixColumn = (-1) * metaboliteMatrixColumn;
+            % Create reaction string
+            metaboliteMatrixColumn = cnap.stoichMat(:, activeReactionIndex);
+            if vCommunity(activeReactionIndex) > 0
+                eductMetaboliteIndices = find(metaboliteMatrixColumn < 0)';
+                productMetaboliteIndices = find(metaboliteMatrixColumn > 0)';
+            else
+                eductMetaboliteIndices = find(metaboliteMatrixColumn > 0)';
+                productMetaboliteIndices = find(metaboliteMatrixColumn < 0)';
+                metaboliteMatrixColumn = (-1) * metaboliteMatrixColumn;
+            end
+            reactionString = "";
+            for eductMetaboliteIndex = eductMetaboliteIndices
+                reactionString = reactionString + abs(metaboliteMatrixColumn(eductMetaboliteIndex)) + " " + getIdAsString(cnap.specID(eductMetaboliteIndex,:)) + " ";
+                if eductMetaboliteIndex ~= eductMetaboliteIndices(end)
+                    reactionString = reactionString + "+ ";
                 end
-                reactionString = "";
-                for eductMetaboliteIndex = eductMetaboliteIndices
-                    reactionString = reactionString + abs(metaboliteMatrixColumn(eductMetaboliteIndex)) + " " + getIdAsString(cnap.specID(eductMetaboliteIndex,:)) + " ";
-                    if eductMetaboliteIndex ~= eductMetaboliteIndices(end)
-                        reactionString = reactionString + "+ ";
-                    end
+            end
+            if cnap.reacMin(activeReactionIndex) < 0
+                reactionString = reactionString + "(<)-> ";
+            else
+                reactionString = reactionString + "-> ";
+            end
+            for productMetaboliteIndex = productMetaboliteIndices
+                reactionString = reactionString + abs(metaboliteMatrixColumn(productMetaboliteIndex)) + " " + getIdAsString(cnap.specID(productMetaboliteIndex,:)) + " ";
+                if productMetaboliteIndex ~= productMetaboliteIndices(end)
+                    reactionString = reactionString + "+ ";
                 end
-                if cnap.reacMin(activeReactionIndex) < 0
-                    reactionString = reactionString + "(<)-> ";
-                else
-                    reactionString = reactionString + "-> ";
-                end
-                for productMetaboliteIndex = productMetaboliteIndices
-                    reactionString = reactionString + abs(metaboliteMatrixColumn(productMetaboliteIndex)) + " " + getIdAsString(cnap.specID(productMetaboliteIndex,:)) + " ";
-                    if productMetaboliteIndex ~= productMetaboliteIndices(end)
-                        reactionString = reactionString + "+ ";
-                    end
-                end
+            end
 
-                fileLine = fileLine + reactionString + "\n";
+            fileLine = fileLine + reactionString + "\n";
 
-                if (sum(speciesIds == activeReactionIDStringSplit(end)) == 0) % e.g. EX_C_ and EXCHG_ reactions
-                    exchangeString = exchangeString + fileLine;
-                else
-                    fileContent = fileContent + fileLine;
-                end
+            isInternalSpeciesReaction = (sum(speciesIds == activeReactionIDStringSplit(end)) == 0);
+            isSpeciesExchangeReaction = (activeReactionIDStringSplit(1) == "EXCHG") && (activeReactionIDStringSplit(2) == singleSpecies);
+            if isInternalSpeciesReaction && ~isSpeciesExchangeReaction
+                exchangeString = exchangeString + fileLine;
+            else
+                fileContent = fileContent + fileLine;
             end
         end
     end

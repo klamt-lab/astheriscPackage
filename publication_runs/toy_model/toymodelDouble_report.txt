@@ -12,7 +12,7 @@ Minimal absolute mdf with community: -Inf
 Minimal absolute flux (in units of the model) for a reaction in order to be considered 'active' ('v epsilon'): 1e-06
 Model path: ./0Astherisc/publication_runs/toy_model/toymodelDouble.mat
 Report path: ./0Astherisc/publication_runs/toy_model/toymodelDouble_report.txt
-Calculate and show community solution bottlenecks? true
+Calculate and show community solution bottlenecks? false
 Calculate and show single-species bottlenecks with active reactions of the community? true
 Calculate indirect bottlenecks for selected bottleneck types? false
 Show original single-strain solution (not the one which is recalculated from the community solution) in a verbose form? false
@@ -91,10 +91,7 @@ R_EXCHG_strain2_B_c_to_B | SCALED FLUX: 1 | M_B_c_strain2 [8.5268;8.5308] | M_B_
 
 Used default exchanges and scaled flux with minimal absolute flux solution (negative flux means uptake to species, positive flux secretion from species):
 R_EXCHG_strain1_P_c_to_P | SCALED FLUX: 1 | M_P_c_strain1 [6.0308;6.0336] | M_P_exchg [5;5.0024]
-
-Species-specific uptake:
-R_EXCHG_strain1_S_c_to_S | SCALED FLUX 0
-R_EXCHG_strain2_S_c_to_S | SCALED FLUX -1
+R_EXCHG_strain2_S_c_to_S | SCALED FLUX: -1 | M_S_c_strain2 [8.2869;8.2908] | M_S_exchg [9.9953;10]
 
 Metabolites with non-overlapping concentration ranges between species:
 M_X_c_strain1 [3.6525;10] & M_X_c_strain2 [1;1.3689]
@@ -102,27 +99,6 @@ M_B_c_strain1 [5.8611;5.8639] & M_B_c_strain2 [8.5268;8.5308]
 M_S_c_strain1 [unused] & M_S_c_strain2 [8.2869;8.2908]
 M_C_c_strain1 [3.6525;10] & M_C_c_strain2 [unused]
 M_P_c_strain1 [6.0308;6.0336] & M_P_c_strain2 [unused]
-
-Bottleneck reactions (driving force=OptMDF) of community solution:
-Direct bottleneck reactions:
-R_B_to_C_strain1 | 1 M_B_c_strain1 -> 1 M_X_c_strain1 + 1 M_C_c_strain1
-R_C_to_P_strain1 | 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1
-R_S_to_A_strain2 | 1 M_S_c_strain2 -> 1 M_A_c_strain2 + 1 M_X_c_strain2
-R_A_to_B_strain2 | 1 M_A_c_strain2 + 1 M_X_c_strain2 -> 1 M_B_c_strain2
-R_EXCHG_strain1_P_c_to_P | 1 M_P_c_strain1 (<)-> 1 M_P_exchg
-R_EXCHG_strain1_B_c_to_B | 1 M_B_exchg (<)-> 1 M_B_c_strain1
-R_EXCHG_strain2_S_c_to_S | 1 M_S_exchg (<)-> 1 M_S_c_strain2
-R_EXCHG_strain2_B_c_to_B | 1 M_B_c_strain2 (<)-> 1 M_B_exchg
->Connecting metabolites:
-R_B_to_C_strain1-> R_C_to_P_strain1; M_X_c_strain1
-R_EXCHG_strain1_B_c_to_B-> R_B_to_C_strain1; M_B_c_strain1
-R_B_to_C_strain1-> R_C_to_P_strain1; M_C_c_strain1
-R_C_to_P_strain1-> R_EXCHG_strain1_P_c_to_P; M_P_c_strain1
-R_S_to_A_strain2-> R_A_to_B_strain2; M_A_c_strain2
-R_S_to_A_strain2-> R_A_to_B_strain2; M_X_c_strain2
-R_EXCHG_strain2_S_c_to_S-> R_S_to_A_strain2; M_S_c_strain2
-R_A_to_B_strain2-> R_EXCHG_strain2_B_c_to_B; M_B_c_strain2
-R_EXCHG_strain2_B_c_to_B-> R_EXCHG_strain1_B_c_to_B; M_B_exchg
 
 Bottleneck reactions (driving force=OptMDF) of single-species solution as calculated back from community solution:
 MDF in single species with reactions occuring in community solution: -0.19137 (OptMDF in community was 0.46467, difference is 0.65605)
@@ -150,31 +126,31 @@ M_P_c_strain2: [unused] (range 0)
 
 Detailed reaction-wise solution reports:
 ~Detailed solution of community solution~
-Detailed solution for species strain1 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
-B_to_C; 1; forward; -5; -0.46467; 1 M_B_c_strain1 -> 1 M_X_c_strain1 + 1 M_C_c_strain1
-C_to_P; 1; forward; 4; -0.46467; 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1
-Detailed solution for species strain2 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
-S_to_A; 1; forward; 4; -0.46467; 1 M_S_c_strain2 -> 1 M_A_c_strain2 + 1 M_X_c_strain2
-A_to_B; 1; forward; -5; -0.46548; 1 M_A_c_strain2 + 1 M_X_c_strain2 -> 1 M_B_c_strain2
-Detailed solution for exchange reactions:
-EX_C_S_exchg; -1; reverse; NaN; NaN; (<)-> 1 M_S_exchg
-EX_C_P_exchg; 1; forward; NaN; NaN; 1 M_P_exchg ->
-EXCHG_P_c_to_P; 1; forward; 0; -0.46467; 1 M_P_c_strain1 (<)-> 1 M_P_exchg
-EXCHG_B_c_to_B; -1; reverse; 0; -0.46467; 1 M_B_exchg -> 1 M_B_c_strain1
+Active reactions associated with species strain1 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
+B_to_C_strain1; 1; forward; -5; -0.46467; 1 M_B_c_strain1 -> 1 M_X_c_strain1 + 1 M_C_c_strain1
+C_to_P_strain1; 1; forward; 4; -0.46467; 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1
+EXCHG_strain1_P_c_to_P; 1; forward; 0; -0.46467; 1 M_P_c_strain1 (<)-> 1 M_P_exchg
+EXCHG_strain1_B_c_to_B; -1; reverse; 0; -0.46467; 1 M_B_exchg -> 1 M_B_c_strain1
+Active reactions associated with species strain2 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
+S_to_A_strain2; 1; forward; 4; -0.46467; 1 M_S_c_strain2 -> 1 M_A_c_strain2 + 1 M_X_c_strain2
+A_to_B_strain2; 1; forward; -5; -0.46548; 1 M_A_c_strain2 + 1 M_X_c_strain2 -> 1 M_B_c_strain2
 EXCHG_strain2_S_c_to_S; -1; reverse; 0; -0.46467; 1 M_S_exchg (<)-> 1 M_S_c_strain2
 EXCHG_strain2_B_c_to_B; 1; forward; 0; -0.46467; 1 M_B_c_strain2 -> 1 M_B_exchg
-
-~Detailed solution of single-strain solution, recalculated from community solution reactions~
-Detailed solution for species strain1 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
-S_to_A; 1; forward; 4; 0.19137; 1 M_S_c_strain1 -> 1 M_A_c_strain1 + 1 M_X_c_strain1
-A_to_B; 1; forward; -5; -3.6068; 1 M_A_c_strain1 + 1 M_X_c_strain1 -> 1 M_B_c_strain1
-B_to_C; 1; forward; -5; -0.68555; 1 M_B_c_strain1 -> 1 M_X_c_strain1 + 1 M_C_c_strain1
-C_to_P; 1; forward; 4; 0.19137; 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1
-Detailed solution for exchange reactions:
+Active reactions of exchange compartment<->environment exchange reactions:
 EX_C_S_exchg; -1; reverse; NaN; NaN; (<)-> 1 M_S_exchg
 EX_C_P_exchg; 1; forward; NaN; NaN; 1 M_P_exchg ->
-EXCHG_P_c_to_P; 1; forward; 0; 0.19137; 1 M_P_c_strain1 (<)-> 1 M_P_exchg
-EXCHG_S_c_to_S; -1; reverse; 0; 0; 1 M_S_exchg (<)-> 1 M_S_c_strain1
+
+~Detailed solution of single-strain solution (recalculated back from community solution reactions)~
+Active reactions associated with species strain1 (Reaction ID; Flux; Direction; dG0 (adjusted to direction); dG; Reaction string (adjusted to direction):
+S_to_A_strain1; 1; forward; 4; 0.19137; 1 M_S_c_strain1 -> 1 M_A_c_strain1 + 1 M_X_c_strain1
+A_to_B_strain1; 1; forward; -5; -3.6068; 1 M_A_c_strain1 + 1 M_X_c_strain1 -> 1 M_B_c_strain1
+B_to_C_strain1; 1; forward; -5; -0.68555; 1 M_B_c_strain1 -> 1 M_X_c_strain1 + 1 M_C_c_strain1
+C_to_P_strain1; 1; forward; 4; 0.19137; 1 M_X_c_strain1 + 1 M_C_c_strain1 -> 1 M_P_c_strain1
+EXCHG_strain1_P_c_to_P; 1; forward; 0; 0.19137; 1 M_P_c_strain1 (<)-> 1 M_P_exchg
+EXCHG_strain1_S_c_to_S; -1; reverse; 0; 0; 1 M_S_exchg (<)-> 1 M_S_c_strain1
+Active reactions of exchange compartment<->environment exchange reactions:
+EX_C_S_exchg; -1; reverse; NaN; NaN; (<)-> 1 M_S_exchg
+EX_C_P_exchg; 1; forward; NaN; NaN; 1 M_P_exchg ->
 
 ==FINAL STATISTICS==
 Total number analyzed target metabolites:
@@ -206,6 +182,6 @@ R_EXCHG_strain1_B_c_to_B: 1
 R_EXCHG_strain2_B_c_to_B: 1
 
 
-Full run time (min): 0.092642
-Full run time (h): 0.001544
-Full run time (days): 6.4335e-05
+Full run time (min): 0.067232
+Full run time (h): 0.0011205
+Full run time (days): 4.6689e-05

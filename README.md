@@ -18,7 +18,7 @@ As a point of reference for compatible prerequisity versions, ASTHERISC was succ
 * MATLAB 2018a & *CellNetAnalyzer* 2019.2 & CPLEX 12.9
 * MATLAB 2019b & *CellNetAnalyzer* 2020.3 & CPLEX 12.10
 
-Once you have installed <i>CellNetAnalyzer</i> in a configuration which allows it to use the CPLEX solver as it is explained in <i>CellNetAnalyzer's</i> manual, you have to add the following lines to "startcna.m" in *CellNetAnalyzer*'s main folder (where $CPLEX_FOLDER has to be replaed by the folder where you installed CPLEX):
+Once you have installed <i>CellNetAnalyzer</i> in a configuration which allows it to use the CPLEX solver as it is explained in <i>CellNetAnalyzer's</i> manual, you have to add the following lines to "startcna.m" in *CellNetAnalyzer*'s main folder (where $CPLEX_FOLDER has to be replaced by the folder where you installed CPLEX):
 <pre>
 cnan.cplex_remote.transport_name= 'processtransport';
 cnan.cplex_remote.transport_args= {'$CPLEX_FOLDER/cplex/bin/x86-64_linux/cplex', '-worker=process'};
