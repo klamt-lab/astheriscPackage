@@ -1167,9 +1167,9 @@ function [finalReport, mdfsWithCommunity, mdfsWithoutCommunity] = astherisc(targ
         finalReport = finalReport + "Metabolites with non-overlapping concentration ranges between species:\n" + numOverlappingMetabolitesStr + "\n";
         if showCommunityModelBottlenecks
             finalReport = finalReport + "Bottleneck reactions (driving force=OptMDF) of community solution:\n";
-            finalReport = finalReport + "Direct bottleneck reactions:\n" + directBottlenecksStr + "\n";
+            finalReport = finalReport + ">Bottleneck reactions (driving force=OptMDF):\n" + directBottlenecksStr + "\n";
             if calculateIndirectBottlenecks
-                finalReport = finalReport + "Indirect bottleneck reactions:\n" + indirectBottlenecksStr + "\n";
+                finalReport = finalReport + ">Indirect bottleneck reactions:\n" + indirectBottlenecksStr + "\n";
             end
         end
         finalReport = finalReport + originalSingleSpeciesBottleneckReport;

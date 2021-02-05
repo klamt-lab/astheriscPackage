@@ -110,7 +110,7 @@ M_co2_p_ecoli1 [3.1852e-06;0.001] & M_co2_p_ecoli2 [unused]
 M_glc__D_p_ecoli1 [1.4805e-05;0.02] & M_glc__D_p_ecoli2 [unused]
 
 Bottleneck reactions (driving force=OptMDF) of community solution:
-Direct bottleneck reactions:
+>Bottleneck reactions (driving force=OptMDF):
 R_F6PA_ecoli1 | 1 M_f6p_c_ecoli1 (<)-> 1 M_dha_c_ecoli1 + 1 M_g3p_c_ecoli1
 R_GAPD_ecoli1 | 1 M_g3p_c_ecoli1 + 1 M_nad_c_ecoli1 + 1 M_pi_c_ecoli1 (<)-> 1 M_13dpg_c_ecoli1 + 1 M_h_c_ecoli1 + 1 M_nadh_c_ecoli1
 R_PGI_ecoli1 | 1 M_g6p_c_ecoli1 (<)-> 1 M_f6p_c_ecoli1
