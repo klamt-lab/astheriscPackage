@@ -104,9 +104,11 @@ A report of the exact given 3-Deoxy-D-manno-octulosonate 8-phosphate (kdo8p) syn
 
 The subfolder "submodules" contains scripts which are internally used by "astherisc.m".
 
-## ASTHERISC's publication
+## ASTHERISC packages's publication
 
-* Bekiaris, P.S., Klamt, S. <i>In submission</i>
+The ASTHERISC package is described and used in the following publication:
+
+* [Bekiaris, P. S., & Klamt, S. (2021). Designing microbial communities to maximize the thermodynamic driving force for the production of chemicals. PLOS Computational Biology, 17(6), e1009093.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009093)
 
 
 ## License
