@@ -2,7 +2,7 @@
 
 ## General description
 
-This repository contains the ASTHERISC package, a [<i>CellNetAnalyzer</i>](https://www2.mpi-magdeburg.mpg.de/projects/cna/cna.html)-based MATLAB package implementation of the ASTHERISC algorithm. ASTHERISC's aim is to find target metabolites with a higher optimal minimal driving force in a situation were multiple strains of the same species interact than in a situation where a single strain has to produce it alone. ASTHERISC is explained in more detail in its publication [(Bekiaris & Klamt, 2021)](#astheriscs-publication) <i>(in submission)</i>.
+This repository contains the ASTHERISC package, a [<i>CellNetAnalyzer</i>](https://www2.mpi-magdeburg.mpg.de/projects/cna/cna.html)-based MATLAB package implementation of the ASTHERISC algorithm. ASTHERISC's aim is to find target metabolites with a higher optimal minimal driving force in a situation were multiple strains of the same species interact than in a situation where a single strain has to produce it alone. ASTHERISC is explained in more detail in its PLOS Computational Biology publication [(Bekiaris & Klamt, 2021)](#astherisc-packagess-publication).
 
 This packages's sister program CommModelPy, which creates community models in a widely automated fashion, can be found [here](https://www.github.com/ARB-Lab/CommModelPy).
 
